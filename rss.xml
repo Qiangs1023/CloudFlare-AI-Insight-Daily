@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 29 Sep 2025 23:12:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Sep 2025 23:55:08 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-09-30日刊]]></title>
           <link>https://ai.hubtoday.app//2025-09/2025-09-30/</link>
           <guid>https://ai.hubtoday.app//2025-09/2025-09-30/</guid>
-          <pubDate>Tue, 30 Sep 2025 07:12:31 GMT</pubDate>
+          <pubDate>Tue, 30 Sep 2025 07:55:07 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/9/30</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://raw.githubusercontent.com/justlovemaki/CloudFlare-AI-Insight-Daily/main/docs/images/wechat.png">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>DeepSeek发布V3.2-Exp模型，其稀疏注意力技术显著降低了推理成本。
 阿里云推出安全护栏模型Qwen3Guard，并为通义千问新增了语音播报功能。
 新研究提出ARC-JSD方法，可将AI生成内容精确溯源，提升模型可信度。
