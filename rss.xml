@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 18 Oct 2025 23:12:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Oct 2025 23:55:15 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-10-19日刊]]></title>
           <link>https://ai.hubtoday.app//2025-10/2025-10-19/</link>
           <guid>https://ai.hubtoday.app//2025-10/2025-10-19/</guid>
-          <pubDate>Sun, 19 Oct 2025 07:12:16 GMT</pubDate>
+          <pubDate>Sun, 19 Oct 2025 07:55:14 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/10/19</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Anthropic为Claude模型推出&quot;技能”系统，Gemini API则正式接入谷歌地图。
 前沿研究量化了AI图像生成的计数幻觉，并提出了改进方案以提升其准确性。
 OpenAI创始成员Andrej Karpathy指出，实现可靠的AI智能体仍需克服巨大挑战。
