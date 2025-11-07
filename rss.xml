@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 07 Nov 2025 23:13:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 23:55:10 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-11-08日刊]]></title>
           <link>https://ai.hubtoday.app//2025-11/2025-11-08/</link>
           <guid>https://ai.hubtoday.app//2025-11/2025-11-08/</guid>
-          <pubDate>Sat, 08 Nov 2025 07:13:04 GMT</pubDate>
+          <pubDate>Sat, 08 Nov 2025 07:55:09 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/11/8</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>月之暗面发布开源模型Kimi K2 Thinking，在多个基准测试中表现亮眼。
 谷歌则将RAG能力直接内置于Gemini API中，并推出File Search功能。
 同时，谷歌Chrome浏览器植入Summarizer API，无需联网即可生成文章摘要。
