@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Dec 2025 23:13:36 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 23:55:12 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-12-07日刊]]></title>
           <link>https://ai.hubtoday.app//2025-12/2025-12-07/</link>
           <guid>https://ai.hubtoday.app//2025-12/2025-12-07/</guid>
-          <pubDate>Sun, 07 Dec 2025 07:13:35 GMT</pubDate>
+          <pubDate>Sun, 07 Dec 2025 07:55:11 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/7</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>英伟达CUDA 13.1引入Tile模型抽象张量核心细节Green Context精细分配GPU资源
 百度Video4Edit从视频学编辑仅用主流模型1%数据性能逼近SOTA成本降九成
 Cloudflare故障因Lua代理异常致WAF规则解析失效Quicksilver秒级全网传播
