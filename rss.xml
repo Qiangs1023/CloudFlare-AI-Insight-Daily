@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 05 Dec 2025 23:14:08 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 08:11:16 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2025-12-06日刊]]></title>
           <link>https://ai.hubtoday.app//2025-12/2025-12-06/</link>
           <guid>https://ai.hubtoday.app//2025-12/2025-12-06/</guid>
-          <pubDate>Sat, 06 Dec 2025 07:14:08 GMT</pubDate>
+          <pubDate>Sat, 06 Dec 2025 16:11:15 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/6</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>阿里Qwen3-TTS新增49种声音支持10语言8方言
 微软开源VibeVoice仅0.5B参数实现300ms响应
 谷歌Gemini3 Deep Think推理模式ARC-AGI测试达45.1%新高
@@ -21,10 +21,10 @@ AI编程代理SUSVIBES测试功能正确率61%但安全率仅10.5%
 </code></pre><h3>产品与功能更新</h3><ol><li><p><strong>阿里通义千问发布Qwen3-TTS新版本。</strong>
 新增49种🚀高品质声音，涵盖可爱、睿智等多种风格，支持10种语言及8种方言（闽南语、粤语等）。语速和节奏<a href="https://qwen.ai/blog?id=qwen3-tts-1128">高度拟人(AI资讯)</a>，播报自然度令人惊叹(✧∀✧)。用户可通过千问聊天、实时API或<a href="https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=2840914_2&modelId=qwen3-tts-flash-2025-11-27">离线API(AI资讯)</a>体验功能。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kbqnfkmbem0sbehcsxesm7sx.avif" alt="AI资讯：阿里通义千问Qwen3-TTS多语言语音演示界面"><br/></p></li><li><p><strong>微软开源VibeVoice实时语音模型。</strong>
 该模型仅0.5B参数，却实现300ms🔥极速响应，支持90分钟超长音频生成。最多支持<a href="https://microsoft.github.io/VibeVoice/">4人多角色对话(AI资讯)</a>，情绪识别精准，中英文双语播报自然(✧∀✧)。模型在HuggingFace和GitHub完全开源，显存占用不到2GB，适合本地部署💡。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kbqnfrdzf7a8nj514g4tpzgw.avif" alt="AI资讯：微软VibeVoice模型实时语音生成演示"><br/></p></li><li><p><strong>谷歌Gemini3 Deep Think推理模式上线。</strong>
-该模式面向Ultra订阅用户，在数学、逻辑等复杂问题上表现🚀出色。未使用工具时，人类最后的考试得分41.0%；使用代码执行时，ARC-AGI-2测试达<a href="https://blog.google/products/gemini/gemini-3-deep-think/">45.1%历史新高(AI资讯)</a>。采用并行推理技术，同时探索多个假设(✧∀✧)，推理能力显著提升💡。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kbqnftk9ev8aq37jrw0sa1f5.avif" alt="AI资讯：谷歌Gemini3 Deep Think推理模式测试结果对比图"><br/></p></li><li><p><strong>NotebookLM角色定制字符数扩展至10000。</strong>
+该模式面向Ultra订阅用户，在数学、逻辑等复杂问题上表现🚀出色。未使用工具时，人类最后的考试得分41.0%；使用代码执行时，ARC-AGI-2测试达<a href="https://blog.google/products/gemini/gemini-3-deep-think/">45.1%历史新高(AI资讯)</a>。采用并行推理技术，同时探索多个假设(✧∀✧)，推理能力显著提升💡。</p></li><li><p><strong>NotebookLM角色定制字符数扩展至10000。</strong>
 之前仅支持500字符，现在用户可为AI设定<a href="https://www.xiaohu.ai/c/xiaohu-ai/notebooklm-persona-10-000">更复杂的角色身份(AI资讯)</a>，如产品经理、科研助理等。AI回答会更贴近预期🚀，理解资料时更有角色意识(✧∀✧)。官方提供三种高级示范：产品经理、初中教师、科研助理💡。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kbqng2wvfc8v7171q7dnqv54.avif" alt="AI资讯：NotebookLM角色定制功能界面示例"><br/></p></li><li><p><strong>OpenAI发布GPT-5.1-Codex Max API。</strong>
 该模型已接入<a href="https://x.com/op7418/status/1996757975609098690">Cursor等编程工具(AI资讯)</a>，提供低、中、高三种推理级别🔥。付费用户限时免费使用低推理级别，代码能力显著提升(✧∀✧)。Windsurf平台也已向所有用户开放该模型💡。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kbqng85ze979f9mer4cmm6gy.avif" alt="AI资讯：OpenAI GPT-5.1-Codex Max模型API发布公告截图"><br/></p></li></ol><h3>前沿研究</h3><ol><li><p><strong>谷歌突破Transformer长文本瓶颈。</strong>
-发布Titans架构和MIRAS框架，推理阶段可将上下文扩展至<a href="https://www.qbitai.com/2025/12/359230.html">200万token(AI资讯)</a>。Titans兼具RNN速度和Transformer性能🚀，通过神经长期记忆模块动态更新权重(✧∀✧)。&quot;大海捞针&quot;任务准确率高，突破了自注意力机制效率瓶颈💡。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kbqngaydfcz8ba70aqfhzdky.avif" alt="AI资讯：谷歌Titans架构与MIRAS框架示意图"><br/></p></li><li><p><strong>NeurIPS 2025最佳论文聚焦Gating机制。</strong>
+发布Titans架构和MIRAS框架，推理阶段可将上下文扩展至<a href="https://www.qbitai.com/2025/12/359230.html">200万token(AI资讯)</a>。Titans兼具RNN速度和Transformer性能🚀，通过神经长期记忆模块动态更新权重(✧∀✧)。&quot;大海捞针&quot;任务准确率高，突破了自注意力机制效率瓶颈💡。</p></li><li><p><strong>NeurIPS 2025最佳论文聚焦Gating机制。</strong>
 研究测试超30种gating变体，模型参数达<a href="https://chapterpal.com/s/c8685321/gated-attention-for-large-language-models-non-linearity-sparsity-and-attention-sink-free">150亿(AI资讯)</a>。逐元素gate效果最佳🔥，训练更稳定、支持更高学习率(✧∀✧)。大幅减少&quot;attention sinks&quot;现象，长文本性能显著提升💡。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kbqngsr6emna3vyrjqwbm8f0.avif" alt="AI资讯：Gating机制改进Transformer注意力机制原理图"><br/></p></li><li><p><strong>扑克AI框架Patrick挑战传统solver理念。</strong>
 该AI不追求<a href="https://arxiv.org/abs/2512.04714">不可剥削的完美打法(AI资讯)</a>，而是专注最大化剥削对手🚀。通过预测锚定学习方法理解人类心理缺陷，64267手试验中表现盈利(✧∀✧)。论文挑战&quot;solved myth&quot;理论，提出掌握人类不完美性才是关键💡。<br/></p></li><li><p><strong>AI生成内容与假新闻级联传播研究。</strong>
 研究分析Reddit五个社区中虚假信息和AI图像传播机制。框架整合文本情感、视觉属性和扩散指标，预测<a href="https://arxiv.org/abs/2512.04639">即时病毒性AUC=0.83(AI资讯)</a>。长期级联传播预测AUC=0.998🔥，为合成和误导性视觉内容审核提供重要见解(✧∀✧)。<br/></p></li><li><p><strong>AudAgent工具守护AI代理隐私合规。</strong>
