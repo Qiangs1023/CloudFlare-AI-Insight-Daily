@@ -5,9 +5,43 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 17 Dec 2025 23:55:09 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Dec 2025 23:15:26 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2025-12-19日刊]]></title>
+          <link>https://ai.hubtoday.app//2025-12/2025-12-19/</link>
+          <guid>https://ai.hubtoday.app//2025-12/2025-12-19/</guid>
+          <pubDate>Fri, 19 Dec 2025 07:15:25 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/19</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>ElevenLabs语音Agents支持WhatsApp集成覆盖20亿用户
+字节TRAE CN企业版内部92%工程师使用支持亿级代码
+OpenAI开放ChatGPT Apps提交正转型AI操作系统
+国产大模型MiniMax智谱冲刺港股IPO资本化拐点来临
+姚顺雨出任腾讯首席AI科学家带队大语言模型研发
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>ElevenLabs语音Agents平台正式支持WhatsApp集成。</strong>
+企业可在🚀<a href="https://www.xiaohu.ai/c/xiaohu-ai/elevenlabs-ai-agents-whatsapp">WhatsApp部署AI语音助手(AI资讯)</a>，与网站电话共享功能。用户发消息秒回，来电外呼(✧∀✧)全搞定。20亿月活用户触手可及。统一后台管理，数据集中分析超省心。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1h36aesytx329rcv7tx9c.avif" alt="AI资讯：ElevenLabs WhatsApp集成界面展示"><br/></p></li><li><p><strong>字节跳动发布TRAE CN企业版。</strong>
+内部<strong>92%工程师</strong>已用上🔥这款AI编程工具。个人版注册破600万。支持<strong>10万文件1.5亿行代码</strong>容量。全链路加密传输，云端零存储💡保障安全。<a href="https://www.aibase.com/zh/news/23822">来源:(AI资讯日报)</a><br/></p></li><li><p><strong>OpenAI正式开放ChatGPT Apps应用提交。</strong>
+开发者可<a href="https://www.xiaohu.ai/c/xiaohu-ai/openai-chatgpt-apps">上传自己的AI应用(AI资讯)</a>啦！新增App Directory应用目录。输入@就能调用，系统自动推荐(´▽`)。未来支持内购订阅变现。ChatGPT正在变成<strong>AI操作系统</strong>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1h7vdfv1b2samcqnsb0ec.avif" alt="AI资讯：ChatGPT Apps SDK核心原则说明"><br/></p></li><li><p><strong>YouTube推出Playables Builder游戏制作工具。</strong>
+基于🎮Gemini 3技术的<a href="https://www.aibase.com/zh/news/23809">AI游戏创作器(AI资讯)</a>开启封闭测试。用户输入文字图片就能做游戏。互动式创作体验(｡◕‿◕｡)超好玩。平台内容多样化再升级。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1haz4ehhvy80w1b95wn8m.avif" alt="AI资讯：YouTube Playables Builder游戏创作界面"><br/></p></li><li><p><strong>Google将Opal整合进Gemini网页应用。</strong>
+用自然语言就能💡零代码构建AI助手Gems。可视化流程图拖拽编排，<a href="https://www.aibase.com/zh/news/23792">来源:(AI资讯日报)</a>小白也能玩。新增文字转步骤视图。氛围编程时代(✧∀✧)正式到来。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1hdkgfjer93rrexa1bh91.avif" alt="AI资讯：Google Opal可视化AI应用创建界面"><br/></p></li><li><p><strong>Gemini 3 Flash模型正式发布。</strong>
+谷歌Josh Woodward<a href="https://x.com/joshwoodward/status/2001321958773022819">宣布(AI资讯)</a>新模型上线。比2.5 Pro更聪明，速度🚀快3倍！推理效率高，token用量少30%。在swe-bench和arc-agi-2上居然超Pro版(゜o゜)。Gemini App免费用。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1hjj0fxpraqhmff3zgp16.avif" alt="AI资讯：Gemini 3 Flash性能基准测试对比图"><br/></p></li></ol><h3>前沿研究</h3><ol><li><p><strong>MedChat多智能体医疗诊断框架发布。</strong>
+深度学习🏥青光眼检测与LLM结合。多角色Agent由导演Agent协调，<a href="https://arxiv.org/abs/2506.07400">论文链接(AI资讯)</a>已开源。减少幻觉风险(✧∀✧)提升可靠性。为临床审查和教育提供交互式诊断报告。<br/></p></li><li><p><strong>Nano Banana Pro低级视觉能力全面评估。</strong>
+研究人员跨<strong>14项任务40个数据集</strong>进行测试。零样本评估<a href="https://arxiv.org/abs/2512.15110">显示(AI资讯)</a>主观视觉质量🔥超强。但传统量化指标落后专家模型。生成模型随机性与像素级一致性存在矛盾。<br/></p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>国产大模型集体冲刺港股IPO。</strong>
+壁仞科技MiniMax智谱均通过🔥港交所聆讯。&quot;AI六小龙&quot;实质进入IPO倒计时。参股公司<a href="https://www.aibase.com/zh/news/23830">股价年内涨超180%(AI资讯)</a>。中国AI产业(✧∀✧)迎来资本化拐点。从资本输血走向自我造血。<br/></p></li><li><p><strong>人形机器人&quot;小墨&quot;规模化入驻宁德时代。</strong>
+全球首条人形机器人规模化落地💡电池产线投运。千寻智能研发的<a href="https://www.aibase.com/zh/news/23829">小墨(AI资讯)</a>专攻高压插接。单日工作量提升<strong>3倍</strong>，插接成功率99%以上。搭载端到端VLA模型，一年融资超11亿。<br/></p></li><li><p><strong>姚顺雨出任腾讯首席AI科学家。</strong>
+98年天才研究员<a href="https://mp.weixin.qq.com/s/VRX22-oAvtdUGiiswJjIjw">正式加盟(AI资讯)</a>带队大语言模型。腾讯开出🔥极高待遇吸引人才。Agent应用转型Infra训练存gap争议。年轻天才(｡◕‿◕｡)如何驾驭复杂组织待观察。<br/></p></li><li><p><strong>Greptile发布2025年AI编程现状报告。</strong>
+每月十亿行代码过他们系统。开发者月产出从4450行涨到<strong>7839行</strong>🚀涨幅76%。<a href="https://x.com/dotey/status/2001537096964571640">报告显示(AI资讯)</a>AI让代码通货膨胀。Anthropic SDK下载增长1547倍。但代码质量(；′⌒`)不好衡量。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1hsg1f3crb8zj1q2p748x.avif" alt="AI资讯：AI编程工具使用数据统计图表"><br/></p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>Letta有状态Agent开发平台。</strong>
+专为构建具有高级记忆功能的💡开放AI设计。能随时间学习自我改进，<a href="https://github.com/letta-ai/letta">GitHub(AI资讯)</a>已获⭐19.7k。适合需要长期状态保持的智能体开发。Agent架构(✧∀✧)新选择。<br/></p></li><li><p><strong>Croc跨设备安全文件传输工具。</strong>
+轻松在计算机间🐊安全传文件。开源项目<a href="https://github.com/schollz/croc">已获⭐32.6k(AI资讯)</a>超受欢迎。端到端加密传输(´▽`)简单好用。跨平台支持，命令行即可操作。<br/></p></li></ol><h3>社媒分享</h3><ol><li><p><strong>从Tool Search到Skills的Agent架构转变。</strong>
+Claude发布Skills规则，<a href="https://x.com/shao__meng/status/2001626454296285258">Codex也跟进(AI资讯)</a>。把工具一股脑扔给LLM是死胡同💀。技能封装上下文，按需加载更可靠。分类器替代盲目搜索，成功率🚀极高。Agent开发从提示词走向软件工程。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1j76wemxs54w761gvn4nr.avif" alt="AI资讯：AI Agent Skills架构示意图"><br/></p></li><li><p><strong>Agent干活到底真提效了吗？</strong>
+博主<a href="https://x.com/frxiaobei/status/2001615583989874813">发问(AI资讯)</a>引发共鸣。单线程才能高效(；′⌒`)切换上下文掉效率。Agent跑到关键节点得确认。执行时间省了，注意力成本💭加倍。卡在进度条里超尴尬。<br/></p></li><li><p><strong>Gemini代码库作为上下文新玩法。</strong>
+用户<a href="https://m.okjike.com/originalPosts/6942cfedf9f724324f745590">分享技巧(AI资讯)</a>直接建Gem。添加营销帖子提示，git代码库作为背景。Gemini根据代码💡输出相关内容。再也不用(´▽`)输那么多描述文字了。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1jabzf2x93kw4pcrh00sg.avif" alt="AI资讯：Gemini Gem创建界面配置截图"><br/></p></li><li><p><strong>GPT image 1.5与Nano Banana Pro对比。</strong>
+用户用6x6网格测试，<a href="https://x.com/aiwarts/status/2001303358804791296">GPT终于赢了一次(AI资讯)</a>🎉！36个格子各种emoji物品。两个模型表现差异明显。复杂指令(゜o゜)考验真功夫。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1jg5we4hssfsekz09n54c.avif" alt="AI资讯：GPT image 1.5生成的6x6网格图"><br/></p></li><li><p><strong>2026年社交媒体趋势预测。</strong>
+从追算法转向追品味💡追小圈层领袖。用户<a href="https://x.com/Yangyixxxx/status/2001491930329579941">意识到(AI资讯)</a>算法让品味同质化。审美策展能力成稀缺资源(✧∀✧)。品牌要经营微社区第三空间。vibe经济时代来了。<br/></p></li><li><p><strong>Prompt首次生成质量总不到位？</strong>
+博主<a href="https://x.com/vista8/status/2001313389227000224">发现规律(AI资讯)</a>即使写得再完备也一样。让AI反思查漏补缺💡总有提升。可能上下文原因(´-ω-`)。迭代次数不能多否则出废话。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1jknvfpwrrqnrk6xpp1a4.avif" alt="AI资讯：AI生成内容反思迭代对比截图"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2025/12/19 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 ElevenLabs语音Agents支持WhatsApp集成覆盖20亿用户 字节TRAE CN企业版内部92%工程师使用支持亿级代码 OpenAI开放ChatGPT Apps提交正转型AI操作系统 国]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2025-12-18日刊]]></title>
           <link>https://ai.hubtoday.app//2025-12/2025-12-18/</link>
@@ -186,40 +220,6 @@ ARC Prize验证<a href="https://x.com/sama/status/1999191411313508704">GPT-5.2�
 Anthropic理念结合<a href="https://x.com/shao__meng/status/1999393092290638275">Kombaico实践(AI资讯)</a>证明：有Skills的AI设计品位完胜通用能力🎨。前端规范一致性成核心竞争力(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc9k0s1gfhs9ys69h9m4tsj0.avif" alt="AI资讯：Claude与Kombai前端设计效果对比"><br/></p></li><li><p><strong>GPT-5.1被怀疑故意降智。</strong>
 开发者质疑<a href="https://x.com/Jimmy_JingLv/status/1999266190091518230">5.1是5.2陪衬(AI资讯)</a>😅。Cursor里12月11号前免费5.1贼难用，数值对比纯粹为好看。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc9k0z4xejzazc27acjrds1s.avif" alt="AI资讯：GPT-5.1与5.2性能指标落差图"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2025/12/13 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 GPT-5.2基准涨成本增40%网友质疑换档升级 谷歌Deep Research治幻觉NotebookLM集成 浏览器Disco能把网页组装应用旅行规划一键搞定 Lang2Motion文本转轨迹检索准]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2025-12-12日刊]]></title>
-          <link>https://ai.hubtoday.app//2025-12/2025-12-12/</link>
-          <guid>https://ai.hubtoday.app//2025-12/2025-12-12/</guid>
-          <pubDate>Fri, 12 Dec 2025 07:55:08 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/12</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>钉钉8.1.10版本全面AI化新增灵动回复听记问答同传翻译
-Google推出Preferred Sources可标记新闻源优先展示AI链接
-腾讯元宝QQ群消息总结自动提炼核心话题生成结构化报告
-Cursor 2.2调试模式主动复现Bug计划模式升级可视化流程图
-商汤Seko 2.0一句话生成100集动画多剧集记忆全局一致性
-</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>钉钉8.1.10版本🚀全面AI化。</strong>
-聊天框新增AI灵动回复,可基于🔥上下文自动生成多种风格的<a href="https://www.jiqizhixin.com/articles/2025-12-11-6">高情商回复建议(AI资讯)</a>。听记功能支持AI问答,边录边拍还能标记重点,课堂笔记✨生成超便捷。录音卡DingTalk A1升级为同声传译机,实时翻译可投屏。</p></li><li><p><strong>Google让你掌控(✧∀✧)信息流。</strong>
-推出Preferred Sources功能,可<a href="https://www.xiaohu.ai/c/xiaohu-ai/ai-google">标记喜欢的新闻源(AI资讯)</a>,搜索结果优先展示。订阅媒体设专属轮播栏,AI答案增加内联链接说明💡来源。Web Guide用AI整理网页主题分组,速度提升两倍,探索主题更高效。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc70xgznfc5rbscn5197djhw.avif" alt="AI资讯：Google搜索结果页面显示Preferred Sources优先展示效果"><br/></p></li><li><p><strong>腾讯元宝救你于爬楼焦虑🔥。</strong>
-QQ群消息总结功能上线,自动提炼核心话题、@消息、分享文件,生成<a href="https://www.aibase.com/zh/news/23582">结构化摘要报告(AI资讯)</a>。支持点击数字索引直达原始聊天,一分钟爬完一下午的楼✨。元宝电脑版和移动APP已全端覆盖,还可添加为QQ好友。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc70xm1rebst8j7r3nv3xgvq.avif" alt="AI资讯：腾讯元宝QQ群消息总结界面展示智能提炼效果"><br/></p></li><li><p><strong>Cursor 2.2版本🧠调试模式登场。</strong>
-新增Debug Mode主动复现修Bug,通过植入日志追踪报错,支持多技术栈。计划模式升级可视化流程图,支持<a href="https://x.com/shao__meng/status/1998922791668818215">Mermaid图表生成(AI资讯)</a>。多智能体裁判机制自动评估并推荐最佳方案💡,聊天可置顶方便回溯。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc70xremeyjvv893khwrpzcr.avif" alt="AI资讯：Cursor调试模式界面展示日志追踪和代码修复流程"><br/></p></li><li><p><strong>商汤Seko 2.0🚀一句话生100集动画。</strong>
-多剧集记忆+全局一致性架构,人物脸型声音零崩坏,制作成本<a href="https://www.aibase.com/zh/news/23595">接近一杯奶茶钱(AI资讯)</a>。支持二次元、迪士尼等上百种风格,可上传自拍生成3D形象。实测12分钟出片✨,质量对标中型工作室,已正式开放测试。</p></li></ol><h3>前沿研究</h3><ol><li><p><strong>Google发布FACTS基准🔥AI事实墙显现。</strong>
-测试四类企业任务,所有顶尖模型综合准确率均<a href="https://www.aibase.com/zh/news/23580">低于70%(AI资讯)</a>。Gemini3Pro领跑68.8%,但多模态任务仅46.1%,远低于搜索任务的83.8%💡。建议企业部署RAG系统,不要依赖模型内部存储。</p></li><li><p><strong>ChatGPT记忆系统(✧∀✧)揭秘无RAG。</strong>
-采用四级上下文结构:会话元数据、用户记忆库、近期对话摘要、当前会话窗口。核心是抓大放小策略,记住重要事实🔥,了解近期概况,专注当前细节。<a href="https://x.com/shao__meng/status/1998927038724583671">逆向工程详解(AI资讯)</a>显示这是极高效的伪全知体验,牺牲琐碎细节换取流畅交互。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc70y4bhfvgve34e76thj4hx.avif" alt="AI资讯：ChatGPT四级上下文结构架构示意图"><br/></p></li><li><p><strong>AI加速量子计算🚀NVIDIA发文。</strong>
-Nature Communications综述展示AI如何加速<a href="https://x.com/NVIDIAAIDev/status/1998890473260245238">量子比特设计到纠错(AI资讯)</a>。从硬件控制到实时纠错全流程应用先进AI技术💡,为实用容错量子计算铺路。量子数据中心与AI融合前景广阔。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc70y8ybfc2rhh5n4swt3m0p.avif" alt="AI资讯：NVIDIA论文封面展示AI与量子计算融合技术路径"><br/></p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>OpenAI前员工🔥因研究限制辞职。</strong>
-前研究员Tom Cunningham称公司变得过于保守,不愿发布<a href="https://www.aibase.com/zh/news/23585">AI经济负面影响研究(AI资讯)</a>。内部压力让严谨分析与倡导者角色产生紧张关系💡。员工担忧保守态度影响长远发展,限制客观研究阻碍行业声音。</p></li><li><p><strong>Google与全球媒体🚀AI新闻合作。</strong>
-推出AI新闻摘要、音频简报、实时数据整合,与3000多家媒体<a href="https://www.xiaohu.ai/c/xiaohu-ai/ai-google">覆盖50国合作(AI资讯)</a>。为内容使用支付费用,媒体通过API提供数据✨。AI不替代网站而是帮找值得看的,未来互联网更个性化透明化。</p></li><li><p><strong>Gemini API密钥🤦让开发者崩溃。</strong>
-获取密钥容易,但正确挂到计费项目是噩梦。多条路径(AI Studio/Vertex/TTS)在权限参数计费上<a href="https://newshacker.me/story?id=46223311">不一致(AI资讯)</a>,GCP层级关系和缺失消费上限导致超额扣费💡。API碎片化与能力不一致,多模态准确率低于50%,开发者建议用OpenRouter等第三方绕开。</p></li><li><p><strong>Karpathy回顾🧠2015年HN预测。</strong>
-用GPT-5.1分析930篇热门文章,识别最具洞察力观点。选出pcwalton、tptacek等<a href="https://x.com/shao__meng/status/1998924255548064022">前十预见性用户(AI资讯)</a>。项目花3小时编写1小时运行仅60美元✨,训练预测模型校准未来判断,提醒善待网络内容因AI会审计一切。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc711k50fwwbkecfk8468bgd.avif" alt="AI资讯：Karpathy项目展示Hacker News存档分析结果可视化图"><br/></p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>Goose⭐23.6k🚀可扩展AI代理。</strong>
-超越代码建议,可与任意LLM配合进行<a href="https://github.com/block/goose">安装执行编辑测试(AI资讯)</a>。开源架构支持深度定制,社区活跃度高💡。适合复杂开发流程自动化,插件生态丰富,持续快速迭代中。</p></li><li><p><strong>MindsDB⭐37.6k🔥面向AI的联邦查询引擎。</strong>
-唯一需要的MCP服务器,支持<a href="https://github.com/mindsdb/mindsdb">跨数据源AI查询(AI资讯)</a>。可连接SQL、NoSQL、向量库,统一接口✨。企业级数据整合利器,降低AI数据准备成本,支持主流模型框架。</p></li><li><p><strong>Agent Starter Pack⭐4.0k💡Google Cloud快速部署。</strong>
-几分钟部署AI代理,内置CI/CD、评估和可观测性。<a href="https://github.com/GoogleCloudPlatform/agent-starter-pack">生产就绪模板(AI资讯)</a>支持GCP生态🚀,文档完善适合企业快速上手,包含最佳实践示例,大幅缩短开发周期。</p></li><li><p><strong>Harden Windows Security⭐3.5k🛡️官方方法加固系统。</strong>
-支持最新Windows版本,提供个人、企业、军事级<a href="https://github.com/HotCakeX/Harden-Windows-Security">安全工具和指南(AI资讯)</a>。符合SLSA Level 3开发流程✨,MS Store可下载,社区维护活跃,定期更新安全策略,详细文档覆盖各应用场景。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>扎克伯格🔥急了蒸馏竞品模型。</strong>
-彭博报道Meta明年发布的Avocado蒸馏了阿里Qwen、谷歌Gemma、OpenAI的GPT-OSS。<a href="https://x.com/vista8/status/1999068247577239695">开源王者用竞品数据(AI资讯)</a>让人意外💡,Llama头把交椅已失。小扎花143亿收购Scale Al组建TBD Lab,给AI研究员开几亿薪酬包✨,破釜沉舟结局待定。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc710tfzfs2swt1615bs9gbr.avif" alt="AI资讯：Meta公司Logo与Llama模型图标并列展示"><br/></p></li><li><p><strong>nano banana pro🎬穿越时空照片。</strong>
-生成1920年代与2025年无缝互动的分屏电影镜头。<a href="https://x.com/dotey/status/1999032189921702216">Prompt展示(AI资讯)</a>水平分屏融合过去现在🔥,捕捉跨时间动态交互。实时翻译可180度面对面查看,会议投屏双方看实时字幕✨,出国会议标配产品。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kc710yf0emnsk8ct6m4danxb.avif" alt="AI资讯：nano banana pro生成的分屏照片展示时空穿越效果"><br/></p></li><li><p><strong>AI画图(✧∀✧)保持脸部一致性方法。</strong>
-宝玉分享三步走:用nano banana pro等<a href="https://x.com/dotey/status/1998774932440772802">一致性好的模型(AI资讯)</a>,先生成高清纯粹人像去除杂乱背景💡。根据参考图画,变换卡通或3D风格只要形似效果就好🚀。适用于模型能力不够或参考难度大的场景,社区持续分享更多技巧。<br/><br/></p></li><li><p><strong>Reddit讨论🧠AI幻觉本质揭秘。</strong>
-幻觉是预测最可能词序列的自然副产品,不是bug而是结构性问题。模型不判断真假只完成模式,所以<a href="https://www.reddit.com/r/artificial/comments/1pjgh5w/what_ai_hallucination_actually_is_why_it_happens/">听起来超有说服力(AI资讯)</a>💡。减少方法包括强上下文、允许表达不确定、强制源头验证、分步提问、跨模型交叉检查🔥。本质是人类判断外包给AI时的责任转移。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2025/12/12 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 钉钉8.1.10版本全面AI化新增灵动回复听记问答同传翻译 Google推出Preferred Sources可标记新闻源优先展示AI链接 腾讯元宝QQ群消息总结自动提炼核心话题生成结构化报告 Cur]]></description>
         </item>
       
   </channel>
