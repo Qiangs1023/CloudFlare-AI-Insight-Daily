@@ -5,9 +5,42 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 23 Dec 2025 23:55:12 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 24 Dec 2025 23:14:33 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2025-12-25日刊]]></title>
+          <link>https://ai.hubtoday.app//2025-12/2025-12-25/</link>
+          <guid>https://ai.hubtoday.app//2025-12/2025-12-25/</guid>
+          <pubDate>Thu, 25 Dec 2025 07:14:32 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/25</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>快手KlingAvatar升级，阿里Qwen3克隆音色
+TACO优化机器人推理，TAVID同步生成视听
+谷歌Gemini3推理登顶，DeepSeek联动元宝
+Plane开源替代JIRA，Fabric增强人类能力
+GLM4.7生成网页惊艳，Firecrawl上线Agent
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>KlingAvatar2.0 让数字人拥有灵魂。</strong>
+快手可灵团队(AI资讯)发布了💃生动的<strong>KlingAvatar2.0</strong>，数字人演技炸裂。新模型支持(✧∀✧)5分钟长视频，动作流畅不崩坏。通过<strong>时空级联框架</strong>，画面细节🔍大幅提升。共推理导演系统让🎥多角色互动更精准，情感表达(T_T)超细腻。<a href="https://app.klingai.com/cn/ai-human/image/new/">体验地址(AI资讯)</a>让每个人都能创作。</p></li><li><p><strong>阿里开源 Fun-Audio-Chat 交互模型。</strong>
+阿里云推出🚀开源语音模型<a href="https://github.com/FunAudioLLM/Fun-Audio-Chat">Fun-Audio-Chat(AI资讯)</a>，交互体验(≧∇≦)超级自然。它能在<strong>低延迟</strong>下理解情绪，支持打断和🗣️全双工对话。采用<strong>双分辨率架构</strong>，推理速度⚡快且成本减半。8B版本性能(👍)超越同级，是打造智能助手的🛠️绝佳选择。</p></li><li><p><strong>Qwen3 发布音色创造与克隆神器。</strong>
+阿里Qwen3系列🔊发布两大<a href="https://www.xiaohu.ai/c/xiaohu-ai/qwen3">语音神器(AI资讯)</a>，效果惊艳全球。<strong>Voice Design</strong>支持用📝自然语言创造独一无二的声音角色。<strong>Voice Clone</strong>仅需3秒(⏱️)即可<strong>复刻音色</strong>，支持10种语言(🌍)输出。评测数据显示，其表现力🎯超越了GPT-4o-Audio等<strong>顶流模型</strong>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd8fx16ef16b5ghp0csc1y8s.avif" alt="AI资讯：Qwen3语音克隆模型性能对比图"><br/></p></li></ol><h3>前沿研究</h3><ol><li><p><strong>TACO 框架解决具身推理不稳定。</strong>
+中国电信TeleAI团队🤖直面VLA模型<strong>推理不稳定</strong>的痛点。新框架<a href="https://arxiv.org/abs/2512.02834">TACO(AI资讯)</a>利用<strong>反探索原理</strong>，大幅提升🛡️机器人操作成功率。通过<strong>耦合伪计数</strong>，让模型(🧠)自我验证动作合理性。真实机器人实验中，长周期任务成功率📈提升了25%。</p></li><li><p><strong>TAVID 实现文本驱动视听生成。</strong>
+想要🤖人机对话更逼真？看看<a href="https://arxiv.org/abs/2512.20296">TAVID框架(AI资讯)</a>。它实现了👀面部与声音的<strong>同步生成</strong>，拒绝割裂感。双向映射器让🧩视听模态紧密耦合，交互(🤝)更流畅。</p></li><li><p><strong>DCL-ENAS 极速搜索神经架构。</strong>
+神经架构搜索(🔍)太费算力？<a href="https://arxiv.org/abs/2512.20112">DCL-ENAS(AI资讯)</a>来破局。利用<strong>双重对比学习</strong>，无需标签🏷️也能看懂架构优劣。仅需7.7个GPU日(⚡)，就在心律失常分类上超越了📝人工设计模型。</p></li><li><p><strong>LongVideoAgent 读懂小时级长视频。</strong>
+让AI看懂📺小时级长视频，<a href="https://arxiv.org/abs/2512.20618">LongVideoAgent(AI资讯)</a>采用<strong>多智能体协作</strong>。主智能体(👑)指挥定位与视觉提取，分工明确。<strong>强化学习</strong>加持下，推理路径(🗺️)清晰且高效。</p></li><li><p><strong>KeyTailor 关键帧提升视频试穿质量。</strong>
+视频试穿(👗)总有瑕疵？<a href="https://arxiv.org/abs/2512.20340">KeyTailor(AI资讯)</a>利用<strong>关键帧驱动</strong>注入细节。不仅保留衣服动态(🌬️)，背景也📦稳如泰山。配套发布的<strong>ViT-HD数据集</strong>，让高清试穿(✨)触手可及。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>谷歌 2025 年的绝地反击战。</strong>
+谁说谷歌掉队了？2025年它打了一场(🥊)漂亮的<a href="https://www.jiqizhixin.com/articles/2025-12-24-10">翻身仗(AI资讯)</a>。<strong>Gemini 3</strong>逻辑推理👑登顶，<strong>TPU Ironwood</strong>算力⚡剑指英伟达。从<strong>AlphaFold</strong>获诺奖到🏆奥数金牌，科研实力(🔬)毋庸置疑。Genie 3世界模型(🌍)更是引爆了<strong>具身智能</strong>的想象空间。</p></li><li><p><strong>DeepSeek 官方点赞腾讯元宝。</strong>
+DeepSeek官方(❤️)点赞了<a href="https://www.jiqizhixin.com/articles/2025-12-24-8">腾讯元宝(AI资讯)</a>，上演罕见<strong>双向奔赴</strong>。元宝用户规模(📈)暴涨百倍，成DeepSeek<strong>深度思考</strong>的最佳搭档。接入腾讯生态后，搜图、听歌🎵一站式搞定，AI正(🚀)融入日常。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>Plane：JIRA 的开源替代品。</strong>
+这是一个🔥替代JIRA的<a href="https://github.com/makeplane/plane">开源项目管理工具(AI资讯)</a>，界面(✨)清爽且功能强大。它能轻松追踪Issue和周期，⭐Star数已破41k。</p></li><li><p><strong>Fabric：AI 增强人类能力框架。</strong>
+用AI🧠增强人类能力的<a href="https://github.com/danielmiessler/Fabric">开源框架(AI资讯)</a>，模块化设计(🧩)非常灵活。它汇集了大量众包<strong>提示词</strong>，让AI解决问题(✅)更高效，⭐Star数36k。</p></li><li><p><strong>Rendercv：学术简历生成器。</strong>
+学术党(🎓)福音！基于Typst的<a href="https://github.com/rendercv/rendercv">简历生成器(AI资讯)</a>，轻松搞定LaTeX级排版。告别繁琐格式，专注于📄内容本身，⭐Star数8.3k。</p></li><li><p><strong>Vendure：现代化无头电商平台。</strong>
+基于TypeScript构建的🛒现代化<a href="https://github.com/vendure-ecommerce/vendure">电商平台(AI资讯)</a>，高度可定制(🛠️)。采用NestJS和GraphQL，开发者体验(😎)极佳，⭐Star数7.2k。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>GLM 4.7 网页设计惊艳众人。</strong>
+被GLM 4.7生成的🎨网页设计<a href="https://x.com/xiaokedada/status/2003807832739905764">狠狠惊艳(AI资讯)</a>，交互(💫)太丝滑了。无论是<strong>视差滚动</strong>还是高对比度风格，代码(💻)都一次跑通。<br/><video src="https://source.hubtoday.app/images/2025/12/news_01kd8fxv0ffwrv7c37yb7wn9hx.mp4"></video><br/></p></li><li><p><strong>Qwen-Image-Edit 获赞最佳开源绘图。</strong>
+阿里开源的🎨<a href="https://x.com/Gorden_Sun/status/2003783545198969232">Qwen绘画模型(AI资讯)</a>被赞是<strong>开源最佳</strong>。不仅美学提升(🌸)，还能写中文和<strong>逻辑推理</strong>。内置流行LoRA，比Flux Dev(🆚)更懂指令。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd8fy7sqemxtav9ptn0c0my8.avif" alt="AI资讯：Qwen模型生成的带有中文的插画"><br/></p></li><li><p><strong>Firecrawl 推出免费 Agent 服务。</strong>
+爬虫神器🕷️Firecrawl推出了<a href="https://x.com/vista8/status/2003688904109752681">Agent服务(AI资讯)</a>，每天免费5次。试着检索论文并存为📊CSV，质量(👌)相当不错。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd8fyc6dfzht66gp4c7q0b8b.avif" alt="AI资讯：Firecrawl Agent检索论文生成表格"><br/></p></li><li><p><strong>AI Skills 与 SubAgent 的爆发。</strong>
+AI Skills正在(🔥)爆发，<a href="https://x.com/vista8/status/2003658462182637763">自动刷抖音(AI资讯)</a>找对象都不是梦。SubAgent解决了🧠<strong>上下文污染</strong>问题，让复杂任务分发(🔀)更高效。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd8fyfq7fmh933zvywp2mngm.avif" alt="AI资讯：Claude Skills配置自动任务界面"><br/></p></li><li><p><strong>Apify Actor 助力数据变现。</strong>
+将网页变身📚LLM数据的<a href="https://x.com/shao__meng/status/2003468729460342885">Apify Actor(AI资讯)</a>，专为<strong>RAG</strong>优化。参加百万美金💰挑战赛，开发者(👨‍💻)变现的好机会。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd8fykcyerg89bn2z2edr3wp.avif" alt="AI资讯：Apify将网页转化为结构化数据"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2025/12/25 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 快手KlingAvatar升级，阿里Qwen3克隆音色 TACO优化机器人推理，TAVID同步生成视听 谷歌Gemini3推理登顶，DeepSeek联动元宝 Plane开源替代JIRA，Fabric增]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2025-12-24日刊]]></title>
           <link>https://ai.hubtoday.app//2025-12/2025-12-24/</link>
@@ -196,45 +229,6 @@ Claude发布Skills规则，<a href="https://x.com/shao__meng/status/200162645429
 从追算法转向追品味💡追小圈层领袖。用户<a href="https://x.com/Yangyixxxx/status/2001491930329579941">意识到(AI资讯)</a>算法让品味同质化。审美策展能力成稀缺资源(✧∀✧)。品牌要经营微社区第三空间。vibe经济时代来了。<br/></p></li><li><p><strong>Prompt首次生成质量总不到位？</strong>
 博主<a href="https://x.com/vista8/status/2001313389227000224">发现规律(AI资讯)</a>即使写得再完备也一样。让AI反思查漏补缺💡总有提升。可能上下文原因(´-ω-`)。迭代次数不能多否则出废话。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcs1jknvfpwrrqnrk6xpp1a4.avif" alt="AI资讯：AI生成内容反思迭代对比截图"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2025/12/19 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 ElevenLabs语音Agents支持WhatsApp集成覆盖20亿用户 字节TRAE CN企业版内部92%工程师使用支持亿级代码 OpenAI开放ChatGPT Apps提交正转型AI操作系统 国]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2025-12-18日刊]]></title>
-          <link>https://ai.hubtoday.app//2025-12/2025-12-18/</link>
-          <guid>https://ai.hubtoday.app//2025-12/2025-12-18/</guid>
-          <pubDate>Thu, 18 Dec 2025 07:55:08 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/18</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>腾讯混元世界模型1.5上线支持文字图片生成互动世界
-字节Seedance实现100%视听同步已上线即梦豆包
-OpenAI发布FrontierScience基准GPT-5.2奥赛77%
-姚顺雨任腾讯首席AI科学家向刘炽平汇报
-英伟达收购Slurm开发商SchedMD强化算力调度护城河
-</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>腾讯混元世界模型1.5上线。</strong>
-国内首个🎮实时互动体验平台<a href="https://3d.hunyuan.tencent.com/sceneTo3D?tab=worldplay">开放体验(AI资讯)</a>了！输入文字或图片就能瞬间生成互动世界，用键鼠或手柄(✧∀✧)自由探索。该模型还<strong>首次开源训练体系</strong>，从数据到推理部署全覆盖。</p></li><li><p><strong>Kling 2.6语音控制功能正式发布。</strong>
-快影AI📢上线了Voice Control，用你的专属声音创作更具魅力的<a href="https://forms.gle/wipMhRUgP8WfHDrw9">个性化内容(AI资讯)</a>。官方同步开启创意大赛🏆现金最高1000美金，提交作品就有机会登上首页推荐。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcpd22r5ez5990mzym2d2we9.avif" alt="AI资讯：Kling 2.6语音控制功能宣传图"><br/></p></li><li><p><strong>字节Seedance 1.5 Pro发布。</strong>
-新一代音视频模型实现🎬100%视听同步，角色口型、语调与表演节奏高度拟合。支持多语种方言自然表达，还能执行希区柯克变焦等高难度<a href="https://www.aibase.com/zh/news/23764">镜头运动(AI资讯)</a>。已在即梦AI和豆包平台上线。<br/></video><br/></p></li><li><p><strong>Meta推出SAM Audio模型。</strong>
-继图像分割后，Meta将&quot;🔊分割一切&quot;理念延伸到音频领域。支持文本、视觉和时间跨度三种提示方式，能像<a href="https://ai.meta.com/blog/sam-audio/">抠图(AI资讯)</a>一样精准分离声音。已在Segment Anything Playground开放试用。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcpd27cje4dafaq7rv7myg62.avif" alt="AI资讯：SAM Audio模型声音分离示意图"><br/></p></li><li><p><strong>小米MiMo大模型对开发者开放。</strong>
-小米宣布开放🤖MiMo系列大模型和CarIoT硬件生态。AIoT平台连接设备突破<strong>10.4亿</strong>，开发者规模达<a href="https://www.qbitai.com/2025/12/361460.html">120万(AI资讯)</a>。MiMo-V2-Flash已开源，在Agent测评跻身全球开源模型TOP2。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcpd2a8feeq8zvf50jg9d10y.avif" alt="AI资讯：小米人车家全生态发布会现场"><br/></p></li><li><p><strong>Meta推出AI听力增强眼镜。</strong>
-新款眼镜采用开放式扬声器设计，可以放大👓与你交谈的人的声音。特别适合咖啡馆或繁忙街道等<a href="https://www.aibase.com/zh/news/23763">嘈杂环境(AI资讯)</a>使用，让日常交流更轻松。</p></li></ol><h3>前沿研究</h3><ol><li><p><strong>OpenAI发布FrontierScience基准。</strong>
-专为评估专家级科学能力构建，包含物理、化学、生物学数百道原创题目。GPT-5.2在奥赛赛道得分<strong>77%</strong>，研究赛道🔬25%，均领先其他前沿模型。Gemini 3 Pro在奥赛赛道与GPT-5.2<a href="https://cdn.openai.com/pdf/2fcd284c-b468-4c21-8ee0-7a783933efcc/frontierscience-paper.pdf">表现相当(AI资讯)</a>。</p></li><li><p><strong>FreeKV框架提升LLM推理效率。</strong>
-针对长上下文KV缓存问题，该框架实现算法-系统协同优化。通过投机检索和双缓冲流式召回，达到🚀近无损精度，相比SOTA方法<a href="https://arxiv.org/abs/2505.13109">最高提速13倍(AI资讯)</a>。<br/></p></li><li><p><strong>Titans让AI有了真正的记忆力。</strong>
-谷歌Jeff Dean点赞的论文，解决了(✧∀✧)AI的&quot;金鱼记忆&quot;问题。短期记忆+长期记忆+持久记忆三种机制各司其职，在<strong>200万token</strong>超长文本理解任务中准确率96%+，吊打<a href="https://arxiv.org/abs/2501.00663">Mamba2的5.4%(AI资讯)</a>。<br/></p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>姚顺雨出任腾讯首席AI科学家。</strong>
-官宣！腾讯升级大模型研发架构，95后明星学者姚顺雨任职&quot;CEO/总裁办公室&quot;首席AI科学家，向刘炽平汇报。同时兼任AI Infra部、大语言模型部负责人，将📈全面强化腾讯大模型<a href="https://www.jiqizhixin.com/articles/2025-12-17-17">研发体系(AI资讯)</a>。</p></li><li><p><strong>英伟达收购Slurm开发商SchedMD。</strong>
-这波低调出手被评价为&quot;护城河又宽了&quot;💪SchedMD开发的Slurm是全球超半数TOP500超算在用的资源调度工具，Meta、Mistral、Thinking Machines都离不开。哪怕用AMD芯片，只要需要算力调度就<a href="https://blogs.nvidia.com/blog/nvidia-acquires-schedmd/">绕不开英伟达(AI资讯)</a>。</p></li><li><p><strong>AI上下文管理引发隐私争议。</strong>
-把全部人生笔记上传给第三方服务器，你放心吗？社区讨论显示，虽然🔥把Obsidian笔记喂给Claude能获得个性化建议，但多数人倾向寻求本地LLM等<a href="https://newshacker.me/story?id=46299552">可控方案(AI资讯)</a>。另有人警告依赖AI摘要会侵蚀真正的知识掌握。<br/></p></li><li><p><strong>GitHub Actions开始收取平台费。</strong>
-自2026年起，私有仓库和自托管runner的调度将按$0.002/分钟计费💸即使算力在用户自己服务器上也要交&quot;税&quot;。小型团队相对受伤更重，社区已开始评估迁往GitLab或<a href="https://newshacker.me/story?id=46291500">Forgejo等替代方案(AI资讯)</a>。<br/></p></li><li><p><strong>AI能否让形式验证成为主流？</strong>
-讨论焦点在于：规范本身难以形式化，需求又频繁变动。乐观者指出Opus、GPT-5.2等🤖大模型显著加速了证明工程，悲观者则认为文化与经济障碍才是<a href="https://newshacker.me/story?id=46294574">普及的真正阻碍(AI资讯)</a>。<br/></p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>摩尔线程开源LiteGS基础库。</strong>
-在SIGGRAPH Asia 2025斩获银奖🥈的3DGS重建算法已开源！60秒任务<strong>34秒交卷</strong>，仅需原版10%训练时间即可达到同等质量。从GPU系统到算法设计全链路优化，代码在<a href="https://github.com/MooreThreads/LiteGS">GitHub开放(AI资讯)</a>。⭐已引发学术界关注。</p></li><li><p><strong>英伟达发布Nemotron 3开源模型。</strong>
-MoE架构支持百万token上下文，包含Nano(30B)、Super(100B)、Ultra(500B)三个规模。Nano版已发布，吞吐量比前代🚀提升4倍，被评为同类型中<a href="https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models">最开放高效的模型(AI资讯)</a>。</p></li><li><p><strong>小米MiMo-V2-Flash开源发布。</strong>
-309B总参数，15B激活，专为极致推理效率自研的MoE大语言模型。代码和Agent能力强💡生成速度快，API限时免费可接入Claude Code、<a href="http://platform.xiaomimimo.com/#/docs/welcome">Cursor等工具(AI资讯)</a>。⭐开发者反响热烈。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcpd2srkfsevbna92qtajftt.avif" alt="AI资讯：小米MiMo-V2-Flash性能对比图"><br/></p></li><li><p><strong>Chatterbox开源TTS系统。</strong>
-号称最先进的开源文本转语音系统，已获得⭐15614星标，项目地址<a href="https://github.com/resemble-ai/chatterbox">resemble-ai/chatterbox(AI资讯)</a>。<br/></p></li><li><p><strong>微软开源TRELLIS.2图生3D模型。</strong>
-4B参数规模，支持图片生成3D模型。在线体验地址已开放，社区反馈效果褒贬不一(￣▽￣)&quot;有人觉得还不如之前版本，模型在<a href="https://huggingface.co/microsoft/TRELLIS.2-4B">Hugging Face发布(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcpd2xwtem6bay2awjbvavcn.avif" alt="AI资讯：微软TRELLIS.2生成的3D模型效果图"><br/></p></li><li><p><strong>美团开源LongCat虚拟人模型。</strong>
-类似字节OmniHuman和快手Avatar，支持音频驱动照片生成视频🎤特别适用于主播和MV场景，项目主页和模型已在<a href="https://huggingface.co/meituan-longcat/LongCat-Video-Avatar">Hugging Face发布(AI资讯)</a>。<br/><video src="https://source.hubtoday.app/images/2025/12/news_01kcpd367rer4b9kf3vg7cr815.mp4"></video><br/></p></li></ol><h3>社媒分享</h3><ol><li><p><strong>Prompt Caching技术深度解读。</strong>
-缓存的不是文本是&quot;思维状态&quot;🧠本质是复用KV矩阵，节省约90%Token费用，长文本首字延迟降低85%。实测显示Anthropic手动模式<a href="https://ngrok.com/blog/prompt-caching">命中率100%(AI资讯)</a>，OpenAI自动模式仅50%。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcpd3jx0efas9gxa8q7vp8em.avif" alt="AI资讯：Prompt Caching技术原理示意图"><br/></p></li><li><p><strong>Gemini 3 Flash已开放使用。</strong>
-相比Pro版本速度提升显著，前端效果基本没变(✧∀✧)美学依旧领先其他模型。ZenMux首发目前免费，<a href="https://zenmux.ai/google/gemini-3-flash-preview-free?utm_source=twitter-zt">使用地址点这里(AI资讯)</a>。<br/><video src="https://source.hubtoday.app/images/2025/12/news_01kcpd4h1mfg49ajttvj3wmqnp.mp4"></video><br/></p></li><li><p><strong>Vibe Coding时代的护城河思考。</strong>
-技术不再是核心竞争力了🤔拿一波流量很容易，但建立护城河需要多花时间思考。有人看到缺陷，有人<a href="https://x.com/op7418/status/2001230834192540085">看到机会(AI资讯)</a>，这些机会不是给挑刺的人准备的。<br/></p></li><li><p><strong>GPT Image 1.5图像能力测试。</strong>
-只是单纯的绘画模型，而不是Banana Pro那样的🌍世界模型。社区评价&quot;谷歌这次领先了一代&quot;，天气卡片生成效果可参考<a href="https://x.com/dotey/status/2001164443284054049">宝玉的测试(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcpd4wr6ff5vp6m0k2rwr4m6.avif" alt="AI资讯：GPT Image 1.5生成的城市天气卡片"><br/></p></li><li><p><strong>AI硬件创意Stickerbox走红。</strong>
-语音输入→AI自动绘图→即时打印贴纸🖨️帮孩子把脑海里的故事变成现实！儿童安全模式无屏幕交互，这个逻辑马上会迁移到<a href="https://x.com/Yangyixxxx/status/2001194271966220767">3D打印领域(AI资讯)</a>。<br/><video src="https://source.hubtoday.app/images/2025/12/news_01kcpd5tyqepkvgyhm4wcxqbdb.mp4"></video><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2025/12/18 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 腾讯混元世界模型1.5上线支持文字图片生成互动世界 字节Seedance实现100%视听同步已上线即梦豆包 OpenAI发布FrontierScience基准GPT-5.2奥赛77% 姚顺雨任腾讯首席]]></description>
         </item>
       
   </channel>
