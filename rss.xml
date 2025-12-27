@@ -5,9 +5,43 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 25 Dec 2025 23:55:13 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2025 04:22:02 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2025-12-27日刊]]></title>
+          <link>https://ai.hubtoday.app//2025-12/2025-12-27/</link>
+          <guid>https://ai.hubtoday.app//2025-12/2025-12-27/</guid>
+          <pubDate>Sat, 27 Dec 2025 12:22:01 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/27</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>通义Code升级全链路平台，MiniMax推M2.1模型引争议
+OpenAI重置额度推节日版，快看开启AI互动漫画
+华为实现Agent自我进化，小红书攻克AI排版难题
+国内AI产业规模破万亿，字节Trae月活破一百六十万
+社媒爬虫与RAG工具开源，Karpathy叹编程行业变迁
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>通义千问Code v0.5重磅升级。</strong>
+国产编程AI迎来🚀<a href="https://www.aibase.com/zh/news/24065">重大进化(AI资讯)</a>。通义实验室发布Qwen Code v0.5版本。它从单纯命令行工具变身为(✧∀✧)全链路开发平台。支持与VS Code等主流IDE深度集成💻。不仅能写代码，还能理解跨文件工程上下文🏗️。</p></li><li><p><strong>MiniMax的M2.1模型引社区争议。</strong>
+这是一款面向💪<a href="https://newshacker.me/story?id=46388213">复杂任务(AI资讯)</a>和多语言编程的新模型。虽然官方文案略显夸张，但性价比💸极具吸引力。实测显示其代码能力接近Sonnet级别📊。它特别针对企业级自动化场景进行了优化🏢。社区对其是否完全开源仍有争议🤔。</p></li><li><p><strong>OpenAI Codex节日特别版。</strong>
+官方团队为开发者送上🎁<a href="https://x.com/op7418/status/2004376604282400957">圣诞礼物(AI资讯)</a>。推出了带有节日个性的GPT-5.2-Codex-XMas模型🎄。同时宣布在1月1日前重置并翻倍⚡<a href="https://x.com/claudeai/status/2004708763014508860">使用额度(AI资讯)</a>。Claude也同步修复了Max 5x用户的额度Bug🐛。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0ajq2exxb085xe0v0areg.avif" alt="AI资讯：OpenAI发布的Codex节日版命令行界面"><br/></p></li><li><p><strong>快看漫画推AI互动体验。</strong>
+漫画角色现在能(✧∀✧)<a href="https://www.aibase.com/zh/news/24055">动起来(AI资讯)</a>并与读者对话了。快看联手MiniMax打造沉浸式互动漫画📱。基于M2.1等模型实现多模态情感连接❤️。首批《DOLO》等顶级IP已开启新模式🚀。这标志着漫画进入AI体验第四赛道🏁。</p></li></ol><h3>前沿研究</h3><ol><li><p><strong>华为诺亚提出Agent自我进化。</strong>
+AI智能体终于能(⊙_⊙)<a href="https://www.jiqizhixin.com/articles/2025-12-26-5">吸取教训(AI资讯)</a>了。新框架SCOPE让Prompt在执行中动态进化🧬。通过分析错误日志自动提炼指导规则📝。在HLE基准测试中成功率翻倍📈。告别了&quot;记吃不记打”的死循环🔄。</p></li><li><p><strong>小红书实现AI精准排版。</strong>
+AI绘图终于不再(￣▽￣)&quot;乱摆放&quot;物体了。复旦联合小红书开源🎯<a href="https://www.aibase.com/zh/news/24049">InstanceAssemble(AI资讯)</a>。该技术解决了复杂场景下的构图难题🧩。仅需极少参数即可适配Stable Diffusion等模型⚡。论文已被顶会NeurIPS2025录用📜。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0as0tfkn8mfr3bp9vjpn8.avif" alt="AI资讯：InstanceAssemble技术生成的精准布局图像示例"><br/></p></li><li><p><strong>压缩图像理解新基准。</strong>
+视觉大模型处理🖼️<a href="https://arxiv.org/abs/2512.20901">压缩图(AI资讯)</a>的能力被严重低估。新研究提出了首个针对压缩图像的VLM评测基准📊。涵盖超过一百万张不同编码的图片💾。研究发现通用适配器能提升10%-30%性能📈。这填补了低比特率图像理解的空白🕳️。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>马斯克自曝AI噩梦。</strong>
+世界首富坦言因AI发展而(⊙_⊙)<a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652658113&idx=3&sn=679c5649c8417f894b5ee3a5a086e575">连做噩梦(AI资讯)</a>。他预测未来工作将变成一种🎮生活选择。Grok即将全面接管X平台的推荐算法🧠。他靠芝士汉堡🍔和洗澡保持状态。这篇访谈揭示了他对多行星文明的执念🌌。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0awa6exysbjzrzg1aqd8q.avif" alt="AI资讯：马斯克在播客访谈中谈论AI与未来"><br/></p></li><li><p><strong>工信部：AI产业破万亿。</strong>
+中国AI核心产业规模首次💰<a href="https://www.aibase.com/zh/news/24056">突破万亿(AI资讯)</a>。2023年数字产业收入同比增长约9%📈。全国已建成7000多家智能工厂🏭。新能源汽车出口也突破200万辆🚗。数据显示数字经济具备强大韧性💪。</p></li><li><p><strong>Trae月活突破160万。</strong>
+字节跳动旗下IDE发布📑<a href="https://x.com/op7418/status/2004446870358339756">年度报告(AI资讯)</a>。TRAE周活跃用户粘性极高🔗。代码生成和Bug修复是两大核心场景🛠️。超八成用户混合使用多种智能体模式🤖。编程语言中Vue的使用率排名第一🏆。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0b1pae0zst2cntk7wsmxc.avif" alt="AI资讯：Trae编辑器用户编程语言分布统计图"><br/></p></li><li><p><strong>决策逻辑是下个万亿机会。</strong>
+企业核心资产正从数据转向🧠<a href="https://x.com/shao__meng/status/2004359244276289674">决策图谱(AI资讯)</a>。传统软件只记录了结果而遗漏了&quot;为什么&quot;❓。AI Agent需要访问决策痕迹才能有效工作🤖。未来的巨头将诞生于对执行逻辑的捕捉🕸️。这是区别于传统SaaS的全新赛道🏁。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>超强社媒爬虫MediaCrawler。</strong>
+这是一个⭐40.8k星的<a href="https://github.com/NanmiCoder/MediaCrawler">数据抓取神器(AI资讯)</a>。支持小红书、抖音、B站等主流平台🕷️。能轻松搞定笔记、评论和视频内容📥。不仅功能强大而且更新频率极高🔄。是做社媒数据分析的必备工具🛠️。</p></li><li><p><strong>多模态RAG框架RAG-Anything。</strong>
+港大实验室开源了这个📚<a href="https://github.com/HKUDS/RAG-Anything">全能框架(AI资讯)</a>。它能一站式处理PDF、图像和公式等复杂内容🧩。通过知识图谱增强检索准确性🔍。支持端到端的多模态内容理解与生成💡。解决了传统RAG处理非文本内容的痛点💊。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0b5qdea1b656qd8nnmggx.avif" alt="AI资讯：RAG-Anything框架处理多模态文档的流程图"><br/></p></li><li><p><strong>私有化RAG引擎LEANN。</strong>
+这是一个⭐6.4k星的<a href="https://github.com/yichuan-w/LEANN">高效RAG方案(AI资讯)</a>。它能在个人设备上运行且节省97%存储💾。保证了极高的隐私性和响应速度⚡。适合对数据安全敏感的个人用户🔒。让万物皆可RAG成为可能🌍。</p></li><li><p><strong>暗网情报工具Robin。</strong>
+这是一款🔍<a href="https://github.com/apurvsinghgautam/robin">AI驱动(AI资讯)</a>的开源情报工具。专门用于暗网信息的搜索与分析🕵️‍♂️。获得了超过3000颗Star⭐。虽然功能强大但请务必合法合规使用⚖️。是安全研究人员的得力助手🛡️。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>Karpathy感叹程序员落伍。</strong>
+这位大神直言感到😱<a href="https://x.com/karpathy/status/2004607146781278521">前所未有(AI资讯)</a>的落后。编程行业正在经历剧烈的重构🏗️。现在的关键是将Agent、Prompt和各种工具串联起来🔗。没有说明书的时代只能靠自己摸索🔦。行动本身就是最好的地图🗺️。</p></li><li><p><strong>Claude神级Skill玩法。</strong>
+大佬们发现Claude配合🔧<a href="https://x.com/vista8/status/2004239712111022380">Superpowers(AI资讯)</a>极其强大。能主动引导用户进行技术方案脑暴🧠。还有人将其与NotebookLM打通📚。实现了从PDF读取到自动提问的全流程⚡。这种组合拳让学习效率起飞🚀。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0b9jvf0tvsr5cmvnkxc62.avif" alt="AI资讯：Claude中使用Superpowers插件的对话界面"><br/></p></li><li><p><strong>2026年AI趋势预测。</strong>
+Reddit热议贴预测🔮<a href="https://www.reddit.com/r/artificial/comments/1pw82h8/ai_trends_to_watch_in_2026/">未来趋势(AI资讯)</a>。Agent将从演示走向实际生产环境🏭。安全和反欺诈将成为企业刚需🛡️。机器人技术将进入日常生活🤖。2025是能力跃升年，2026将是信誉兑现年💰。</p></li><li><p><strong>腾讯大模型团队段子。</strong>
+网传腾讯内部关于💡<a href="https://x.com/vista8/status/2004597586074927511">技术路线(AI资讯)</a>的争论。只要一句&quot;OpenAI就是这么干的&quot;🙊。所有人都会瞬间闭嘴🤐。这折射出行业对头部玩家的盲目崇拜🙏。虽然是段子但也颇具讽刺意味😏。</p></li><li><p><strong>25年前的张小龙访谈。</strong>
+那时的微信之父还在纠结🤔<a href="https://m.okjike.com/originalPosts/694e97c1e48f1bd7abb9132b">去留问题(AI资讯)</a>。感叹200万人用免费软件是奇迹✨。谁能想到后来他做出了日活10亿的产品📱。这篇文章记录了他在人生十字路口的迷茫🛤️。读来令人唏嘘不已🕰️。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0bdpve8kae8jsnak99smn.avif" alt="AI资讯：2000年电脑报关于张小龙的访谈版面"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2025/12/27 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 通义Code升级全链路平台，MiniMax推M2.1模型引争议 OpenAI重置额度推节日版，快看开启AI互动漫画 华为实现Agent自我进化，小红书攻克AI排版难题 国内AI产业规模破万亿，字节Tr]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2025-12-26日刊]]></title>
           <link>https://ai.hubtoday.app//2025-12/2025-12-26/</link>
@@ -185,43 +219,6 @@ Cursor收购代码工具💸Graphite引发<a href="https://newshacker.me/story?i
 网友整理了五万字📒养网站<a href="https://m.okjike.com/originalPosts/694602a6e48f1bd7abe0ddf1">防老手册(AI资讯)</a>。适合小白的SEO🌱实操指南。内容涵盖结构化知识与🏗️建站细节。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcy65hbgfxhtthyep24xf5tn.avif" alt="AI资讯：FlowUs上的网站SEO养护手册目录"><br/></p><ol start="4"><li><strong>AI 内容的丝滑与人类的真实。</strong>
 AI生成的内容过于🌊丝滑流畅<a href="https://x.com/lijigang_com/status/2002285069960982937">缺乏质感(AI资讯)</a>。读完大脑里留不下🧠任何刮痕。人的困惑与笨拙反而🧐显得真实可爱。</li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2025/12/21 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 OpenAI Codex支持封装技能并携手迪士尼 智谱AI赴港交表冲刺大模型第一股 Karpathy发文称大模型转向RLVR训练 Cursor收购Graphite推动IDE一体化 Qwen发布支持透明]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2025-12-20日刊]]></title>
-          <link>https://ai.hubtoday.app//2025-12/2025-12-20/</link>
-          <guid>https://ai.hubtoday.app//2025-12/2025-12-20/</guid>
-          <pubDate>Sat, 20 Dec 2025 07:55:10 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/20</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Google发布270M参数FunctionGemma准确率达85%
-GPT-5.2-Codex成最强编程模型SWE-Bench达56.4%
-人大腾讯证实长推理链累积噪声提出Adaptive Think
-Manus八个月ARR破亿美元创全球最快增长纪录
-Pieter Abbeel接任亚马逊AGI负责人前沿研究
-</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>Google推出FunctionGemma。</strong>
-这个270M参数的🔥小模型能把自然语言直接<a href="https://www.xiaohu.ai/c/a066c4/google-functiongemma">转成设备命令(AI资讯)</a>，测试准确率从58%飙升到<strong>85%</strong>。你说&quot;帮我设提醒晚8点喂猫&quot;，它就能秒懂并调用系统API(✧∀✧)，从聊天机器人升级成真能干活的🚀智能代理了。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh691afbe9jsnj8r7keh7c.avif" alt="AI资讯：FunctionGemma模型功能特性对比图"><br/></p></li><li><p><strong>Google Gemini可检测AI视频。</strong>
-用户现在能上传视频💡直接查是否由Google AI生成，利用<strong>SynthID水印技术</strong>分别检查视觉和音频轨道。该功能支持最大100MB、90秒视频，<a href="https://www.aibase.com/zh/news/23831">全球免费使用(AI资讯)</a>无需订阅(✧∀✧)。</p></li><li><p><strong>OpenAI发布GPT-5.2-Codex。</strong>
-这是目前🚀最强的智能体编程模型，<strong>SWE-Bench Pro准确率56.4%</strong>，能长时间专注复杂任务还不会忘记进度。防御性网络安全💡能力也是顶级，还帮研究员发现了<a href="https://x.com/OpenAI/status/2001766212494332013">React框架关键漏洞(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh6mt8ed09va2ke9h22fs2.avif" alt="AI资讯：GPT-5.2-Codex性能基准测试结果"><br/></p></li><li><p><strong>Kling 2.6运动控制功能上线。</strong>
-用户可定义图片角色如何移动🔥，参与创作大赛最高拿**$1000现金**。一等奖5名送16000积分，截止12月31日(✧∀✧)，作品还有机会<a href="https://x.com/Kling_ai/status/2001891240359632965">登上官方首页(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh6skdfemt3jm1dy9jnbe8.avif" alt="AI资讯：Kling 2.6运动控制功能大赛海报"><br/></p></li><li><p><strong>Mistral发布OCR 3。</strong>
-在处理表单扫描件和手写内容时相比前代<strong>胜率74%</strong>，每千页仅需💡2美元，批量折扣低至1美元。能保留复杂表格结构，<a href="https://mistral.ai/news/mistral-ocr-3">支持直接输出Markdown(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh76ntf5y8zenhaxe2svsr.avif" alt="AI资讯：Mistral OCR 3文档解析效果展示"><br/></p></li></ol><h3>前沿研究</h3><ol><li><p><strong>大模型&quot;越想越错&quot;被证实。</strong>
-人大腾讯团队用信息论发现🔥推理链过长会积累噪声，提出<strong>Adaptive Think</strong>策略让模型&quot;够自信就停&quot;。在GSM8K上Token消耗减少一半，准确率还<a href="https://arxiv.org/abs/2505.18237">提升了(AI资讯)</a>，论文入选NeurIPS 2025 Spotlight(✧∀✧)。</p></li><li><p><strong>JARVIS框架增强视觉推理。</strong>
-这个💡受I-JEPA启发的<a href="https://arxiv.org/abs/2512.15885">自监督学习框架(AI资讯)</a>能让多模态大模型不再只依赖文字描述学视觉。实验证明在视觉中心任务上🚀持续提升，还不影响多模态推理能力。代码已开源GitHub。</p></li><li><p><strong>AIMM检测社媒操纵股市。</strong>
-这个AI框架融合Reddit活动和OHLCV数据生成💡每日操纵风险分数，在<strong>GME事件前22天</strong>就发出预警(✧∀✧)。包含33个标注样本的<a href="https://arxiv.org/abs/2512.16103">真相数据集已开源(AI资讯)</a>。</p></li><li><p><strong>Pull-based协议解决AI协作难题。</strong>
-论文发现有知识的💡Leader常因缺乏心智理论无法正确指导Follower，成功率从35%暴跌到17%。实验证明主动提问的<a href="https://arxiv.org/abs/2512.15776">Pull协议比Push指令更稳(AI资讯)</a>，澄清请求频率🚀翻倍。<br/></p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>Manus 8个月ARR破1亿美元。</strong>
-这家新加坡AI代理公司创下🔥全球最快纪录，月复合增长率超<strong>20%</strong>，处理了147万亿tokens。它能自主完成简历筛选到全栈开发的<a href="https://www.aibase.com/zh/news/23862">复杂任务(AI资讯)</a>，团队仅105人(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh79stfmpah4ypv1xjm331.avif" alt="AI资讯：Manus通用AI代理产品界面展示"><br/></p></li><li><p><strong>亚马逊AGI负责人离职。</strong>
-Rohit Prasad两年任期结束后🔥离开，强化学习大佬<strong>Pieter Abbeel</strong>接任前沿研究团队。这位伯克利教授培养的学生包括<a href="https://www.jiqizhixin.com/articles/2025-12-19-2">OpenAI联合创始人(AI资讯)</a>，学术引用量高达23.1万次。</p></li><li><p><strong>字节AI手机方案曝光。</strong>
-免收Token分成和定制开发费💡只换入口，与vivo、联想、传音洽谈<a href="https://www.aibase.com/zh/news/23851">预装豆包助手(AI资讯)</a>。手机厂商可分成流量和会员收益，精准切中🚀此前Token成本过高的痛点。</p></li><li><p><strong>AWS CEO反对裁初级开发者。</strong>
-Matt Garman认为用AI替代新人是🔥&quot;最愚蠢的想法&quot;，因为初级员工更擅长使用AI工具。他强调人才梯队像运动队，<a href="https://www.jiqizhixin.com/articles/2025-12-19-2">不培养新人会断层(AI资讯)</a>，AI长期会创造更多岗位。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>PentestGPT渗透测试利器。</strong>
-这款GPT驱动的安全工具⭐9495能自动化渗透测试流程🔥，帮助安全研究员发现系统漏洞。支持多种攻击向量分析，<a href="https://github.com/GreyDGL/PentestGPT">开源免费使用(AI资讯)</a>。<br/></p></li><li><p><strong>斯坦福CS229速查表。</strong>
-机器学习经典课程配套💡的VIP速查表⭐18921，涵盖监督学习、深度学习等核心概念。复习备考必备<a href="https://github.com/afshinea/stanford-cs-229-machine-learning">浓缩精华(AI资讯)</a>。<br/></p></li><li><p><strong>Metabase开源BI工具。</strong>
-⭐45061的商业智能神器让🚀每个人都能轻松处理数据，支持嵌入式分析和可视化。企业级功能<a href="https://github.com/metabase/metabase">完全开源(AI资讯)</a>，中小团队福音(✧∀✧)。<br/></p></li></ol><h3>社媒分享</h3><ol><li><p><strong>上下文工程成新护城河。</strong>
-Box CEO分析AI智能体从💡&quot;模型能力&quot;向&quot;系统架构&quot;演进，失败根源不再是逻辑缺陷而是<strong>信息不对称</strong>。上下文工程本质是逆向推导🚀专家需要什么<a href="https://x.com/shao__meng/status/2001980022773645663">信息输入(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh7gzgetestxydkb6e44ej.avif" alt="AI资讯：Box CEO分析AI智能体架构演进趋势"><br/></p></li><li><p><strong>字节涨薪35%太可怕。</strong>
-在大家都停止增长的时候🔥人均涨幅竟然这么高(✧∀✧)，网友纷纷表示<a href="https://x.com/op7418/status/2001979689846587723">羡慕嫉妒恨(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh7n81f4rvs9pqq6h42dv3.avif" alt="AI资讯：字节跳动2025年涨薪数据截图"><br/></p></li><li><p><strong>小红书AI视频爆火10万赞。</strong>
-映峰大叔的作品💡巧妙躲过AI呼吸暂停，声音转场节奏把握🚀既精准又有张力。10天涨10万赞<a href="https://x.com/huangyun_122/status/2001962295501766768">长尾推荐恐怖(AI资讯)</a>。<br/><video src="https://source.hubtoday.app/images/2025/12/news_01kcvh82adf46tba8g9tqa4fxh.mp4"></video><br/></p></li><li><p><strong>Claude Code原来这么强。</strong>
-李默演示了飞书应用当数据库💡一键采集发布到小红书，还能用<strong>Claude Agent SDK</strong>包装成API定时跑。并行十几个任务<a href="https://m.okjike.com/originalPosts/6944d57475a476d43923630d">报错会自己改代码(AI资讯)</a>重跑(✧∀✧)。<br/></p></li><li><p><strong>Plan Mode架构壁垒解析。</strong>
-Flask作者指出🔥原生计划模式与IDE工具链深度绑定，能实时感知文件状态。用户可以在<strong>原子级步骤</strong>拦截审批，<a href="https://lucumr.pocoo.org/2025/12/17/what-is-plan-mode/">从代码工变评审员(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh8wqmf75b1et4syp1r3re.avif" alt="AI资讯：Flask作者解析Plan Mode技术架构"><br/></p></li><li><p><strong>16岁少年攻破四大厂。</strong>
-通过Mintlify SVG/XSS漏洞💡拿下Discord、Vercel、Cursor、X，但悬赏仅数千美元引发争议(✧∀✧)。讨论认为把第三方内容放主域是<a href="https://newshacker.me/story?id=46317098">制造风险根源(AI资讯)</a>。<br/></p></li><li><p><strong>谷歌Conductor推上下文驱动开发。</strong>
-这个Gemini CLI扩展能🚀自动扫描项目结构提取相关代码，打包成富上下文请求喂给模型。告别手动复制粘贴，<a href="https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/">AI不再盲人摸象(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kcvh990xfdgr6dxkej7xvhdk.avif" alt="AI资讯：谷歌Conductor上下文驱动开发架构图"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2025/12/20 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 Google发布270M参数FunctionGemma准确率达85% GPT-5.2-Codex成最强编程模型SWE-Bench达56.4% 人大腾讯证实长推理链累积噪声提出Adaptive Thin]]></description>
         </item>
       
   </channel>
