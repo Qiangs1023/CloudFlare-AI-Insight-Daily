@@ -5,9 +5,35 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 27 Dec 2025 23:55:13 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 23:14:15 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2025-12-29日刊]]></title>
+          <link>https://ai.hubtoday.app//2025-12/2025-12-29/</link>
+          <guid>https://ai.hubtoday.app//2025-12/2025-12-29/</guid>
+          <pubDate>Mon, 29 Dec 2025 07:14:14 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/29</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>AntV推新框架文字一键生成矢量信息图
+特斯拉Robovan无方向盘座舱似移动客厅
+首个物理世界全模态评测基准填补空白
+Claude生成代码引热议开发转型架构师
+会计用飞书搭建三十五个智能体实现提效
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>AntV推出一句话生成信息图框架。</strong>
+阿里AntV发布<a href="https://www.xiaohu.ai/c/a066c4/antv-infographic">新框架(AI资讯)</a>🚀，描述文字即可生成图表。支持ChatGPT等💡大模型优化。提供200+模板✨一键调用。矢量SVG输出不失真。流式渲染实现边说边画🎨。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtfg8jfxnsfaj244b01015.avif" alt="AI资讯：AntV自动生成的信息图表示例"><br/></p></li><li><p><strong>马斯克Robovan内饰像移动客厅。</strong>
+特斯拉<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009372&idx=2&sn=eb5b492faaaa4a5e02c5249eeb3b59fd">Robovan(AI资讯)</a>无方向盘🔥设计。车厢宽敞可容纳20人👥。每公里成本低至3毛钱💰。复古流线造型(✧∀✧)超吸睛。预计2027年实现量产🚐。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtfqjsefg98xntgfgwbzam.avif" alt="AI资讯：特斯拉Robovan复古内饰设计"><br/></p></li><li><p><strong>Mysti实现多模型互审代码。</strong>
+新工具<a href="https://newshacker.me/story?id=46365105">Mysti(AI资讯)</a>让AI辩论代码🛠️。Claude与Gemini联合审查🤝。通过CLI降低幻觉与漏洞。上下文共享减少Token消耗📉。充当开发者的第二双眼👀。</p></li></ol><h3>前沿研究</h3><ol><li><strong>首个物理世界全模态评测基准。</strong>
+FysicsWorld填补<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009372&idx=3&sn=4df769f93c3218b57a5c1b6042b1485d">物理感知(AI资讯)</a>空白🌍。覆盖16大类真实场景任务。打破单一模态孤岛效应🔗。评测AI多感官融合能力🧠。揭示真实环境交互短板📉。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtfx4pfsfs87558f4e7krk.avif" alt="AI资讯：FysicsWorld全模态评测体系架构"><br/></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>Claude代码生成引发职业大讨论。</strong>
+创始人称Claude包办<a href="https://newshacker.me/story?id=46410285">一个月代码(AI资讯)</a>😲。引发原创性与定责争论🗣️。工程师或转型架构师🏗️。审美与整体协同成关键。人类需驾驭AI而非被替🤝。</p></li><li><p><strong>2025年AI从幻想到现实落地。</strong>
+DeepSeek登顶Nature<a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652658534&idx=1&sn=267be37b21f40dc717b3ad8793274dc2">年度人物(AI资讯)</a>🏆。Meta豪赌两万亿基础设施💸。AGI祛魅而ASI初现端倪🤯。软技能比编程更重要🧠。人类必须居于AI核心🛡️。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtnfe9f4a8gr7zcyr6xm4z.avif" alt="AI资讯：2025年AI行业发展回顾"><br/></p></li><li><p><strong>英伟达200亿美金&quot;买”人才。</strong>
+以许可加雇佣<a href="https://newshacker.me/story?id=46403559">规避审查(AI资讯)</a>🤫。Groq核心技术被吸纳💸。员工权益分配引发争议🗣️。初创公司变现新路径。反垄断监管面临新挑战⚖️。</p></li></ol><h3>开源TOP项目</h3><ol><li><strong>vibe-kanban</strong>: 专为AI编程智能体设计的<a href="https://github.com/BloopAI/vibe-kanban">看板工具(AI资讯)</a>，可视化管理任务流(⭐7k)。</li><li><strong>Lean</strong>: 强大的算法交易引擎<a href="https://github.com/QuantConnect/Lean">Lean(AI资讯)</a>，支持Python与C#策略(⭐14.3k)。</li><li><strong>fresh</strong>: 极简且快速的终端<a href="https://github.com/sinelaw/fresh">文本编辑器(AI资讯)</a>，提升命令行开发效率(⭐3.6k)。</li></ol><h3>社媒分享</h3><ol><li><p><strong>会计用飞书AI造35个智能体。</strong>
+传统行业会计不懂<a href="https://x.com/frxiaobei/status/2005262286697423281">代码(AI资讯)</a>🙅‍♂️。用多维表格搭建自动化流。硬生生提升公司效率🚀。AI普惠真实落地案例💡。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtg49xe4raw7871ktn0gjc.avif" alt="AI资讯：普通会计利用AI提升效率"><br/></p></li><li><p><strong>Claude Code一个月提交259个PR。</strong>
+作者晒出<a href="https://x.com/dotey/status/2005069751920337194">惊人数据(AI资讯)</a>😲。近8万行代码变动📝。软件工程重心转向思考🧠。代码不再是开发瓶颈⛓️。</p></li><li><p><strong>Google额度转API神器Antigravity。</strong>
+将Google免费额度<a href="https://m.okjike.com/originalPosts/6950fd798dab01fe530bde91">转为API(AI资讯)</a>🛠️。支持Claude Code调用。让Agent实现自我升级🚀。白嫖党的高效工具💸。</p></li><li><p><strong>GLM 4.7被低估的质变时刻。</strong>
+智谱RLVR方法完全<a href="https://x.com/oran_ge/status/2005046496748863814">跑通(AI资讯)</a>🔥。突破蒸馏能力界限。开源模型盈利的里程碑💰。期待GLM 5.0表现👀。</p></li><li><p><strong>AI自媒体震惊体标题大赏。</strong>
+盘点那些<a href="https://m.okjike.com/originalPosts/69509a9a6951d9ad9ab54e19">吓人的标题(AI资讯)</a>😂。史诗级进化与彻夜狂欢🎭。实际产品往往一地鸡毛🐔。警惕营销焦虑陷阱🚫。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2025/12/29 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 AntV推新框架文字一键生成矢量信息图 特斯拉Robovan无方向盘座舱似移动客厅 首个物理世界全模态评测基准填补空白 Claude生成代码引热议开发转型架构师 会计用飞书搭建三十五个智能体实现提效 ]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2025-12-28日刊]]></title>
           <link>https://ai.hubtoday.app//2025-12/2025-12-28/</link>
@@ -187,33 +213,6 @@ Armin大神分享了🔮<a href="https://x.com/shao__meng/status/200306584142081
 学习神器来了，<a href="https://x.com/dotey/status/2002984918960439799">NotebookLM(AI资讯)</a>能生成记忆卡片。它把知识点变成问答题，帮助你🧠高效记忆。只需上传素材，AI就能自动提炼重点。这绝对是考研党的📚备考利器。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd3avffqfgdbt7x89c7spew7.avif" alt="AI资讯：NotebookLM生成的记忆卡片界面"><br/></p></li><li><p><strong>AI一键生成质感PPT。</strong>
 想做PPT但没灵感？试试用📝<a href="https://x.com/Jimmy_JingLv/status/2002745636488425945">NotebookLM生成(AI资讯)</a>幻灯片。它不仅风格有质感，文字还能随意修改。这效率简直🚀起飞，打工人狂喜(✨ω✨)。AI辅助演示，让你的汇报更出彩。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd3avqwjf7a8peqe61gjkmzf.avif" alt="AI资讯：NotebookLM生成的幻灯片效果展示"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2025/12/23 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 蚂蚁集团发布千亿参数医疗模型安诊儿，具备临床级诊疗思维能力。 谷歌开源A2UI项目，支持智能体通过数据描述直接生成原生交互界面。 盛大AI推出数字人系统Mio，具备长期记忆与情感，交互能力超越现有技术]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2025-12-22日刊]]></title>
-          <link>https://ai.hubtoday.app//2025-12/2025-12-22/</link>
-          <guid>https://ai.hubtoday.app//2025-12/2025-12-22/</guid>
-          <pubDate>Mon, 22 Dec 2025 07:55:11 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/22</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Gemini深度集成NotebookLM打通个人知识库对话
-Qwen分层模型登fal平台实现PS级图层分离编辑
-英伟达开源NitroGen模型通玩千款游戏具备泛化力
-Anthropic推SGTM技术隔离危险知识保留通用能力
-Karpathy总结年度AI范式RLVR成标配且智能锯齿化
-</code></pre><h3>产品与功能更新</h3><ol><li><strong>Gemini App深度集成NotebookLM。</strong>
-谷歌Gemini App现已📥支持直接导入<a href="https://x.com/op7418/status/2002570649039221126">NotebookLM笔记(AI资讯)</a>，打通了个人知识库与对话模型的壁垒。用户可以针对上传的笔记内容直接提问，非常适合📚整合多个来源或进行深度<a href="https://video.twimg.com/amplify_video/2002075703995498496/vid/avc1/1280x720/6SaMgavlEebQr60r.mp4?tag=14">扩展研究(AI资讯)</a>。</li></ol><p><br/><video src="https://source.hubtoday.app/images/2025/12/news_01kd0tb81xe27r9xa59rjmv5e5.mp4"></video><br/></p><ol start="2"><li><strong>Qwen图像分层模型上线fal平台。</strong>
-Qwen Image Layered模型🎨现已登陆<a href="https://x.com/Alibaba_Qwen/status/2002528792359940211">fal平台(AI资讯)</a>，带来PS级别的图层分离与编辑体验。该模型能物理隔离RGBA层，从粗糙布局到精细细节都能✨精确控制，实现真正的<a href="https://pbs.twimg.com/media/G8i7PawXwAULbFP?format=jpg&name=orig">原生编辑(AI资讯)</a>。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd0tbd5mfjj8tg00pkjb2tgg.avif" alt="AI资讯：Qwen模型演示图层分离效果"><br/></p><h3>前沿研究</h3><ol><li><p><strong>英伟达开源通用游戏基础模型NitroGen。</strong>
-英伟达发布了🤖能玩1000+款游戏的<a href="https://www.jiqizhixin.com/articles/2025-12-21-11">NitroGen模型(AI资讯)</a>，基于GR00T架构仅需微调即可上手新游戏。这不仅是脚本，而是(✧∀✧)具备跨游戏泛化能力的通用大模型，通过学习互联网视频中的手柄操作。它无需深度思考，专注于🎮玩家直觉式的<a href="https://nitrogen.minedojo.org">运动控制(AI资讯)</a>，为通用具身智能铺路。</p></li><li><p><strong>Anthropic发布SGTM安全隔离技术。</strong>
-Anthropic提出🛡️不删数据也能移除危险知识的<a href="https://www.jiqizhixin.com/articles/2025-12-21">SGTM技术(AI资讯)</a>，通过梯度路由将CBRN等敏感信息隔离。这种方法利用吸附效应，让未标注的危险内容也能自动聚集到🧠特定参数区域，事后一键置零即可。相比传统过滤，它更具鲁棒性且保留通用能力，是🧪安全研究的<a href="https://arxiv.org/pdf/2512.05648">新范式(AI资讯)</a>。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>Karpathy发布2025年终大模型清单。</strong>
-大神Karpathy总结了📝年度重要的<a href="https://www.jiqizhixin.com/articles/2025-12-21-7">AI范式转变(AI资讯)</a>，指出RLVR（可验证奖励强化学习）已成为训练标配。他认为AI智能呈现锯齿状(Jaggedness)，在某些领域像天才在另一些像小学生🧠。Cursor代表了新的应用层厚度，而Claude Code则是住进电脑的👻本地<a href="https://x.com/karpathy/status/2002118205729562949">Agent(AI资讯)</a>。</p></li><li><p><strong>物理限制vs软硬件优化：AGI激辩。</strong>
-两位教授就AGI是否遥遥无期💥吵起来了，CMU教授认为物理限制和计算成本将阻碍AGI发生。UCSD教授则反驳称软硬件效率仍有🚀巨大的<a href="https://www.jiqizhixin.com/articles/2025-12-21-10">提升空间(AI资讯)</a>，如FP4训练和新架构设计。这场关于物理墙与工程优化的<a href="https://danfu.org/notes/agi/">观点交锋(AI资讯)</a>，揭示了行业对未来的分歧。</p></li><li><p><strong>Redis之父Salvatore的年度AI反思。</strong>
-Redis之父分享了🤔深刻的<a href="https://x.com/dotey/status/2002465295047479548">AI行业观察(AI资讯)</a>，直言&quot;随机鹦鹉”论已破产，LLM确实形成了内部表征。他认为思维链(CoT)被低估，是强化学习让模型学会了收敛路径📈。程序员态度已从怀疑转向依赖，未来二十年的挑战是如何避免🤖<a href="https://antirez.com/news/157">AI灭绝(AI资讯)</a>。</p></li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd0tbj9xfqf8xy5k7ttqmqtb.avif" alt="AI资讯：Redis之父Salvatore在社交媒体的头像"><br/></p><h3>开源TOP项目</h3><ol><li><p><strong>PayloadsAllTheThings</strong>
-这个⭐73k的<a href="https://github.com/swisskyrepo/PayloadsAllTheThings">安全Payload列表(AI资讯)</a>涵盖了Web渗透测试所需的各种注入代码与绕过技术，是白帽子必备的🔫武器库。</p></li><li><p><strong>The Book of Secret Knowledge</strong>
-这是一个⭐199k的<a href="https://github.com/trimstray/the-book-of-secret-knowledge">极客资源宝典(AI资讯)</a>，汇集了CLI工具、黑客技巧、单行命令和各种开发速查表，内容📚包罗万象。</p></li><li><p><strong>CocoIndex</strong>
-高性能的⭐4.3k<a href="https://github.com/cocoindex-io/cocoindex">数据转换框架(AI资讯)</a>，专为AI应用设计且支持增量处理，能显著提升数据流转效率⚡。</p></li></ol><h3>社媒分享</h3><ol><li><strong>Nano Banana生成城市艺术海报。</strong>
-博主歸藏演示了🍌Nano Banana Pro生成的<a href="https://x.com/op7418/status/2002685689314574803">城市海报(AI资讯)</a>，模型能根据选择的城市自动调整云海风格与建筑地标。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd0tbzaaek1859zepar71nvh.avif" alt="AI资讯：Nano Banana生成的城市数字艺术海报"><br/></p><ol start="2"><li><strong>ChatGPT彩蛋：发送礼物Emoji。</strong>
-网友小互发现🎁在ChatGPT里发送<a href="https://x.com/imxiaohu/status/2002418082091085862">礼物Emoji(AI资讯)</a>会触发惊喜特效，增加了人机交互的趣味性(✧∀✧)。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kd0tc4sffpybdd6k46h205be.avif" alt="AI资讯：ChatGPT界面显示礼物盒的特效截图"><br/></p><ol start="3"><li><strong>优质上下文工程博客清单。</strong>
-开发者推荐了一份📚非常实用的<a href="https://x.com/shao__meng/status/2002394841532281000">上下文工程博客(AI资讯)</a>清单，包含Anthropic、Cognition等官方技术博客，适合周末充电🔋。</li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2025/12/22 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 Gemini深度集成NotebookLM打通个人知识库对话 Qwen分层模型登fal平台实现PS级图层分离编辑 英伟达开源NitroGen模型通玩千款游戏具备泛化力 Anthropic推SGTM技术隔]]></description>
         </item>
       
   </channel>
