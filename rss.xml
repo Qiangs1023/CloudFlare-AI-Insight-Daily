@@ -5,9 +5,33 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Jan 2026 23:55:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 23:14:26 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-03日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-03/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-03/</guid>
+          <pubDate>Sat, 03 Jan 2026 07:14:25 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/3</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>特斯拉接入Grok视觉赋能车机机器人
+DeepSeek推mHC架构降显存稳训练
+DAVE模型突破复杂文档视觉理解
+DeepMind预言2026年AI实现永生
+SentientAGI开源ROMA智能体框架
+</code></pre><h3>前沿研究</h3><ol><li><p><strong>DeepSeek创始人发布新架构mHC。</strong>
+DeepSeek创始人梁文锋亲自署名，元旦发布🔥重磅<a href="https://www.jiqizhixin.com/articles/2026-01-02-7">mHC架构论文(AI资讯)</a>。针对<strong>大模型训练</strong>中的不稳定性，团队提出了流形约束超连接技术。通过将矩阵投影到双拟随机流形上，保证了信号传播的⚡能量守恒。这不仅解决了数值爆炸难题，还大幅降低了( • ̀ω•́ )显存开销。</p></li><li><p><strong>DAVE模型专攻文档视觉理解。</strong>
+现在的VLM视觉编码器看不懂复杂排版？DAVE模型正是为此诞生的<a href="https://arxiv.org/abs/2512.17221">视觉专家(AI资讯)</a>。它专为📄文档理解和Web代理设计，不再依赖昂贵的大规模标注数据。通过自监督预训练，DAVE在解析任务上🚀表现出色，弥补了通用视觉编码器的短板。</p></li><li><p><strong>SpaceTimePilot实现视频时空解耦。</strong>
+想要随意控制视频里的🎥运镜和时间？SpaceTimePilot实现了惊人的<a href="https://arxiv.org/abs/2512.25075">时空解耦(AI资讯)</a>。它能独立改变相机视角，或者调整🏃动作发生的快慢，互不干扰。这种生成式渲染技术，让动态场景的探索变得(qaq)随心所欲。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>DeepMind预测AI将在2026永生。</strong>
+谷歌DeepMind抛出惊人🔮预言，2026年将是<a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652659818&idx=1&sn=a4d07f563f7c94e7c06de7d4bc1a10a4">持续学习(AI资讯)</a>的元年，AI将不再遗忘。更有预测称2030年，<strong>全自动编程</strong>将彻底⚡取代人类程序员。到2050年，AI甚至可能垄断🏆诺贝尔奖级的研究。人类向AI让渡科学主导权的⏳倒计时已经开始。</p></li><li><p><strong>解析罗振宇演讲背后的AI焦虑。</strong>
+罗振宇的跨年演讲引发争议，被指是典型的<a href="https://x.com/dotey/status/2006887867197354351">施特劳斯式模因(AI资讯)</a>。表面是AI时代的💪人生指南，实则是精密设计的<strong>商业变现</strong>系统。这种信息结构利用了😰焦虑与身份认同，让受众难以自拔。普通人看到希望，明白人却看到了📦收割的镰刀。</p></li></ol><p><br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdzmc7cket9b25z62w7tpw11.avif" alt="AI资讯：施特劳斯式模因分析长图"><br/></p><h3>开源TOP项目</h3><ol><li><strong>SentientAGI开源元智能体框架。</strong>
+SentientAGI团队开源了🔥高性能的<a href="https://github.com/sentient-agi/ROMA">ROMA框架(AI资讯)</a>，支持递归任务分解。它像个智能项目经理，把大任务拆解给👶子智能体并行执行。这种架构解决了长链推理中的💾上下文溢出问题。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdzmcbmwfs0944637nna4cgc.avif" alt="AI资讯：ROMA智能体框架架构图"><br/></p><ol start="2"><li><p><strong>NewsNow实时新闻阅读器。</strong>
+这是一个⭐1.5k星的<a href="https://github.com/ourongxing/newsnow">实时新闻工具(AI资讯)</a>，主打优雅的阅读体验。它能帮助用户从🌁信息洪流中，快速获取热点。</p></li><li><p><strong>Memos自托管笔记服务。</strong>
+拥有⭐48.5k星的<a href="https://github.com/usememos/memos">轻量级笔记(AI资讯)</a>，主打无隐私追踪。它完全开源且(oﾟvﾟ)永久免费，让你的数据完全由自己掌控。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>技术大佬推荐的深度访谈。</strong>
+开发者Tw93强推了一个📺非常有收获的<a href="https://x.com/HiTw93/status/2007088939442880643">访谈视频(AI资讯)</a>，内容关于技术变现。视频主角季逸超非常接地气，谈论了对💰商业化和新技术的独到判断。这对于技术人思考未来方向(💡)很有启发。</p></li><li><p><strong>特斯拉接入Grok视觉能力。</strong>
+特斯拉正在🚗接入Grok模型，现在Grok已经能调用<a href="https://x.com/imxiaohu/status/2006927289267925133">车载摄像头(AI资讯)</a>实时观察周围环境。这代表着👀视觉感知能力的重大突破，不仅用于驾驶，更意味着人形机器人Optimus可能已在(✧∀✧)疯狂测试中。这种多模态能力的落地，将让<strong>物理世界交互</strong>变得更加智能。</p></li></ol><br/><video src="https://source.hubtoday.app/images/2026/01/news_01kdzmd3pafenbehmtke8b6gz7.mp4" controls="controls" width="100%"></video><br/><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2026/1/3 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 特斯拉接入Grok视觉赋能车机机器人 DeepSeek推mHC架构降显存稳训练 DAVE模型突破复杂文档视觉理解 DeepMind预言2026年AI实现永生 SentientAGI开源ROMA智能体框架 ]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-02日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-02/</link>
@@ -190,40 +214,6 @@ Stack Overflow发布2025开发者调查，AI渗透率(AoA)创新高。全球177�
 听长播客太费时间，博主用腾讯会议挂机做<a href="https://x.com/aiwarts/status/2004756468818682148">AI纪要(AI资讯)</a>。罗永浩的直播光听就要几个小时，AI能快速提炼重点。这简直是获取信息的(Orz)效率神器。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdg691hbe2y9pf6ssezb0sh7.avif" alt="AI资讯：使用腾讯会议AI纪要记录罗永浩直播内容"><br/></p><ol start="4"><li><strong>AI伴读黄帝内经。</strong>
 读《黄帝内经》这种古籍，遇到不懂的直接扔给AI解释。一边读一边问，AI就像个随时在身边的<a href="https://x.com/Yangyixxxx/status/2004757320895713347">博学老师(AI资讯)</a>。虽然偶尔有幻觉，但追问几次就能发现(QAQ)问题所在。</li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2025/12/28 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 智谱ZCode可视化编程发布，阶跃图像模型升级 顶尖模型科研评测不及格，NPR框架实现并行推理 Vibe Engineering引关注，SO调查显AI渗透率高 Claude会话转网页工具开源，AI自动]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2025-12-27日刊]]></title>
-          <link>https://ai.hubtoday.app//2025-12/2025-12-27/</link>
-          <guid>https://ai.hubtoday.app//2025-12/2025-12-27/</guid>
-          <pubDate>Sat, 27 Dec 2025 12:22:01 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/27</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>通义Code升级全链路平台，MiniMax推M2.1模型引争议
-OpenAI重置额度推节日版，快看开启AI互动漫画
-华为实现Agent自我进化，小红书攻克AI排版难题
-国内AI产业规模破万亿，字节Trae月活破一百六十万
-社媒爬虫与RAG工具开源，Karpathy叹编程行业变迁
-</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>通义千问Code v0.5重磅升级。</strong>
-国产编程AI迎来🚀<a href="https://www.aibase.com/zh/news/24065">重大进化(AI资讯)</a>。通义实验室发布Qwen Code v0.5版本。它从单纯命令行工具变身为(✧∀✧)全链路开发平台。支持与VS Code等主流IDE深度集成💻。不仅能写代码，还能理解跨文件工程上下文🏗️。</p></li><li><p><strong>MiniMax的M2.1模型引社区争议。</strong>
-这是一款面向💪<a href="https://newshacker.me/story?id=46388213">复杂任务(AI资讯)</a>和多语言编程的新模型。虽然官方文案略显夸张，但性价比💸极具吸引力。实测显示其代码能力接近Sonnet级别📊。它特别针对企业级自动化场景进行了优化🏢。社区对其是否完全开源仍有争议🤔。</p></li><li><p><strong>OpenAI Codex节日特别版。</strong>
-官方团队为开发者送上🎁<a href="https://x.com/op7418/status/2004376604282400957">圣诞礼物(AI资讯)</a>。推出了带有节日个性的GPT-5.2-Codex-XMas模型🎄。同时宣布在1月1日前重置并翻倍⚡<a href="https://x.com/claudeai/status/2004708763014508860">使用额度(AI资讯)</a>。Claude也同步修复了Max 5x用户的额度Bug🐛。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0ajq2exxb085xe0v0areg.avif" alt="AI资讯：OpenAI发布的Codex节日版命令行界面"><br/></p></li><li><p><strong>快看漫画推AI互动体验。</strong>
-漫画角色现在能(✧∀✧)<a href="https://www.aibase.com/zh/news/24055">动起来(AI资讯)</a>并与读者对话了。快看联手MiniMax打造沉浸式互动漫画📱。基于M2.1等模型实现多模态情感连接❤️。首批《DOLO》等顶级IP已开启新模式🚀。这标志着漫画进入AI体验第四赛道🏁。</p></li></ol><h3>前沿研究</h3><ol><li><p><strong>华为诺亚提出Agent自我进化。</strong>
-AI智能体终于能(⊙_⊙)<a href="https://www.jiqizhixin.com/articles/2025-12-26-5">吸取教训(AI资讯)</a>了。新框架SCOPE让Prompt在执行中动态进化🧬。通过分析错误日志自动提炼指导规则📝。在HLE基准测试中成功率翻倍📈。告别了&quot;记吃不记打”的死循环🔄。</p></li><li><p><strong>小红书实现AI精准排版。</strong>
-AI绘图终于不再(￣▽￣)&quot;乱摆放&quot;物体了。复旦联合小红书开源🎯<a href="https://www.aibase.com/zh/news/24049">InstanceAssemble(AI资讯)</a>。该技术解决了复杂场景下的构图难题🧩。仅需极少参数即可适配Stable Diffusion等模型⚡。论文已被顶会NeurIPS2025录用📜。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0as0tfkn8mfr3bp9vjpn8.avif" alt="AI资讯：InstanceAssemble技术生成的精准布局图像示例"><br/></p></li><li><p><strong>压缩图像理解新基准。</strong>
-视觉大模型处理🖼️<a href="https://arxiv.org/abs/2512.20901">压缩图(AI资讯)</a>的能力被严重低估。新研究提出了首个针对压缩图像的VLM评测基准📊。涵盖超过一百万张不同编码的图片💾。研究发现通用适配器能提升10%-30%性能📈。这填补了低比特率图像理解的空白🕳️。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>马斯克自曝AI噩梦。</strong>
-世界首富坦言因AI发展而(⊙_⊙)<a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652658113&idx=3&sn=679c5649c8417f894b5ee3a5a086e575">连做噩梦(AI资讯)</a>。他预测未来工作将变成一种🎮生活选择。Grok即将全面接管X平台的推荐算法🧠。他靠芝士汉堡🍔和洗澡保持状态。这篇访谈揭示了他对多行星文明的执念🌌。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0awa6exysbjzrzg1aqd8q.avif" alt="AI资讯：马斯克在播客访谈中谈论AI与未来"><br/></p></li><li><p><strong>工信部：AI产业破万亿。</strong>
-中国AI核心产业规模首次💰<a href="https://www.aibase.com/zh/news/24056">突破万亿(AI资讯)</a>。2023年数字产业收入同比增长约9%📈。全国已建成7000多家智能工厂🏭。新能源汽车出口也突破200万辆🚗。数据显示数字经济具备强大韧性💪。</p></li><li><p><strong>Trae月活突破160万。</strong>
-字节跳动旗下IDE发布📑<a href="https://x.com/op7418/status/2004446870358339756">年度报告(AI资讯)</a>。TRAE周活跃用户粘性极高🔗。代码生成和Bug修复是两大核心场景🛠️。超八成用户混合使用多种智能体模式🤖。编程语言中Vue的使用率排名第一🏆。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0b1pae0zst2cntk7wsmxc.avif" alt="AI资讯：Trae编辑器用户编程语言分布统计图"><br/></p></li><li><p><strong>决策逻辑是下个万亿机会。</strong>
-企业核心资产正从数据转向🧠<a href="https://x.com/shao__meng/status/2004359244276289674">决策图谱(AI资讯)</a>。传统软件只记录了结果而遗漏了&quot;为什么&quot;❓。AI Agent需要访问决策痕迹才能有效工作🤖。未来的巨头将诞生于对执行逻辑的捕捉🕸️。这是区别于传统SaaS的全新赛道🏁。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>超强社媒爬虫MediaCrawler。</strong>
-这是一个⭐40.8k星的<a href="https://github.com/NanmiCoder/MediaCrawler">数据抓取神器(AI资讯)</a>。支持小红书、抖音、B站等主流平台🕷️。能轻松搞定笔记、评论和视频内容📥。不仅功能强大而且更新频率极高🔄。是做社媒数据分析的必备工具🛠️。</p></li><li><p><strong>多模态RAG框架RAG-Anything。</strong>
-港大实验室开源了这个📚<a href="https://github.com/HKUDS/RAG-Anything">全能框架(AI资讯)</a>。它能一站式处理PDF、图像和公式等复杂内容🧩。通过知识图谱增强检索准确性🔍。支持端到端的多模态内容理解与生成💡。解决了传统RAG处理非文本内容的痛点💊。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0b5qdea1b656qd8nnmggx.avif" alt="AI资讯：RAG-Anything框架处理多模态文档的流程图"><br/></p></li><li><p><strong>私有化RAG引擎LEANN。</strong>
-这是一个⭐6.4k星的<a href="https://github.com/yichuan-w/LEANN">高效RAG方案(AI资讯)</a>。它能在个人设备上运行且节省97%存储💾。保证了极高的隐私性和响应速度⚡。适合对数据安全敏感的个人用户🔒。让万物皆可RAG成为可能🌍。</p></li><li><p><strong>暗网情报工具Robin。</strong>
-这是一款🔍<a href="https://github.com/apurvsinghgautam/robin">AI驱动(AI资讯)</a>的开源情报工具。专门用于暗网信息的搜索与分析🕵️‍♂️。获得了超过3000颗Star⭐。虽然功能强大但请务必合法合规使用⚖️。是安全研究人员的得力助手🛡️。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>Karpathy感叹程序员落伍。</strong>
-这位大神直言感到😱<a href="https://x.com/karpathy/status/2004607146781278521">前所未有(AI资讯)</a>的落后。编程行业正在经历剧烈的重构🏗️。现在的关键是将Agent、Prompt和各种工具串联起来🔗。没有说明书的时代只能靠自己摸索🔦。行动本身就是最好的地图🗺️。</p></li><li><p><strong>Claude神级Skill玩法。</strong>
-大佬们发现Claude配合🔧<a href="https://x.com/vista8/status/2004239712111022380">Superpowers(AI资讯)</a>极其强大。能主动引导用户进行技术方案脑暴🧠。还有人将其与NotebookLM打通📚。实现了从PDF读取到自动提问的全流程⚡。这种组合拳让学习效率起飞🚀。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0b9jvf0tvsr5cmvnkxc62.avif" alt="AI资讯：Claude中使用Superpowers插件的对话界面"><br/></p></li><li><p><strong>2026年AI趋势预测。</strong>
-Reddit热议贴预测🔮<a href="https://www.reddit.com/r/artificial/comments/1pw82h8/ai_trends_to_watch_in_2026/">未来趋势(AI资讯)</a>。Agent将从演示走向实际生产环境🏭。安全和反欺诈将成为企业刚需🛡️。机器人技术将进入日常生活🤖。2025是能力跃升年，2026将是信誉兑现年💰。</p></li><li><p><strong>腾讯大模型团队段子。</strong>
-网传腾讯内部关于💡<a href="https://x.com/vista8/status/2004597586074927511">技术路线(AI资讯)</a>的争论。只要一句&quot;OpenAI就是这么干的&quot;🙊。所有人都会瞬间闭嘴🤐。这折射出行业对头部玩家的盲目崇拜🙏。虽然是段子但也颇具讽刺意味😏。</p></li><li><p><strong>25年前的张小龙访谈。</strong>
-那时的微信之父还在纠结🤔<a href="https://m.okjike.com/originalPosts/694e97c1e48f1bd7abb9132b">去留问题(AI资讯)</a>。感叹200万人用免费软件是奇迹✨。谁能想到后来他做出了日活10亿的产品📱。这篇文章记录了他在人生十字路口的迷茫🛤️。读来令人唏嘘不已🕰️。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdf0bdpve8kae8jsnak99smn.avif" alt="AI资讯：2000年电脑报关于张小龙的访谈版面"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2025/12/27 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 通义Code升级全链路平台，MiniMax推M2.1模型引争议 OpenAI重置额度推节日版，快看开启AI互动漫画 华为实现Agent自我进化，小红书攻克AI排版难题 国内AI产业规模破万亿，字节Tr]]></description>
         </item>
       
   </channel>
