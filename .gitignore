@@ -1,0 +1,2 @@
+cron-docker/*.tar.gz
+docs/images/*.png # 如果这些图可再生（如截图），也可忽略
