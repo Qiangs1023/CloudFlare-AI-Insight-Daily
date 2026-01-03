@@ -45,3 +45,7 @@ BOOK_LINK = ""
 INSERT_FOOT = "false"
 INSERT_AD = "false"
 # INSERT_APP_URL = "<h3>[查看完整版AI日报↗️ https://ai.hubtoday.app/](https://ai.hubtoday.app/)</h3>"
+
+# SemiAnalysis 配置
+SEMIANALYSIS_RSS_URL = "https://semianalysis.com/feed/"
+SEMIANALYSIS_MAX_ITEMS = "10"
