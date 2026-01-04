@@ -5,9 +5,33 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Jan 2026 23:55:15 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 23:14:58 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-05日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-05/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-05/</guid>
+          <pubDate>Mon, 05 Jan 2026 07:14:56 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/5</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>OpenAI研发智能笔硬件转单富士康
+国产MinT平台单CPU训万亿参数模型
+ControlNet作者新架构解长视频难题
+贵州推AI酿酒印度勒令X平台限时整改
+编程智能体爆火GitHub警告垃圾代码
+</code></pre><h3>产品与功能更新</h3><ol><li><strong>OpenAI首款硬件细节曝光。</strong>
+软件巨头OpenAI正跨界📝研发<a href="https://www.aibase.com/zh/news/24217">首款硬件(AI资讯)</a>，代号Gumdrop或为👀<strong>智能笔形态</strong>。手写笔记内容能⚡直接上传ChatGPT，为避险已将订单🏭转给<strong>富士康</strong>。预计该产品将在🚀2026年正式发布。</li></ol><h3>前沿研究</h3><ol><li><p><strong>中国团队抢跑后训练赛道。</strong>
+中国95后团队🇨🇳打造Mind Lab实验室，推出MinT🛠️<a href="https://www.jiqizhixin.com/articles/2026-01-04-6">后训练平台(AI资讯)</a>。单卡CPU即可📉训练<strong>万亿参数模型</strong>，成本优化十倍且⚡效率极高。比前OpenAI CTO团队更早🏆实现<strong>1T LoRA-RL</strong>。</p></li><li><p><strong>ControlNet作者攻克长视频。</strong>
+斯坦福博士🎓张吕敏再出新作，解决长视频🎥<a href="https://www.jiqizhixin.com/articles/2026-01-04-5">上下文爆炸(AI资讯)</a>难题。新架构将20秒视频📉压缩至<strong>极短上下文</strong>，两阶段策略🧠保留<strong>高频细节</strong>。让普通显卡也能⚡跑出高质量长视频。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>贵州力推AI赋能酱香白酒。</strong>
+贵州出台重磅📄<a href="https://www.aibase.com/zh/news/24220">三年行动方案(AI资讯)</a>，聚焦6+3产业🏔️<strong>集群数字化</strong>。AI将全面赋能🍷<strong>酱香白酒</strong>酿造工艺，化工能源也将🤖实现<strong>智能调度</strong>。力争民间投资💰占比达到42%。</p></li><li><p><strong>印度勒令X平台紧急整改。</strong>
+印度政府😡对X平台下达<a href="https://www.aibase.com/zh/news/24183">整改令(AI资讯)</a>，Grok因生成🚫<strong>女性不雅图</strong>惹祸。限72小时内⏳提交<strong>合规报告</strong>，否则将失去⚖️<strong>法律避风港</strong>保护。AI生成内容👮监管进入高危期。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>超高热度的编程智能体。</strong>
+这是一个⭐47k星的<a href="https://github.com/anomalyco/opencode">开源智能体(AI资讯)</a>，它能像人类一样💻编写<strong>复杂代码</strong>。</p></li><li><p><strong>二次元专属媒体中心。</strong>
+动漫爱好者📺必备的<a href="https://github.com/5rahim/seanime">媒体服务器(AI资讯)</a>，提供丝滑的✨<strong>Web管理界面</strong>。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>AI让读论文变厚了。</strong>
+博主让AI📝解读年度论文，从几千字扩充到🤯<a href="https://x.com/vista8/status/2007802169571901785">万字长文(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke4s2zvjfk2tcgjm8rrt5s5b.avif" alt="AI资讯：Latent Space年度AI论文榜单截图"><br/></p></li><li><p><strong>代码速度与质量的博弈。</strong>
+GitHub警告⚠️<a href="https://x.com/hongming731/status/2007706612061057332">AI垃圾代码(AI资讯)</a>泛滥，写代码光快没用🚫必须<strong>可控且简洁</strong>。</p></li><li><p><strong>人机共创成为未来主流。</strong>
+未来创作是🤝<a href="https://x.com/dotey/status/2007639681207533626">人机协作(AI资讯)</a>模式，读者只在乎📚<strong>作品价值</strong>而非手段。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2026/1/5 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 OpenAI研发智能笔硬件转单富士康 国产MinT平台单CPU训万亿参数模型 ControlNet作者新架构解长视频难题 贵州推AI酿酒印度勒令X平台限时整改 编程智能体爆火GitHub警告垃圾代码 产品]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-04日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-04/</link>
@@ -190,32 +214,6 @@ Vibe Coding不是瞎写，需要<a href="https://x.com/shao__meng/status/2005295
 黄药师认为，AI时代传统的程序员成长路径<a href="https://m.okjike.com/originalPosts/69513ac9f00b06fdd8c8eee7">已经断裂(AI资讯)</a>。以后每个工程师都必须具备架构师的能力，否则将被淘汰🚫。新人必须想办法利用AI成为新时代的架构师。这本质上是物种的进化，不进则退🦕。</p></li><li><p><strong>ChatGPT Plus省钱大法</strong>
 想要免费用一个月ChatGPT Plus？网友分享了一个<a href="https://x.com/Jimmy_JingLv/status/2005268750430548241">神奇技巧(AI资讯)</a>。尝试取消订阅，OpenAI为了挽留你，可能会送一个月免费体验🎁。这羊毛薅得让人猝不及防，大家可以去试试手气（仅供参考哦）😜。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2025/12/30 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 智谱GLM-4.7登顶编程榜阶跃星辰开源深度模型 通义千问推长文本模型火山引擎视频云智能化 Insta360发全景深度模型DeepSeek评测性价比高 少年用AI写病毒马斯克称Grok将取代传统医疗 ]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2025-12-29日刊]]></title>
-          <link>https://ai.hubtoday.app//2025-12/2025-12-29/</link>
-          <guid>https://ai.hubtoday.app//2025-12/2025-12-29/</guid>
-          <pubDate>Mon, 29 Dec 2025 07:55:11 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/29</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>AntV推新框架文字一键生成矢量信息图
-特斯拉Robovan无方向盘座舱似移动客厅
-首个物理世界全模态评测基准填补空白
-Claude生成代码引热议开发转型架构师
-会计用飞书搭建三十五个智能体实现提效
-</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>AntV推出一句话生成信息图框架。</strong>
-阿里AntV发布<a href="https://www.xiaohu.ai/c/a066c4/antv-infographic">新框架(AI资讯)</a>🚀，描述文字即可生成图表。支持ChatGPT等💡大模型优化。提供200+模板✨一键调用。矢量SVG输出不失真。流式渲染实现边说边画🎨。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtfg8jfxnsfaj244b01015.avif" alt="AI资讯：AntV自动生成的信息图表示例"><br/></p></li><li><p><strong>马斯克Robovan内饰像移动客厅。</strong>
-特斯拉<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009372&idx=2&sn=eb5b492faaaa4a5e02c5249eeb3b59fd">Robovan(AI资讯)</a>无方向盘🔥设计。车厢宽敞可容纳20人👥。每公里成本低至3毛钱💰。复古流线造型(✧∀✧)超吸睛。预计2027年实现量产🚐。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtfqjsefg98xntgfgwbzam.avif" alt="AI资讯：特斯拉Robovan复古内饰设计"><br/></p></li><li><p><strong>Mysti实现多模型互审代码。</strong>
-新工具<a href="https://newshacker.me/story?id=46365105">Mysti(AI资讯)</a>让AI辩论代码🛠️。Claude与Gemini联合审查🤝。通过CLI降低幻觉与漏洞。上下文共享减少Token消耗📉。充当开发者的第二双眼👀。</p></li></ol><h3>前沿研究</h3><ol><li><strong>首个物理世界全模态评测基准。</strong>
-FysicsWorld填补<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009372&idx=3&sn=4df769f93c3218b57a5c1b6042b1485d">物理感知(AI资讯)</a>空白🌍。覆盖16大类真实场景任务。打破单一模态孤岛效应🔗。评测AI多感官融合能力🧠。揭示真实环境交互短板📉。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtfx4pfsfs87558f4e7krk.avif" alt="AI资讯：FysicsWorld全模态评测体系架构"><br/></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>Claude代码生成引发职业大讨论。</strong>
-创始人称Claude包办<a href="https://newshacker.me/story?id=46410285">一个月代码(AI资讯)</a>😲。引发原创性与定责争论🗣️。工程师或转型架构师🏗️。审美与整体协同成关键。人类需驾驭AI而非被替🤝。</p></li><li><p><strong>2025年AI从幻想到现实落地。</strong>
-DeepSeek登顶Nature<a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652658534&idx=1&sn=267be37b21f40dc717b3ad8793274dc2">年度人物(AI资讯)</a>🏆。Meta豪赌两万亿基础设施💸。AGI祛魅而ASI初现端倪🤯。软技能比编程更重要🧠。人类必须居于AI核心🛡️。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtnfe9f4a8gr7zcyr6xm4z.avif" alt="AI资讯：2025年AI行业发展回顾"><br/></p></li><li><p><strong>英伟达200亿美金&quot;买”人才。</strong>
-以许可加雇佣<a href="https://newshacker.me/story?id=46403559">规避审查(AI资讯)</a>🤫。Groq核心技术被吸纳💸。员工权益分配引发争议🗣️。初创公司变现新路径。反垄断监管面临新挑战⚖️。</p></li></ol><h3>开源TOP项目</h3><ol><li><strong>vibe-kanban</strong>: 专为AI编程智能体设计的<a href="https://github.com/BloopAI/vibe-kanban">看板工具(AI资讯)</a>，可视化管理任务流(⭐7k)。</li><li><strong>Lean</strong>: 强大的算法交易引擎<a href="https://github.com/QuantConnect/Lean">Lean(AI资讯)</a>，支持Python与C#策略(⭐14.3k)。</li><li><strong>fresh</strong>: 极简且快速的终端<a href="https://github.com/sinelaw/fresh">文本编辑器(AI资讯)</a>，提升命令行开发效率(⭐3.6k)。</li></ol><h3>社媒分享</h3><ol><li><p><strong>会计用飞书AI造35个智能体。</strong>
-传统行业会计不懂<a href="https://x.com/frxiaobei/status/2005262286697423281">代码(AI资讯)</a>🙅‍♂️。用多维表格搭建自动化流。硬生生提升公司效率🚀。AI普惠真实落地案例💡。<br/><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdjtg49xe4raw7871ktn0gjc.avif" alt="AI资讯：普通会计利用AI提升效率"><br/></p></li><li><p><strong>Claude Code一个月提交259个PR。</strong>
-作者晒出<a href="https://x.com/dotey/status/2005069751920337194">惊人数据(AI资讯)</a>😲。近8万行代码变动📝。软件工程重心转向思考🧠。代码不再是开发瓶颈⛓️。</p></li><li><p><strong>Google额度转API神器Antigravity。</strong>
-将Google免费额度<a href="https://m.okjike.com/originalPosts/6950fd798dab01fe530bde91">转为API(AI资讯)</a>🛠️。支持Claude Code调用。让Agent实现自我升级🚀。白嫖党的高效工具💸。</p></li><li><p><strong>GLM 4.7被低估的质变时刻。</strong>
-智谱RLVR方法完全<a href="https://x.com/oran_ge/status/2005046496748863814">跑通(AI资讯)</a>🔥。突破蒸馏能力界限。开源模型盈利的里程碑💰。期待GLM 5.0表现👀。</p></li><li><p><strong>AI自媒体震惊体标题大赏。</strong>
-盘点那些<a href="https://m.okjike.com/originalPosts/69509a9a6951d9ad9ab54e19">吓人的标题(AI资讯)</a>😂。史诗级进化与彻夜狂欢🎭。实际产品往往一地鸡毛🐔。警惕营销焦虑陷阱🚫。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2025/12/29 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 AntV推新框架文字一键生成矢量信息图 特斯拉Robovan无方向盘座舱似移动客厅 首个物理世界全模态评测基准填补空白 Claude生成代码引热议开发转型架构师 会计用飞书搭建三十五个智能体实现提效 ]]></description>
         </item>
       
   </channel>
