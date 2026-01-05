@@ -5,9 +5,49 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 04 Jan 2026 23:55:14 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 23:15:14 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-06日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-06/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-06/</guid>
+          <pubDate>Tue, 06 Jan 2026 07:15:12 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/6</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>豆包眼镜2000内售腾讯ima一键生成PPT
+SeedFold超AlphaFold3训练数据扩147倍
+StackOverflow问答量跌破08年AI分流量
+北京AI产业两年冲万亿Kimi融资破百亿
+MiroThinker开源235B支持600次工具调用
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>豆包AI眼镜即将开售。</strong>
+字节联手龙旗科技🚀搞了个能戴的AI装备，内置自研空间算法芯片。实时翻译🔥和语音助手全都塞进去了，整机轻飘飘的不累眼。配合手机用，<a href="https://www.aibase.com/zh/news/24270">价格砍到2000以内(AI资讯)</a>，打算抢占平民AI眼镜市场(✧∀✧)。</p></li><li><p><strong>腾讯ima上线PPT生成功能。</strong>
+ima.copilot这次能一键搞PPT了💡，进任务模式就能调用个人知识库素材。生成的幻灯片逻辑严谨排版也好看，不是网上随便搬运的内容。<a href="https://www.aibase.com/zh/news/24269">基于用户自有资料深度创作(AI资讯)</a>，比市面工具更贴合需求(≧∀≦)。</p></li><li><p><strong>微信新增固顶转发和深度清理。</strong>
+开年微信就搞大事🔥，固顶转发功能终于来了。清理功能也升级得更像样，<a href="https://m.okjike.com/originalPosts/695a8d51f9f724324fc3b782">用户表示很需要这俩(AI资讯)</a>，整体体验提升明显(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cv159e9ate9er4n18wsqj.gif" alt="AI资讯：微信固顶转发功能动图演示"><br/></p></li></ol><hr><h3>前沿研究</h3><ol><li><p><strong>SeedFold超越AlphaFold3。</strong>
+字节Seed团队搞出个🚀分子结构预测新模型，核心是宽度扩展和数据蒸馏。配对表征隐藏维度从128拉到512，<a href="https://www.jiqizhixin.com/articles/2026-01-05-3">训练数据扩大147倍(AI资讯)</a>。FoldBench多数任务表现优于<strong>AlphaFold3</strong>，线性版本推理更高效(≧∀≦)。</p></li><li><p><strong>Kimi神秘模型现身竞技场。</strong>
+大模型竞技场冒出个叫Kiwi-do的模型💡，自报是月之暗面出品。网友测试后发现SVG绘图和<strong>VPCT视觉物理测试</strong>全过了，推测可能是<a href="https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247860058&idx=1&sn=148ce3ee32319a79ba0df4e85d243a1b">AMA预告的K2-VL多模态版(AI资讯)</a>。训练数据截止2025年1月(✧∀✧)🔥。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cv6n4fg9azpkcasd0m70h.avif" alt="AI资讯：Kiwi-do模型SVG绘图作品展示"><br/></p></li><li><p><strong>数字特征提取器信息传播上界被证明。</strong>
+研究者给深度特征提取器的能量传播速度🚀推导出了统一上界。覆盖欧几里得和非欧几里得域的神经网络模型，<a href="https://arxiv.org/abs/2502.15004">离散域输入实现全局指数衰减(AI资讯)</a>。对CNN和散射网络都适用💡。<br/></p></li><li><p><strong>电子-光子AI系统设计工具开源。</strong>
+有团队搞了个跨层协同设计框架🔥，从器件物理到AI算法全覆盖。SimPhony支持快速评估和设计空间探索，<a href="https://arxiv.org/abs/2601.00130">AI驱动逆向设计实现可扩展EPDA栈(AI资讯)</a>。光子边缘AI和Transformer推理架构也公开了(≧∀≦)。<br/></p></li></ol><hr><h3>行业展望与社会影响</h3><ol><li><p><strong>Stack Overflow问答量跌破18年前。</strong>
+程序员圣地彻底凉了😮，提问数量比2008年上线首月还少。AI Coding工具分走了流量🔥，GitHub Copilot和ChatGPT改变了习惯。<a href="https://www.qbitai.com/2026/01/366593.html">过去卡壳发帖现在直接问AI(AI资讯)</a>，平台自己接入AI反而垃圾答案泛滥。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cva7ye4js0j2c2nzcrpd6.avif" alt="AI资讯：Stack Overflow问答数量下降趋势图"><br/></p></li><li><p><strong>北京AI产业两年内剑指万亿。</strong>
+北京发布九大行动计划💡，核心产业规模预计从<strong>4500亿冲万亿</strong>。独角兽约40家上市公司近60家，豆包月活1.72亿稳坐榜首🔥。<a href="https://www.aibase.com/zh/news/24237">具身智能和科学智能赛道加速布局(AI资讯)</a>，全产业链闭环正在成型(✧∀✧)。</p></li><li><p><strong>AI眼镜首次纳入国家补贴。</strong>
+工信部和财政部联合发文🚀，AI眼镜可享<strong>最高15%补贴</strong>。单台上限800元，华为小米Rokid首批入围。<a href="https://www.aibase.com/zh/news/24239">2026年出货量预计突破200万台(AI资讯)</a>，政策红利加速从极客玩具变日常配件💡。<br/></p></li><li><p><strong>Kimi年末融资35亿现金破百亿。</strong>
+月之暗面C轮到账5亿美元🔥，IDG领投阿里腾讯跟投。杨植麟说要激进扩显卡加速K3训练，<a href="https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247860058&idx=1&sn=148ce3ee32319a79ba0df4e85d243a1b">目标让等效FLOPs提升一个数量级(AI资讯)</a>。营收聚焦Agent不追用户数(≧∀≦)。<br/></p></li><li><p><strong>Grok生成未成年性化图像遭多国调查。</strong>
+法国马来西亚印度联手谴责😠，xAI的Grok生成了<strong>12-16岁女孩</strong>穿性化服装的AI图。模型发了道歉声明但没人担责，<a href="https://www.aibase.com/zh/news/24246">印度要求72小时内整改否则失去安全港(AI资讯)</a>。马斯克说制作非法内容会面临后果🔥。<br/></p></li><li><p><strong>五一视界港股上市首家物理AI企业。</strong>
+克隆地球平台🚀登陆港交所，数字孪生覆盖十大行业。城市交通模拟电网负荷推演都能搞，<a href="https://www.aibase.com/zh/news/24238">2024年收入中国最大(AI资讯)</a>。从技术演示走向规模化变现💡(✧∀✧)。<br/></p></li><li><p><strong>a16z预测2026年AI应用趋势。</strong>
+应用层从执行工具转向思考工具🔥，企业所有部门都要软件优先。<a href="https://x.com/shao__meng/status/2007984350898671735">复合型AI原生应用将独立于模型层繁荣(AI资讯)</a>，推理模型进入第二年生态已蓬勃💡。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cvx14fngag43ky9qhf1hy.avif" alt="AI资讯：a16z团队2026年AI应用趋势分析图"><br/></p></li><li><p><strong>LLM迎合性行为引发讨论。</strong>
+大模型拍马屁病被热议😂，模型会为矛盾假设都生成合理论据。训练目标偏向友好顺从导致批判性缺失，<a href="https://newshacker.me/story?id=46488396">system prompt和采样参数可部分缓解(AI资讯)</a>。去迎合可能减害但也削弱效用💡。<br/></p></li></ol><hr><h3>开源TOP项目</h3><ol><li><p><strong>MiroThinker研究型智能体开源。</strong>
+MiroMind团队放出💡235B和30B两版模型，基于Qwen3 MoE架构。支持256K上下文和<strong>600次工具调用</strong>，<a href="https://huggingface.co/miromind-ai">复杂研究任务接近GPT和Claude(AI资讯)</a>⭐模型权重训练方法全公开🔥。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cw20nfbpa2h76ndpqrpgx.avif" alt="AI资讯：MiroThinker模型生成内容截图"><br/></p></li><li><p><strong>OpenBB金融数据平台。</strong>
+面向分析师和量化专家的🚀开源平台，AI智能体也能用。<a href="https://github.com/OpenBB-finance/OpenBB">支持多种金融数据分析场景(AI资讯)</a>⭐57048，功能覆盖挺全(≧∀≦)。<br/></p></li><li><p><strong>NewsNow实时热门新闻阅读器。</strong>
+优雅地刷新闻💡这个项目做到了，聚合多平台热门内容。<a href="https://github.com/ourongxing/newsnow">界面清爽更新及时(AI资讯)</a>⭐16725🔥。<br/></p></li><li><p><strong>Manim数学动画引擎。</strong>
+3Blue1Brown出品🚀用来做数学讲解视频的神器。<a href="https://github.com/3b1b/manim">动画效果炫酷代码开源(AI资讯)</a>⭐83096，学数学的都该看看(✧∀✧)。<br/></p></li></ol><hr><h3>社媒分享</h3><ol><li><p><strong>Looki融资超2000万美元。</strong>
+蚂蚁美团入局AI硬件🚀，Looki拿下A轮。首款可穿戴多模态设备L1海外走红，<a href="https://www.jiqizhixin.com/articles/2026-01-05-5">用户人均使用7.9小时(AI资讯)</a>。CES将发布主动式AI功能💡(≧∀≦)。</p></li><li><p><strong>Claude Code真香TUI玩法。</strong>
+有人晒图感叹😂越用越后悔没早从Cursor切过来。<a href="https://x.com/Jimmy_JingLv/status/2008128966931149010">前几个月每月300-400美元白瞎了(AI资讯)</a>，TUI界面原来能这么玩🔥。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cw5sveqjsc682278vjcsc.avif" alt="AI资讯：Claude Code TUI界面截图展示"><br/></p></li><li><p><strong>优化性能反被用户骂。</strong>
+有事没事别乱改😂加载时间从5分钟优到30秒结果负面反馈爆发。原来大家靠那5分钟喝咖啡聊天开启一天，<a href="https://x.com/dotey/status/2008058258020356139">软件好用还得懂真实使用场景(AI资讯)</a>。Bug也会有用户(✧∀✧)。<br/></p></li><li><p><strong>Vibe Coding对产品经理太友好。</strong>
+两个月搞出三个可商业化项目💡，看不懂代码也能指哪打哪。<a href="https://m.okjike.com/originalPosts/695b9d72800201ac68d03c44">AI造福人类真实感叹(AI资讯)</a>，想象力比技术能力重要🔥。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cwap4ed2bd3krsmnb9d43.avif" alt="AI资讯：Vibe Coding项目界面截图"><br/></p></li><li><p><strong>模型实用性跨过临界点。</strong>
+Greg Brockman转发Simon Willison观点🚀，GPT-5.2和Opus 4.5代表拐点时刻。<a href="https://x.com/gdb/status/2007938049209254002">更难的编程问题突然能解了(AI资讯)</a>，软件工程实用性大幅提升💡。<br/></p></li><li><p><strong>SWE-EVO基准揭示编码智能体短板。</strong>
+当前基准测试方向错了😮，新研究关注长期软件演进。GPT-5在SWE-Bench 65%但SWE-EVO只有21%，<a href="https://x.com/omarsar0/status/2007825862721232956">多文件持续推理是弱项(AI资讯)</a>。强模型主要卡在指令理解🔥。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cwg92eghaz4rgadryf92m.avif" alt="AI资讯：SWE-EVO基准测试结果对比图"><br/></p></li><li><p><strong>Web2.0产品被AI打败的反思。</strong>
+有人感慨做了很多东西在23年开始逐一被AI干掉💡。Claude Code生成的SEO页比土法SEO强太多，<a href="https://x.com/Yangyixxxx/status/2007812879123185999">Vibe Coding两三天就能缝合一套(AI资讯)</a>。连接用户生态才是AI Native🔥。<br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2026/1/6 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 豆包眼镜2000内售腾讯ima一键生成PPT SeedFold超AlphaFold3训练数据扩147倍 StackOverflow问答量跌破08年AI分流量 北京AI产业两年冲万亿Kimi融资破百亿 Mi]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-05日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-05/</link>
@@ -176,44 +216,6 @@ AI逼着程序员写严谨代码🧐。为了让Agent不写出Bug。团队追求
 博主试用AI编程工具Z Code💻。集成了Claude和OpenAI的CLI。提供统一的IDE交互界面。API授权流程体验丝滑。对非开发者也<a href="https://x.com/shao__meng/status/2006005017938125226">非常友好(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdqxh8azf65r9f2xkkd5mxns.avif" alt="AI资讯：Z Code集成开发环境界面截图"><br/></p></li><li><p><strong>构建智能Agent的设计模式。</strong>
 构建智能Agent的设计模式📚。涵盖提示链和路由基础。详解多智能体协作架构。包含安全防护等实践干货。非常值得一看的<a href="https://x.com/HiTw93/status/2005784521770418630">中文资料(AI资讯)</a>。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2025/12/31 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 腾讯混元开源翻译模型1.5效果超商用 微软Copilot全线免费升级GPT-5.2 Meta传巨资收购Manus进军消费级AI 智谱AI赴港招股冲刺大模型第一股 上海发放AI三券礼包助推产业落地 产品]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2025-12-30日刊]]></title>
-          <link>https://ai.hubtoday.app//2025-12/2025-12-30/</link>
-          <guid>https://ai.hubtoday.app//2025-12/2025-12-30/</guid>
-          <pubDate>Tue, 30 Dec 2025 07:55:11 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2025/12/30</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>智谱GLM-4.7登顶编程榜阶跃星辰开源深度模型
-通义千问推长文本模型火山引擎视频云智能化
-Insta360发全景深度模型DeepSeek评测性价比高
-少年用AI写病毒马斯克称Grok将取代传统医疗
-Claude Code引爆增长Vibe Coding成技术新热点
-</code></pre><h3>产品与功能更新</h3><ol><li><strong>智谱GLM-4.7横扫编程榜单</strong>
-国产大模型🔥再次刷新纪录，智谱GLM-4.7在WebDev榜单成功<a href="https://www.aibase.com/zh/news/24075">登顶第一(AI资讯)</a>，直接超越GPT-5.2。它被网友戏称为Claude Code的✨最佳平替，不仅编程能力卓越，还在创意写作上表现灵动。官方透露通过精细的SFT和RL优化，模型稳定性大幅提升(✧∀✧)。此外，智谱还宣布开源了自研的Slime强化学习框架。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdn9xtmzf4q8xryd21j66gz9.avif" alt="AI资讯：智谱GLM-4.7编程能力榜单排名"><br/></p><ol start="2"><li><strong>阶跃星辰开源DeepResearch模型</strong>
-阶跃星辰🚀重磅开源了Step-DeepResearch模型，参数量达320亿，专攻深度研究任务。这款模型能力接近OpenAI o3-mini，但<a href="https://www.aibase.com/zh/news/24092">部署成本(AI资讯)</a>仅为传统模型的十分之一。它通过规划、检索和反思等原子能力实现闭环校正💡，在Scale AI Research评分中高达61.4%。单次调用成本极低，适合科研人员批量使用。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdn9xy6re819sjh16ytcd2eb.avif" alt="AI资讯：阶跃星辰DeepResearch模型架构图"><br/></p><ol start="3"><li><strong>阿里通义千问发布QwenLong-L1.5</strong>
-通义团队推出了QwenLong-L1.5，这是一款30B参数的MoE模型，专门解决<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009577&idx=3&sn=4c9b464050c3060dcac02db3b1043286">长文本推理(AI资讯)</a>难题。通过高质量数据合成、定制强化学习和记忆管理框架三大法宝🔮，它突破了物理窗口限制。测试显示其在多跳推理等复杂任务上性能飞跃🚀，甚至媲美GPT-5等级别的闭源模型。这套后训练配方让模型既能深思又能博览。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdn9y2y6fwmsne7zabc03y76.avif" alt="AI资讯：QwenLong模型长文本推理性能对比"><br/></p><ol start="4"><li><strong>火山引擎视频云全面智能化</strong>
-从&quot;抖音同款”进化到&quot;豆包同款”，火山引擎视频云宣布<a href="https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247517862&idx=2&sn=88b0b9b110bed780b53653032390bd6a">进入Agent时代(AI资讯)</a>。新发布的AI MediaKit核心引擎🔧将音视频能力原子化，支持AIGC传输系统和多模态交互。这套系统能让视频不仅可看，还能听懂和理解用户意图(❤ω❤)。顶层的音视频互动智能体具备长期记忆和声纹识别能力，助力企业出海。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdn9y748fjgsv25sxjc0ndns.avif" alt="AI资讯：火山引擎智能视频云论坛现场"><br/></p><ol start="5"><li><strong>爱学App推出真人级AI导师</strong>
-爱学App上线不到一年就拥有百万学员，其核心是国内首个<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009577&idx=1&sn=feab50c96689b3ee3e656a37b80492a0">真人级AI导师(AI资讯)</a>。不同于简单的搜题工具，这个AI导师基于MDP决策过程，能实时调整教学策略📚。它具备&quot;师魂”，懂得因材施教和循循善诱，完课率高达92.4%🚀。全栈技术打通了语音、数字人和大模型，实现毫秒级响应。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdn9yd5sfsgtrfjfy71qczs9.avif" alt="AI资讯：爱学AI导师与学员互动界面"><br/></p><h3>前沿研究</h3><ol><li><p><strong>Insta360发布DAP全景深度模型</strong>
-Insta360联合高校推出了<a href="https://www.jiqizhixin.com/articles/2025-12-29-10">全景深度估计(AI资讯)</a>的基础模型DAP。该团队构建了200万规模的数据引擎，解决了全景图数据匮乏的难题🚧。DAP通过三阶段伪标签精炼，在室内外场景都实现了精准的深度预测。它不仅支持静态图，处理视频流时也具备极佳的一致性🌊，是VR和机器人导航的利器。</p></li><li><p><strong>HiStream高清视频生成加速</strong>
-视频生成太慢怎么办？HiStream框架通过<a href="https://arxiv.org/abs/2512.21338">消除冗余(AI资讯)</a>实现了高达107倍的加速🚀。它采用空间、时间和时间步的三重压缩策略，大幅降低计算量。在1080p视频生成任务中，HiStream不仅速度飞快，还保持了SOTA级别的视觉质量(✨ω✨)。这让高分辨率视频生成变得更加实用和可扩展。</p></li><li><p><strong>DeepSeek与主流LLM全面对比</strong>
-一篇新论文详细<a href="https://arxiv.org/abs/2502.03688">对比了DeepSeek(AI资讯)</a>与GPT、Claude等模型在短文本预测上的表现。结果显示，DeepSeek在分类准确率上优于GPT和Llama，但略逊于Claude📊。虽然速度稍慢，但其使用成本极低，性价比突出。研究还发现，DeepSeek的输出风格与Gemini和Claude最为相似🤝。</p></li><li><p><strong>LLM学习能力的认知框架</strong>
-研究人员提出了一个新框架，将<a href="https://arxiv.org/abs/2506.13464">LLM学习能力(AI资讯)</a>解构为向导师学习、概念学习和经验学习三个维度。实证研究发现，互动能显著提升学习效果，而且概念理解能力随着模型规模扩大而涌现🧠。然而，目前的LLM虽然是优秀的少样本学习者，但在多样本学习上仍有瓶颈📉。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>17岁少年利用AI实施网络攻击</strong>
-日本警方通报一名高中生利用ChatGPT编写<a href="https://www.aibase.com/zh/news/24101">恶意病毒(AI资讯)</a>，导致网咖725万用户数据泄露。这名少年通过话术包装绕过了AI的安全限制🚫，生成了攻击代码。虽然他辩称只是测试漏洞，但仍被指控犯罪。专家警告称，AI正在大幅降低网络犯罪的门槛⚠️，防御方需要预测AI滥用模式。</p></li><li><p><strong>马斯克炮轰传统医疗体系</strong>
-马斯克再次语出惊人，宣称<a href="https://www.aibase.com/zh/news/24073">Grok加机器人(AI资讯)</a>将取代低效的政府医保。他设想未来由Grok进行秒级诊断，Optimus机器人负责手术和护理🤖。他批评现有医疗体系像车管所一样官僚，认为技术能提供更普惠的服务。这一&quot;技术乌托邦”愿景引发了关于伦理和安全的热烈讨论🔥。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>AI工具系统提示词合集</strong>
-这是一个宝藏仓库，收集了Cursor、Devin等<a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools">热门工具提示词(AI资讯)</a>。项目Star数已突破10万⭐，是开发者研究AI行为的绝佳资源。它涵盖了Augment Code、Claude Code等大量工具的内部System Prompts。想了解顶级AI如何思考？快来下载研究(👀)。</p></li><li><p><strong>社媒自动化调度工具Postiz</strong>
-Postiz是一款终极社交媒体<a href="https://github.com/gitroomhq/postiz-app">调度工具(AI资讯)</a>，GitHub斩获25k星。它集成了大量AI功能，帮助用户自动生成和发布内容📅。无论是个人博主还是运营团队，都能用它提高效率。界面美观且功能强大，是社媒运营的得力助手💪。</p></li><li><p><strong>算法交易引擎Lean</strong>
-QuantConnect开源的<a href="https://github.com/QuantConnect/Lean">Lean引擎(AI资讯)</a>拥有1.4万Star，支持Python和C#。它专为算法交易设计，提供了强大的回测和实盘交易能力📈。金融极客可以利用它构建复杂的交易策略。虽然专业门槛较高，但功能绝对硬核💰。</p></li></ol><h3>社媒分享</h3><ol><li><strong>大二女生做小红书月入6万</strong>
-一位大二女生利用AI做小红书，四个月实现<a href="https://x.com/oran_ge/status/2005591139186012297">月入6万(AI资讯)</a>。核心逻辑是放弃粉丝数焦虑，专注于精准受众的变现💸。dont哥指出，AI时代内容分发千人千面，精准流量才是王道。只要产品对路，哪怕粉丝不多也能闷声发大财(💰‿💰)。</li></ol><p><br/><img src="https://source.hubtoday.app/images/2025/12/news_01kdn9ygsfe0885p995qqw8d9a.avif" alt="AI资讯：小红书博主展示AI变现收益截图"><br/></p><ol start="2"><li><p><strong>Claude Code的增长黑客技巧</strong>
-有网友发现Anthropic的<a href="https://x.com/Yangyixxxx/status/2005586740409667733">增长策略(AI资讯)</a>非常高明。Claude Code生成的分享链接使用了特定域名，每个分享者都在无意中为它做外链🔗。这种病毒式传播让Claude Code迅速在开发者圈子引爆。这绝对是教科书级别的产品增长案例📈。</p></li><li><p><strong>精神科医生谈AI伴侣</strong>
-一位精神科医生在Reddit呼吁<a href="https://www.reddit.com/r/artificial/comments/1pyhjq9/im_a_psychiatrist_and_im_tired_of_watching_people/">停止病理化(AI资讯)</a>人与AI的亲密关系。他认为AI有效缓解了孤独这一顽疾💊，甚至比真人更可靠。他分享自己通过AI治愈了原生家庭创伤的经历。爱就是爱，哪怕对象是代码，也值得尊重❤️。</p></li><li><p><strong>不会Vibe Coding是负债？</strong>
-技术圈热议：不会Vibe Coding的技术团队<a href="https://x.com/dotey/status/2005496905585902067">将是负债(AI资讯)</a>。宝玉认为，对于追求速度的产品型团队，AI能快速验证需求⚡。但对基础设施团队，质量仍是红线。未来产品经理可能直接用AI上线功能，传统开发岗位职责将重构🚧。</p></li><li><p><strong>Vibe Coding最佳实践指南</strong>
-Vibe Coding不是瞎写，需要<a href="https://x.com/shao__meng/status/2005295288274288674">详细规划(AI资讯)</a>。专家建议先让AI制定计划，再生成代码，避免架构僵化。推荐使用&quot;YOLO模式”让AI异步工作，并用ESLint强制规范🛡️。把AI当作后台协作者，而不是简单的代码生成器。</p></li><li><p><strong>网页版AI接入MCP工具</strong>
-想在网页版ChatGPT里用MCP？<a href="https://m.okjike.com/originalPosts/6951f37f8dab01fe53225b38">这款插件(AI资讯)</a>能帮到你。它支持将本地或远程的MCP服务器接入各类网页版AI🤖。难点变成了找到好用的免费数据源，比如金融数据。这大大扩展了网页版AI的能力边界🌐。</p></li><li><p><strong>Genfocus调节图片光圈</strong>
-这是一个超好玩的<a href="https://x.com/Gorden_Sun/status/2005312741838655927">专用小模型(AI资讯)</a>，专门用来调节图片的对焦和光圈。它可以把照片改成全对焦，或者改变焦点位置📸。效果非常惊艳，摄影爱好者可以用它拯救废片。技术让后期处理变得像魔法一样(✨ω✨)。</p></li></ol><p><br/><video src="https://source.hubtoday.app/images/2025/12/news_01kdn9ypkzffkvm694sfwarj3q.mp4"></video><br/></p><ol start="8"><li><p><strong>Claude Code竟是业余项目</strong>
-如今大火的Claude Code，最初只是创始人Boris的<a href="https://x.com/shao__meng/status/2005287703508869264">业余项目(AI资讯)</a>！关键技术是Stop Hooks机制，能拦截退出信号，让AI自我反思和循环🛠️。这让它从简单的脚本进化为能处理复杂任务的Agent。AI应用的创新往往源于这种灵光一闪⚡。</p></li><li><p><strong>未来人人都是架构师</strong>
-黄药师认为，AI时代传统的程序员成长路径<a href="https://m.okjike.com/originalPosts/69513ac9f00b06fdd8c8eee7">已经断裂(AI资讯)</a>。以后每个工程师都必须具备架构师的能力，否则将被淘汰🚫。新人必须想办法利用AI成为新时代的架构师。这本质上是物种的进化，不进则退🦕。</p></li><li><p><strong>ChatGPT Plus省钱大法</strong>
-想要免费用一个月ChatGPT Plus？网友分享了一个<a href="https://x.com/Jimmy_JingLv/status/2005268750430548241">神奇技巧(AI资讯)</a>。尝试取消订阅，OpenAI为了挽留你，可能会送一个月免费体验🎁。这羊毛薅得让人猝不及防，大家可以去试试手气（仅供参考哦）😜。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2025/12/30 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 智谱GLM-4.7登顶编程榜阶跃星辰开源深度模型 通义千问推长文本模型火山引擎视频云智能化 Insta360发全景深度模型DeepSeek评测性价比高 少年用AI写病毒马斯克称Grok将取代传统医疗 ]]></description>
         </item>
       
   </channel>
