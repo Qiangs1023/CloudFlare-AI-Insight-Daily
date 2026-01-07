@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 07 Jan 2026 23:15:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 23:55:12 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2026-01-08日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-08/</link>
           <guid>https://ai.hubtoday.app//2026-01/2026-01-08/</guid>
-          <pubDate>Thu, 08 Jan 2026 07:15:37 GMT</pubDate>
+          <pubDate>Thu, 08 Jan 2026 07:55:11 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/8</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Claude桌面端集成Code功能支持多任务并行开发
 Cursor动态上下文发现模式token消耗降47%
 雷蛇CES发布Grok驱动全息AI伴侣Project Ava
