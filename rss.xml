@@ -5,9 +5,42 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 06 Jan 2026 23:55:12 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 23:15:38 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-08日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-08/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-08/</guid>
+          <pubDate>Thu, 08 Jan 2026 07:15:37 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/8</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Claude桌面端集成Code功能支持多任务并行开发
+Cursor动态上下文发现模式token消耗降47%
+雷蛇CES发布Grok驱动全息AI伴侣Project Ava
+Liquid AI推出边缘端LFM2.5小模型家族开源
+吴恩达提出图灵AGI测试评估远程工作能力
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>Claude桌面端现已支持本地Claude Code。</strong>
+不想用终端命令行的开发者🎉有福了！现在直接在<a href="https://claude.ai/download">Claude Desktop(AI资讯)</a>里就能本地使用Claude Code，图形界面操作。打开侧边栏&quot;Code&quot;开关，选个文件夹授权，就能让Claude帮你写代码改项目(✧∀✧)。还支持<strong>多任务并行</strong>，多个会话互不干扰，像开了两个分支同时开发。企业用户也有权限管控，安全放心。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kechshz0f1at9a6fahbmve5f.avif" alt="AI资讯：Claude桌面端Code功能开关界面"><br/></p></li><li><p><strong>Cursor发布动态上下文发现模式。</strong>
+传统AI助手把所有信息一股脑塞进提示框，token消耗暴涨💸。Cursor反其道行之，Agent只在需要时动态拉取上下文，保持提示简洁。<a href="https://cursor.com/blog/dynamic-context-discovery">官方博客(AI资讯)</a>显示，使用MCP工具时token消耗<strong>平均降低46.9%</strong>。聊天历史太长？转成文件让Agent搜索(´▽`)，再也不怕丢细节。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kechsqn8fjrsmnrxyza86ehp.avif" alt="AI资讯：Cursor动态上下文发现架构图"><br/></p></li><li><p><strong>雷蛇CES发布全息AI桌面伴侣Project Ava。</strong>
+5.5英寸全息胶囊里装着🔥二次元少女，还能看你屏幕看你人。雷蛇在<a href="https://www.jiqizhixin.com/articles/2026-01-07-12">CES 2026(AI资讯)</a>展出这款AI伴侣，由<strong>马斯克xAI的Grok驱动</strong>。目前有5种形象可选，包括二次元少女Kira和肌肉型男Zane。预定只要20美元，官方豪言要卖<strong>十亿台</strong>。不过Grok那种&quot;调情&quot;风格也一并继承了(눈_눈)。</p></li><li><p><strong>Liquid AI发布LFM2.5边缘端小模型家族。</strong>
+专为边缘设备和本地部署打造💡，1.2B参数却在GPQA上达到<strong>38.89分</strong>。<a href="https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai">开源权重(AI资讯)</a>已发布在Hugging Face。还有日语特化版、视觉语言版和音频语言版，音频模型的反tokenizer速度比之前快<strong>8倍</strong>，适合实时语音对话。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kechsyx9eyhvmb7890y28cwx.avif" alt="AI资讯：LFM2.5模型性能基准对比图"><br/></p></li></ol><h3>前沿研究</h3><ol><li><p><strong>VTONQA：首个虚拟试穿质量评估数据集发布。</strong>
+网购试穿图经常变形走样😅，现在有了专门的评估标准。<a href="https://arxiv.org/abs/2601.02945">arXiv论文(AI资讯)</a>显示，数据集包含<strong>8132张</strong>由11个试穿模型生成的图片，从服装贴合度、身体兼容性、整体质量三个维度打分。揭示了现有模型的局限性，为开发者指明方向。</p></li><li><p><strong>CodeEvolve：开源进化式代码生成框架。</strong>
+把大模型和进化搜索结合起来🧬合成高性能算法。<a href="https://github.com/inter-co/science-codeevolve">GitHub开源(AI资讯)</a>显示，在AlphaEvolve的基准测试中表现更优。开源模型居然能匹敌闭源方案，而且<strong>算力成本只是零头</strong>。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>吴恩达提出&quot;图灵-AGI测试&quot;新标准。</strong>
+新年第一推🎊没预测AI多厉害，反而在问怎么判断AGI来没来。<a href="https://x.com/dotey/status/2008709530654216567">吴恩达推文(AI资讯)</a>提出：给AI一台能上网的电脑，让它像远程员工一样连续工作几天，接受培训、处理客户、接收反馈。能做得和熟练员工一样好就算通过。经典图灵测试最有效的居然是<strong>故意打错别字</strong>(눈‸눈)。</p></li><li><p><strong>英伟达发布Vera Rubin平台。</strong>
+CES上放大招🚀，训练10万亿参数模型只需Blackwell<strong>四分之一</strong>的芯片数量，时间缩短到一个月。<a href="https://x.com/vista8/status/2008876426255270106">推理成本(AI资讯)</a>直接降到十分之一，计划下半年发货。</p></li><li><p><strong>Reddit万赞帖被证实AI伪造。</strong>
+一篇指控外卖平台欺诈的爆料帖获得<strong>8.7万点赞</strong>，结果是AI编的。<a href="https://www.aibase.com/zh/news/24336">AIbase报道(AI资讯)</a>显示，所谓&quot;员工证&quot;和18页&quot;技术文档&quot;都有AI痕迹。有趣的是🔍，识破骗局的也是AI——用谷歌Gemini的SynthID水印技术。</p></li><li><p><strong>AI渗透测试Agent表现亮眼但有局限。</strong>
+斯坦福研究显示AI渗透bot成本不到**$60/小时**，击败了9/10的人类测试员。但<a href="https://newshacker.me/story?id=46518996">HackerNews讨论(AI资讯)</a>指出约18%是误报，还漏掉了明显漏洞。网络渗透已高度自动化，但应用层测试仍需人工判断(´-ω-`)。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>googletest：谷歌测试框架。</strong>
+C++测试和模拟框架的业界标准⭐<strong>37.7k</strong>，<a href="https://github.com/google/googletest">GitHub仓库(AI资讯)</a>持续更新中。写单元测试的老朋友了，稳定可靠。</p></li><li><p><strong>ebook2audiobook：电子书转有声书工具。</strong>
+支持语音克隆和<strong>1158+种语言</strong>🎧！<a href="https://github.com/DrewThomasson/ebook2audiobook">项目地址(AI资讯)</a>已获⭐<strong>16.6k</strong>，把你的电子书变成有声读物不是梦。</p></li><li><p><strong>MiroThinker：开源搜索Agent系列。</strong>
+专注工具增强推理和信息检索🔎，<a href="https://github.com/MiroMindAI/MiroThinker">GitHub仓库(AI资讯)</a>目前⭐<strong>2.5k</strong>。让Agent更会用工具更会搜信息。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>跟着Anthropic学Agent Skills构建。</strong>
+@shao__meng总结了<a href="https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills">官方博客(AI资讯)</a>的精华：名字用动名词如processing-pdfs，描述用第三人称💡。关键原则是&quot;只提供Claude不知道的信息&quot;，Token是昂贵资源！验证循环也很重要，让Claude执行前先拷贝清单打勾(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kecht5gge5sv6d66bbdqaqj4.avif" alt="AI资讯：Agent Skills构建最佳实践指南"><br/></p></li><li><p><strong>ByteRover给AI编码Agent加长期记忆。</strong>
+一行代码解决Agent跨会话丢失上下文的问题🧠。<a href="https://x.com/shao__meng/status/2008902572648874334">详细教程(AI资讯)</a>显示，支持Cursor、Claude Code、Codex等几乎所有AI编码工具。像Git一样push和pull上下文，团队共享无障碍。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kecht9hkfwwr56wm1q5x960p.avif" alt="AI资讯：ByteRover长期记忆配置界面"><br/></p></li><li><p><strong>LTX-2开源版Veo3视频模型发布。</strong>
+19B参数能同时生成视频和音频🎬！<a href="https://huggingface.co/Lightricks/LTX-2">Hugging Face模型(AI资讯)</a>已上线，支持文生视频和图生视频。还有<a href="https://ltx.io/model/model-blog/prompting-guide-for-ltx-2">提示词指南(AI资讯)</a>帮你写出好效果。<br/><video src="https://source.hubtoday.app/images/2026/01/news_01kechtqtfedbsgt3evby09mz4.mp4" controls="controls" width="100%"></video><br/></p></li><li><p><strong>X对普通会员开放长文权限。</strong>
+橘子老师的Claude Code教程轻松<strong>200多万阅读</strong>📈让人心动！<a href="https://x.com/Jimmy_JingLv/status/2008834754301636746">JimmyLv分享(AI资讯)</a>说配合Typeless语音输入法，每天输出根本停不下来。</p></li><li><p><strong>2026通用赚钱方法论。</strong>
+@Yangyixxxx提出<a href="https://x.com/Yangyixxxx/status/2008733816119251101">三步法(AI资讯)</a>：找高质量信息源→让AI分析总结→形成知识库反哺AI🔄。让AI学习的同时自己也学习，就能获得拥有专家Knowhow的AI。</p></li><li><p><strong>罗技鼠标驱动证书过期翻车。</strong>
+跟英雄联盟一样的坑😅！<a href="https://x.com/op7418/status/2008748491217268949">解决方法(AI资讯)</a>：把日期改成昨天，启动调好再关掉，最后改回来。罗技这么长时间都没修复，真服了。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kechtwmjefdvy992x948qqqw.avif" alt="AI资讯：罗技驱动证书过期错误提示"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2026/1/8 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 Claude桌面端集成Code功能支持多任务并行开发 Cursor动态上下文发现模式token消耗降47% 雷蛇CES发布Grok驱动全息AI伴侣Project Ava Liquid AI推出边缘端LFM]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-07日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-07/</link>
@@ -184,41 +217,6 @@ Reddit正被<a href="https://www.reddit.com/r/artificial/comments/1q0qcmh/its_ha
 别盲目迷信Manus的<a href="https://m.okjike.com/originalPosts/6956440f8dab01fe5390c20a">成功学(AI资讯)</a>。这种特殊案例难以📝复制。创业更多是坚持加🍀偶然突变。应该关注其被收购的💰影响。</p></li><li><p><strong>Qwen上位与MCP新架构。</strong>
 Qwen正在接过Llama的👑权杖。MCP协议成为新的<a href="https://x.com/frxiaobei/status/2006425000958693397">AI入口(AI资讯)</a>。便宜可靠的架构🏗️战胜暴力美学。系统化智能时代⏰将来临。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2026/1/2 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 Nerd语言专供机器读写，视频生成实现时空解耦 特斯拉FSD横穿美国零接管，端到端技术大胜利 谷歌DeepMind合体逆袭，Gemini重夺行业高地 Memos笔记开源支持自托管，LEANN优化RAG存储]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-01-01日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-01/2026-01-01/</link>
-          <guid>https://ai.hubtoday.app//2026-01/2026-01-01/</guid>
-          <pubDate>Thu, 01 Jan 2026 07:55:12 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/1</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>小米MiMo公测延至2026年用户免费用
-月之暗面获五亿美元融资现金超百亿
-软银注资OpenAI四百亿美元持股一成
-罗永浩发布AI讲书应用且听深度解读
-腾讯开源十亿参数3D动作生成模型
-</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>小米MiMo公测延期至2026年。</strong>
-小米宣布<a href="https://www.aibase.com/zh/news/24177">MiMo公测(AI资讯)</a>将延期至2026年。用户可继续🎉免费体验3090亿参数模型。官方计划在公测结束前上线<strong>支付系统</strong>。API定价为国内输入每百万token0.7元。这显示了小米对<a href="https://www.aibase.com/zh/news/24177">AI资讯技术</a>的坚定信心。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdtjcktyecrv6055h9xm6pwm.avif" alt="AI资讯：小米MiMo模型公测延期公告说明图"><br/></p></li><li><p><strong>涂鸦智能推出Hey Tuya生活助手。</strong>
-涂鸦智能推出🏠操作系统级<a href="https://www.qbitai.com/2025/12/366334.html">AI助手(AI资讯)</a>。&quot;Hey Tuya&quot;能深度协同全屋<strong>智能硬件</strong>。它支持用户像搭积木般🧱DIY场景。不仅能管家安防，还能做会议纪要。目前该功能正开启<a href="https://www.qbitai.com/2025/12/366334.html">Beta测试(AI资讯)</a>。</p></li><li><p><strong>罗永浩发布AI讲书App且听。</strong>
-罗永浩发布🎙️自研<a href="https://www.aibase.com/zh/news/24157">AI产品(AI资讯)</a>&quot;且听”。这款APP主打书籍的<strong>深度语音讲解</strong>。单本解读时长达1至2小时。年费仅37.8元，价格💰极具竞争力。用户还能定制脱口秀演员的<a href="https://www.aibase.com/zh/news/24157">语音模型(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdtjcs2mey09104yv1apn2nb.avif" alt="AI资讯：罗永浩发布且听App的界面截图"><br/></p></li><li><p><strong>夸克AI眼镜迎来首次OTA升级。</strong>
-夸克AI眼镜迎来👓首次<a href="https://www.aibase.com/zh/news/24169">OTA升级(AI资讯)</a>。新功能包含实用的<strong>图文备忘录</strong>。它能同时理解导航与音乐🎵等复合指令。翻译能力已覆盖89种语言。用户通过<a href="https://www.aibase.com/zh/news/24169">APP推送(AI资讯)</a>即可更新。</p></li></ol><h3>前沿研究</h3><ol><li><p><strong>腾讯开源10亿参数动作生成模型。</strong>
-腾讯混元团队🚀开源<a href="https://www.aibase.com/zh/news/24167">动作生成模型(AI资讯)</a>。HY-Motion1.0拥有10亿参数规模。文本一键生成流畅<strong>3D骨骼动画</strong>。它兼容Blender并助力🎮游戏NPC开发。轻量版模型也同步开放<a href="https://www.aibase.com/zh/news/24167">下载(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdtjcyatem0b15defghqzt7g.avif" alt="AI资讯：腾讯HY-Motion模型生成的3D动作演示"><br/></p></li><li><p><strong>ProGuard主动式多模态防护。</strong>
-研究者提出🛡️主动式<a href="https://arxiv.org/abs/2512.23573">多模态防护(AI资讯)</a>ProGuard。该方案无需调整模型即可识别风险。团队构建了87K<strong>平衡数据集</strong>进行训练。它在不安全内容分类上表现👀出色。主动风险检测能力大幅提升<a href="https://arxiv.org/abs/2512.23573">52.6%(AI资讯)</a>。</p></li><li><p><strong>大模型多漏洞检测面临挑战。</strong>
-针对LLM的🐛<a href="https://arxiv.org/abs/2512.22306">多漏洞检测(AI资讯)</a>新基准发布。研究涵盖C与Python等四种语言。实验显示漏洞密度增加会导致<strong>性能骤降</strong>。Llama-3.3在高密度下准确率📉下跌40%。这揭示了LLM在<a href="https://arxiv.org/abs/2512.22306">代码安全(AI资讯)</a>上的短板。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>月之暗面获5亿美元C轮融资。</strong>
-月之暗面💰斩获5亿美元<a href="https://www.aibase.com/zh/news/24174">C轮融资(AI资讯)</a>。公司现金储备已突破<strong>100亿元</strong>。CEO杨植麟表示不急于IPO上市。2026年将推行双倍💸薪酬激励。其目标是冲击全球<a href="https://www.aibase.com/zh/news/24174">AGI资讯领先</a>地位。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdtjd0jcemfakvkp52vy2bcx.avif" alt="AI资讯：月之暗面Kimi品牌与融资新闻图"><br/></p></li><li><p><strong>MiniMax拟在香港IPO上市。</strong>
-MiniMax拟在🇭🇰香港<a href="https://www.qbitai.com/2025/12/366302.html">IPO上市(AI资讯)</a>。股票代码00100，募资超6亿美元。阿里与阿布扎比局领投<strong>基石投资</strong>。公司B端毛利率已大幅📈改善。这将是港股<a href="https://www.qbitai.com/2025/12/366302.html">AI资讯第一股</a>有力竞争者。</p></li><li><p><strong>软银完成OpenAI注资400亿美元。</strong>
-软银正式完成对<a href="https://www.aibase.com/zh/news/24140">OpenAI注资(AI资讯)</a>。总计400亿美元资金已全部💰到位。软银持股比例成功突破<strong>10%</strong>。资金将支持算力基建&quot;星门计划”。OpenAI也在积极筹备<a href="https://www.aibase.com/zh/news/24140">上市(AI资讯)</a>。</p></li><li><p><strong>广电总局严打AI魔改视频。</strong>
-广电总局宣布🚫严打<a href="https://www.aibase.com/zh/news/24147">AI魔改视频(AI资讯)</a>。2026年起启动专项治理行动。重点保护<strong>四大名著</strong>与经典动画。此举旨在遏制低俗化与恶意篡改。监管为<a href="https://www.aibase.com/zh/news/24147">AI资讯内容</a>划定红线。</p></li><li><p><strong>腾讯云AI落地超100个金融场景。</strong>
-腾讯云披露🏦<a href="https://www.aibase.com/zh/news/24145">金融AI成绩单(AI资讯)</a>。大模型已落地超过<strong>100个</strong>业务场景。合作方包括工行与深交所等机构。方案支持安全可控的私有化部署。这标志着<a href="https://www.aibase.com/zh/news/24145">金融AI资讯</a>进入深水区。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>获取Spotify真FLAC音质。</strong>
-这是一个🎵获取<a href="https://github.com/afkarxyz/SpotiFLAC">高音质音乐(AI资讯)</a>的神器。它无需账户即可下载<strong>真FLAC</strong>音频。支持Tidal与Amazon Music源。项目已获⭐1.4k Star关注。</p></li><li><p><strong>Organic Maps离线地图。</strong>
-这款🍃良心的<a href="https://github.com/organicmaps/organicmaps">离线地图APP(AI资讯)</a>值得推荐。它完全免费且无任何<strong>广告追踪</strong>。数据源自OpenStreetMap社区。项目深受旅行者喜爱⭐12.5k。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>稚晖君发布个人人形机器人。</strong>
-稚晖君发布🤖年度<a href="https://x.com/vista8/status/2006340694110241233">压轴作品(AI资讯)</a>。这是全球首款<strong>个人人形机器人</strong>。主打全身力控且体积小巧。极客们惊呼(✧∀✧)太酷了。</p></li><li><p><strong>2025年AI技术突破年终调研。</strong>
-宝玉发布了一份📝<a href="https://x.com/dotey/status/2006165594459045928">年终AI调研(AI资讯)</a>。共识认为<strong>推理能力</strong>是关键突破。Claude Code被评为年度惊艳产品。未来Agent将学会🧠&quot;慢思考”。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdtjd95be2z8f474gdrn9h3x.avif" alt="AI资讯：2025年AI技术突破与产品调研总结图"><br/></p></li><li><p><strong>罗永浩大战豆包AI爆笑全场。</strong>
-罗永浩现场😂大战<a href="https://x.com/imxiaohu/status/2006040978042343789">豆包AI(AI资讯)</a>。两者的对话互动引发全场爆笑。这是一场有趣的<strong>人机互动</strong>演示。推荐观看这段🎥精彩切片。<br/><video src="https://video.twimg.com/amplify_video/2006039507272130560/vid/avc1/1080x1920/QT65jG0pLDXs6ZfM.mp4?tag=21"></video><br/></p></li><li><p><strong>Qwen发布增强版图像模型。</strong>
-Qwen发布了🖼️新版<a href="https://www.reddit.com/r/artificial/comments/1q0aalf/qwenimage2512_released_on_huggingface/">图像模型(AI资讯)</a>。新模型大幅提升了<strong>人物真实感</strong>。自然景观的细节渲染更加细腻。文字与图像的排版也更✨精准。</p></li><li><p><strong>资深开发者倾向控制而非Vibe。</strong>
-研究发现🧑‍💻资深开发者并不&quot;Vibe”。他们倾向于<strong>精准控制</strong><a href="https://x.com/omarsar0/status/2006063755449504154">AI生成代码(AI资讯)</a>。专业人士会编写详细的提示词。AI被视为协作者而非🤖全自动工具。</p></li><li><p><strong>智能体工程的核心是迭代。</strong>
-这是一篇关于⚙️<a href="https://x.com/shao__meng/status/2006312024947495334">智能体工程(AI资讯)</a>的深度好文。文章提出<strong>上线</strong>只是学习的开始。必须构建构建-测试-观察的循环。生产环境才是智能体真正的👨‍🏫老师。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdtjdy6reyhtfa402zdesqpp.avif" alt="AI资讯：智能体工程Agent Engineering核心概念图"><br/></p></li><li><p><strong>Claude Code实用工具分享。</strong>
-开发者分享了🛠️三个<a href="https://x.com/shao__meng/status/2006171403528122454">Claude神器(AI资讯)</a>。包含WhatsApp的<strong>对话桥接</strong>工具。还有稳定的浏览器自动化插件。以及保持上下文的🧩编码助手。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdtje1evecjv8rqc08bgc867.avif" alt="AI资讯：Claude Code实用的开源工具列表"><br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2026/1/1 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 小米MiMo公测延至2026年用户免费用 月之暗面获五亿美元融资现金超百亿 软银注资OpenAI四百亿美元持股一成 罗永浩发布AI讲书应用且听深度解读 腾讯开源十亿参数3D动作生成模型 产品与功能更新 小]]></description>
         </item>
       
   </channel>
