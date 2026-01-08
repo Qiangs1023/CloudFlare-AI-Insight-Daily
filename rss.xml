@@ -5,9 +5,47 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 07 Jan 2026 23:55:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 23:14:01 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-09日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-09/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-09/</guid>
+          <pubDate>Fri, 09 Jan 2026 07:14:00 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/9</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>傅利叶GR-3亮相CES具备55自由度主打陪伴
+小鹏二代VLA量产实现视觉驱动初阶L4能力
+OpenAI推健康版连接Apple Health解读血检
+MiniMax港股募资42亿国产大模型进入变现期
+蚂蚁阿福月活破3000万打通咨询问诊全链路
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>傅利叶GR-3首秀CES。</strong>
+CES2026上傅利叶带着🔥<a href="https://www.qbitai.com/2026/01/367659.html">人形机器人GR-3(AI资讯)</a>亮相，现场设置了互动区让观众零距离体验(✧∀✧)。GR-3能下棋聊天还会💡识别表情，<strong>55个全身自由度</strong>让它动作超灵活。这款机器人主打<strong>有温度的陪伴</strong>，用莫兰迪配色消解机械感。傅利叶还展出了桌面级玩偶机器人概念原型。</p></li><li><p><strong>小鹏第二代VLA大模型上车。</strong>
+何小鹏宣布🚀<strong>物理AI</strong>成为2026核心关键词，<a href="https://www.aibase.com/zh/news/24413">第二代VLA模型(AI资讯)</a>一季度量产推送。这模型能从视觉直接驱动动作，号称<strong>初阶L4能力</strong>（厉害了）。2026款P7+和G7都搭载这技术，Robotaxi运营也要正式启动💡。小鹏还要量产人形机器人和飞行汽车。</p></li><li><p><strong>OpenAI推ChatGPT Health。</strong>
+OpenAI正式发布<a href="https://www.xiaohu.ai/c/xiaohu-ai/openai-chatgpt-aa2635">ChatGPT健康版(AI资讯)</a>，能连接<strong>Apple Health</strong>和电子病历🏥。上传血检报告它帮你用大白话解释指标，还能生成就诊提问清单(✧∀✧)。健康数据独立加密存储，<strong>不用于模型训练</strong>。目前仅向小范围用户💡开放测试。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kef3qx0ge8ttxagzvxv74saz.avif" alt="AI资讯：ChatGPT Health连接健康应用界面展示"><br/></p></li><li><p><strong>谷歌课堂上线Gemini播客工具。</strong>
+教师输入课程主题就能🎙️自动生成<a href="https://www.aibase.com/zh/news/24387">播客风格音频课(AI资讯)</a>，专门为Z世代设计。支持<strong>主持人+嘉宾</strong>对话式呈现，还能加背景音乐💡。一位老师反馈学生完听率达<strong>92%</strong>（比读PDF高一倍）。多语言支持一键生成，碎片化学习神器(✧∀✧)。</p></li><li><p><strong>腾讯开源HY-Motion1.0。</strong>
+腾讯混元发布🔥<a href="https://www.aibase.com/zh/news/24388">文生3D动作大模型(AI资讯)</a>，<strong>十亿参数</strong>基于DiT架构。能生成200多种动作类别，从日常走路到💪体育竞技都覆盖。输出直接接入Unreal和Unity，开箱即用(✧∀✧)。项目已在<a href="https://huggingface.co/tencent/HY-Motion-1.0">HuggingFace(AI资讯)</a>开源。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kef3r1j2f0vvyfq3hybe7fv2.avif" alt="AI资讯：HY-Motion生成的3D角色动画效果展示"><br/></p></li></ol><hr><h3>前沿研究</h3><ol><li><p><strong>V-Agent多模态视频搜索。</strong>
+新论文提出🔍<a href="https://arxiv.org/abs/2512.16925">V-Agent视频搜索系统(AI资讯)</a>，微调VLM就能同时理解画面和语音。三个Agent协作💡处理用户意图，在MultiVENT2.0测试集达到<strong>SOTA零样本性能</strong>。视频帧和语音转文字被嵌入同一空间(✧∀✧)，模型已开源。</p></li><li><p><strong>PhysVideoGenerator物理感知视频生成。</strong>
+这篇论文让视频生成模型🎬<a href="https://arxiv.org/abs/2601.03665">学会物理规律(AI资讯)</a>，解决物体碰撞不自然的问题。用<strong>V-JEPA2</strong>提取物理特征注入生成过程💡，重力和时序一致性都变好了。目前是概念验证阶段，训练稳定性已验证(✧∀✧)。</p></li><li><p><strong>ThinkRL-Edit推理式图像编辑。</strong>
+新框架让图像编辑模型🧠<a href="https://arxiv.org/abs/2601.03467">先思考再动手(AI资讯)</a>，用<strong>思维链采样</strong>探索多种方案。传统方法只在去噪时随机，这个在语义层面就开始探索💡。用二元检查表替代模糊评分，效果显著超越之前工作(✧∀✧)。</p></li></ol><hr><h3>行业展望与社会影响</h3><ol><li><p><strong>MiniMax港股暗盘涨15%。</strong>
+继智谱AI后又一家🔥大模型公司上市，<a href="https://www.aibase.com/zh/news/24420">MiniMax(AI资讯)</a>募资<strong>41.89亿港元</strong>。暗盘最高199.8港元，市值逼近600亿💰。资金主要投入下一代多模态模型和自研芯片，国产大模型进入<strong>价值兑现阶段</strong>(✧∀✧)。盈利压力和国际竞争是未来挑战。</p></li><li><p><strong>蚂蚁阿福月活飙至3000万。</strong>
+一个月从1500万涨到🚀<a href="https://www.aibase.com/zh/news/24410">3000万用户(AI资讯)</a>，OpenAI紧急跟进推ChatGPT Health。蚂蚁阿福打通了<strong>咨询-问诊-就医</strong>全链路💡，接入5000家医院和十大品牌设备。ChatGPT Health目前还停留在信息辅助阶段(；′⌒`)。中美AI健康路径分化明显。</p></li><li><p><strong>谷歌急聘AI质检员。</strong>
+谷歌正面临🔥<a href="https://www.aibase.com/zh/news/24405">搜索质量信任危机(AI资讯)</a>，AI概述频繁出现幻觉。同一问题两次问出<strong>400万到7000万</strong>不等的错误答案(；′⌒`)。更严重的是医疗建议给出致命指导💡，招聘信息首次间接承认功能缺陷。</p></li><li><p><strong>恶意Chrome扩展窃取AI对话。</strong>
+两款伪装成AI工具的💀<a href="https://www.aibase.com/zh/news/24409">恶意扩展(AI资讯)</a>下载量超<strong>90万次</strong>。专门针对ChatGPT和DeepSeek窃取聊天记录，其中一款还获得谷歌精选徽章(；′⌒`)。定期把浏览URL和敏感词发送到远程服务器，已被下架💡。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kef3r8a2fxn80t9x470yrx10.avif" alt="AI资讯：恶意Chrome扩展伪装界面截图"><br/></p></li></ol><hr><h3>开源TOP项目</h3><ol><li><p><strong>claude-mem自动会话记忆。</strong>
+这个<a href="https://github.com/thedotmack/claude-mem">Claude Code插件(AI资讯)</a>⭐12.3k，能自动捕获编程会话中所有操作🔥。用AI压缩后注入未来会话，<strong>上下文不再断片</strong>(✧∀✧)。基于Claude的agent-sdk开发💡，对长期项目特别友好。</p></li><li><p><strong>ComfyUI-LTXVideo视频生成。</strong>
+Lightricks官方出的🎬<a href="https://github.com/Lightricks/ComfyUI-LTXVideo">ComfyUI视频支持(AI资讯)</a>⭐2.5k，LTX-Video模型接入变得超简单。工作流拖拽就能用💡，生成质量不错(✧∀✧)。</p></li><li><p><strong>memU记忆基础设施。</strong>
+面向LLM和🤖Agent的<a href="https://github.com/NevaMind-AI/memU">记忆系统(AI资讯)</a>⭐3.6k，解决长期记忆管理问题。NevaMind团队开发💡，让AI真正记住你说过啥(✧∀✧)。</p></li><li><p><strong>VideoRAG视频对话。</strong>
+港大出品的📹<a href="https://github.com/HKUDS/VideoRAG">视频检索增强生成(AI资讯)</a>⭐1.9k，KDD2026论文配套代码。能跟视频内容直接对话💡，理解画面还能回答问题(✧∀✧)。</p></li><li><p><strong>MiroThinker搜索智能体。</strong>
+号称🔍<a href="https://github.com/MiroMindAI/MiroThinker">全球最强搜索Agent(AI资讯)</a>，30B模型跑出1T级性能。支持<strong>256K上下文</strong>和400次工具调用💡，在BrowseComp测试全球第一梯队(✧∀✧)。像科学家一样主动查证自我修正，<a href="https://dr.miromind.ai/">在线体验(AI资讯)</a>已开放。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kef3rz4tfe9bka9wfmm8rtnh.avif" alt="AI资讯：MiroThinker搜索智能体架构图"><br/></p></li></ol><hr><h3>社媒分享</h3><ol><li><p><strong>MOSS语音识别能标说话人。</strong>
+@Gorden_Sun分享🎤复旦团队的<a href="https://x.com/Gorden_Sun/status/2009257152976666651">MOSS Transcribe Diarize(AI资讯)</a>，不仅识别语音还能区分不同说话人💡。支持多语言最长<strong>90分钟</strong>音频，国内用不了Gemini的替代方案(✧∀✧)。<a href="https://huggingface.co/spaces/OpenMOSS-Team/MOSS-transcribe-diarize">Demo已开放(AI资讯)</a>。</p></li><li><p><strong>Gemini CLI支持Agent Skills。</strong>
+@Jimmy_JingLv说继Codex之后🎉<a href="https://x.com/Jimmy_JingLv/status/2009255230542893460">Gemini CLI也支持技能插件(AI资讯)</a>了，v0.23.0更新💡。<a href="http://AgentSkills.me%E4%BB%8A%E5%B9%B4%E5%85%A8%E5%8A%9B%E6%8A%BC%E6%B3%A8agents(%E2%9C%A7%E2%88%80%E2%9C%A7)%E3%80%82">http://AgentSkills.me今年全力押注agents(✧∀✧)。</a></p></li><li><p><strong>Claude Code画Canvas超好用。</strong>
+@vista8分享用🎨Obsidian CEO写的<a href="https://x.com/vista8/status/2009151175745241116">Canvas技能(AI资讯)</a>，让Claude搜索清朝皇帝然后画可视化图谱💡。画组织结构图产品架构图都行(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kef3s8t8ejfa7xm78dcxqsmd.avif" alt="AI资讯：Claude Code生成的清朝皇帝Canvas图谱"><br/></p></li><li><p><strong>智谱上市z.ai出海经验。</strong>
+@op7418转发🔔智谱敲钟日<a href="https://x.com/op7418/status/2009093160337854748">子玄的出海总结(AI资讯)</a>，介绍z.ai如何在海外快速提升影响力💡。做出海没头绪的可以参考(✧∀✧)。</p></li><li><p><strong>Planning with Files复现Manus。</strong>
+@shao__meng推荐📁用Markdown当AI外挂大脑的<a href="https://x.com/shao__meng/status/2009074350784434274">Claude技能(AI资讯)</a>，解决记忆波动和目标漂移问题💡。三个文件管理任务清单研究笔记和最终产出(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kef3sd3qe9j9qa12mkzc2qwn.avif" alt="AI资讯：Planning with Files工作流程示意图"><br/></p></li><li><p><strong>黄仁勋自嘲中美同时吊打。</strong>
+@dotey转发🤣黄仁勋幽默发言：<a href="https://x.com/dotey/status/2009092790966472993">我们是历史上第一家被中美同时吊打的公司(AI资讯)</a>💡。<br/><video src="https://source.hubtoday.app/images/2026/01/news_01kef3t8q9f3cvbz28f60wm4ha.mp4" controls="controls" width="100%"></video><br/></p></li><li><p><strong>AI决定谁升职引争议。</strong>
+Reddit热帖讨论🤔<a href="https://www.reddit.com/r/artificial/comments/1q75yio/imagine_ai_picking_who_gets_promoted_at_your_job/">AI自动决定升职加薪(AI资讯)</a>，调查显示<strong>60%经理</strong>已在用AI做这事💡。打字速度和邮件都被监控(；′⌒`)。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2026/1/9 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 傅利叶GR-3亮相CES具备55自由度主打陪伴 小鹏二代VLA量产实现视觉驱动初阶L4能力 OpenAI推健康版连接Apple Health解读血检 MiniMax港股募资42亿国产大模型进入变现期 蚂蚁]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-08日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-08/</link>
@@ -190,33 +228,6 @@ SentientAGI团队开源了🔥高性能的<a href="https://github.com/sentient-a
 开发者Tw93强推了一个📺非常有收获的<a href="https://x.com/HiTw93/status/2007088939442880643">访谈视频(AI资讯)</a>，内容关于技术变现。视频主角季逸超非常接地气，谈论了对💰商业化和新技术的独到判断。这对于技术人思考未来方向(💡)很有启发。</p></li><li><p><strong>特斯拉接入Grok视觉能力。</strong>
 特斯拉正在🚗接入Grok模型，现在Grok已经能调用<a href="https://x.com/imxiaohu/status/2006927289267925133">车载摄像头(AI资讯)</a>实时观察周围环境。这代表着👀视觉感知能力的重大突破，不仅用于驾驶，更意味着人形机器人Optimus可能已在(✧∀✧)疯狂测试中。这种多模态能力的落地，将让<strong>物理世界交互</strong>变得更加智能。</p></li></ol><br/><video src="https://source.hubtoday.app/images/2026/01/news_01kdzmd3pafenbehmtke8b6gz7.mp4" controls="controls" width="100%"></video><br/><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2026/1/3 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 特斯拉接入Grok视觉赋能车机机器人 DeepSeek推mHC架构降显存稳训练 DAVE模型突破复杂文档视觉理解 DeepMind预言2026年AI实现永生 SentientAGI开源ROMA智能体框架 ]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-01-02日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-01/2026-01-02/</link>
-          <guid>https://ai.hubtoday.app//2026-01/2026-01-02/</guid>
-          <pubDate>Fri, 02 Jan 2026 07:55:12 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/2</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Nerd语言专供机器读写，视频生成实现时空解耦
-特斯拉FSD横穿美国零接管，端到端技术大胜利
-谷歌DeepMind合体逆袭，Gemini重夺行业高地
-Memos笔记开源支持自托管，LEANN优化RAG存储
-Qwen接棒Llama地位，Reddit陷数据自我吞噬
-</code></pre><h3>前沿研究</h3><ol><li><p><strong>Nerd：给机器看的编程语言。</strong>
-这是一门不给人看的<a href="https://newshacker.me/story?id=46450217">新编程语言(AI资讯)</a>。专为AI模型🧠设计而非人类。作者称机器生成代码☁️占比近半。引发关于调试⚠️和审计的激烈争议。这究竟是未来还是<a href="https://newshacker.me/story?id=46450217">歧途(AI资讯)</a>？</p></li><li><p><strong>SpaceTimePilot：视频生成大突破。</strong>
-视频生成迎来🚀重大突破。新模型<a href="https://arxiv.org/abs/2512.25075">SpaceTimePilot(AI资讯)</a>实现时空解耦。单目视频也能随意改变🎥视角。动态场景生成(✧∀✧)不再是难题。训练方案利用了<a href="https://arxiv.org/abs/2512.25075">多视角数据(AI资讯)</a>。</p></li><li><p><strong>HEAR：量化评估音乐审美。</strong>
-音乐审美也能被🤖量化评估？<a href="https://arxiv.org/abs/2511.18869">HEAR框架(AI资讯)</a>挑战这一难题。结合多尺度特征提取🎶旋律美感。分层增强策略防止❌过拟合。在<a href="https://arxiv.org/abs/2511.18869">SongEval基准(AI资讯)</a>上表现优异。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>特斯拉FSD横穿美国零接管。</strong>
-马斯克十年前的🚗豪言终于成真。特斯拉FSD完成<a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652659659&idx=1&sn=48c41752c3ed20726ed288da90dbd10a">横穿美国(AI资讯)</a>壮举。全程近4400公里竟😲零接管。端到端神经网络💡彻底胜利。方向盘或许真要退出<a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652659659&idx=1&sn=48c41752c3ed20726ed288da90dbd10a">历史舞台(AI资讯)</a>了。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdx1e0hrf8kst609r5rykzz9.avif" alt="AI资讯：特斯拉车主David Moss在车内"><br/></p></li><li><p><strong>谷歌三年卧薪尝胆终逆袭。</strong>
-谷歌三年隐忍终于🦁逆袭。从ChatGPT发布时的<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651010155&idx=2&sn=8a28cedca18c338cb4960ca1b8e04481">红色警报(AI资讯)</a>开始。到Gemini全线开花🌸重夺高地。合并DeepMind结束⚡资源内耗。创始人布林回归<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651010155&idx=2&sn=8a28cedca18c338cb4960ca1b8e04481">亲自写代码(AI资讯)</a>。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>Memos：开源笔记自托管神器。</strong>
-这是一款<a href="https://github.com/usememos/memos">开源笔记(AI资讯)</a>神器。⭐4.7w星标证明其🔥火爆程度。数据完全掌握在自己✊手中。无广告且支持自托管☁️部署。</p></li><li><p><strong>LEANN：万物皆可RAG。</strong>
-在个人设备运行<a href="https://github.com/yichuan-w/LEANN">RAG应用(AI资讯)</a>。实现快速准确且🔒完全隐私。节省高达97%的💾存储空间。让万物RAG成为可能(✪ω✪)。</p></li><li><p><strong>Bedrock Agent：企业级智能体。</strong>
-亚马逊推出的<a href="https://github.com/awslabs/amazon-bedrock-agentcore-samples">智能体样本(AI资讯)</a>。加速AI智能体🚀投入生产环境。具备企业级的🛡️安全性。确保大规模部署的☁️可靠性。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>非技术人员用Agent编程。</strong>
-不懂代码也能用🤖Agent开发。Ben Tossell分享<a href="https://x.com/shao__meng/status/2006551788829421625">实战经验(AI资讯)</a>。通过终端CLI指挥AI干活🛠️。无需精通语法也能🚧构建项目。AI正在创造新的<a href="https://x.com/shao__meng/status/2006551788829421625">技术阶层(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kdx1eempe21vgegfffc9n5m1.avif" alt="AI资讯：Ben Tossell演示AI编程流程"><br/></p></li><li><p><strong>二十元支架打造AI阅读伴侣。</strong>
-几块钱支架搞定<a href="https://x.com/vista8/status/2006699164768612789">懒人读书(AI资讯)</a>。反向夹住手机打开📹豆包App。摄像头对着屏幕或📚书本。随时提问让AI陪你🧠阅读。<br/><video src="https://source.hubtoday.app/images/2026/01/news_01kdx1ep1aed48r5jzw6vq733b.mp4" controls="controls" width="100%"></video></p></li><li><p><strong>Reddit数据沦为AI衔尾蛇。</strong>
-Reddit正被<a href="https://www.reddit.com/r/artificial/comments/1q0qcmh/its_happening_right_in_front_of_us/">AI生成内容(AI资讯)</a>填满。公司花钱买数据训练🌪️模型。模型生成内容又回到🔃Reddit。数据贪吃蛇正在咬自己的尾巴🐍。</p></li><li><p><strong>警惕Manus成功学幸存者偏差。</strong>
-别盲目迷信Manus的<a href="https://m.okjike.com/originalPosts/6956440f8dab01fe5390c20a">成功学(AI资讯)</a>。这种特殊案例难以📝复制。创业更多是坚持加🍀偶然突变。应该关注其被收购的💰影响。</p></li><li><p><strong>Qwen上位与MCP新架构。</strong>
-Qwen正在接过Llama的👑权杖。MCP协议成为新的<a href="https://x.com/frxiaobei/status/2006425000958693397">AI入口(AI资讯)</a>。便宜可靠的架构🏗️战胜暴力美学。系统化智能时代⏰将来临。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2026/1/2 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 Nerd语言专供机器读写，视频生成实现时空解耦 特斯拉FSD横穿美国零接管，端到端技术大胜利 谷歌DeepMind合体逆袭，Gemini重夺行业高地 Memos笔记开源支持自托管，LEANN优化RAG存储]]></description>
         </item>
       
   </channel>
