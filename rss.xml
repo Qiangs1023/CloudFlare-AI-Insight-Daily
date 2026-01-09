@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Jan 2026 23:15:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 23:55:12 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2026-01-10日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-10/</link>
           <guid>https://ai.hubtoday.app//2026-01/2026-01-10/</guid>
-          <pubDate>Sat, 10 Jan 2026 07:15:06 GMT</pubDate>
+          <pubDate>Sat, 10 Jan 2026 07:55:11 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/10</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>阿里云发Mooni M1儿童AI伙伴基于通义千问定制含情绪识别
 Claude Code更新至2.1.0新增会话传送等功能引发围观热议
 RelayLLM小模型控制关键时调大模型省98%推理成本
