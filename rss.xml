@@ -5,9 +5,27 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Jan 2026 23:55:12 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 23:14:35 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-11日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-11/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-11/</guid>
+          <pubDate>Sun, 11 Jan 2026 07:14:34 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/11</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Niji 7上线主打画面连贯性支持sref风格迁移
+FaceRefiner用可微渲染解决AI人脸细节不一致
+InfiAgent文件状态外化方案解决长任务上下文爆炸
+Call Me插件让Claude遇问题自动拨号通话
+DeepSeek V4或将发布社区调侃准备震惊标题
+</code></pre><h3>产品与功能更新</h3><ol><li><strong>Niji 7动漫模型正式上线。</strong>
+Niji・Journey时隔一年半🎉放出重磅更新，<a href="https://www.xiaohu.ai/c/xiaohu-ai/niji-journey-niji-7">最新版本介绍(AI资讯)</a>主打画面<strong>连贯性</strong>突破。眼睛高光、反射细节清晰到让人心动(✧∀✧)，提示词理解能力也强太多了。新增<strong>sref风格迁移</strong>功能，用户可以🔥随意迁移角色风格。团队说这次审美方向是&quot;线条与空间&quot;，追求更平、更干净的艺术感。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kem7xcgae5y8kdp4q38xat79.avif" alt="AI资讯：Niji 7动漫角色眼睛高光细节展示"><br/></li></ol><h3>前沿研究</h3><ol><li><p><strong>FaceRefiner让人脸纹理更逼真。</strong>
+这篇<a href="https://arxiv.org/abs/2601.04520">论文(AI资讯)</a>解决了💡AI生成人脸细节不一致的老毛病。方法是把3D采样纹理当风格，用<strong>可微渲染</strong>做迁移。不仅传高层信息，像素级细节也能保留(✧∀✧)，身份特征不丢失。在Multi-PIE、CelebA等数据集上效果超越了现有方法。</p></li><li><p><strong>人机协作识别钓鱼邮件。</strong><a href="https://arxiv.org/abs/2601.04610">新研究(AI资讯)</a>对比了🤖机器学习和人类判断钓鱼邮件的能力。结果显示模型准确率还行，但<strong>置信度</strong>波动大。人类用的语言特征更丰富，判断更稳定。年龄会影响检测效果，语言水平影响不大。</p></li><li><p><strong>InfiAgent解决长任务上下文爆炸。</strong>
+这篇<a href="https://arxiv.org/abs/2601.03204">论文(AI资讯)</a>提出文件为中心的状态外化方案🚀，让Agent推理上下文<strong>长度固定</strong>。不管任务跑10步还是1000步，都不会积累错误。20B开源模型在80篇论文文献综述任务上，表现接近更大的闭源系统。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kem7xhz8eq0a7kaa6babksfm.avif" alt="AI资讯：InfiAgent框架长任务处理架构图"><br/></p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>Call Me让Claude主动打电话。</strong>
+这个<a href="https://github.com/ZeframLou/call-me">Claude Code插件(AI资讯)</a>⭐实现AI遇到问题时📞自动拨号找你。跑完任务汇报结果、卡住报错请你决定，都能语音通话解决。支持手机、手表甚至座机，通话<strong>成本约$0.03/分钟</strong>。安装配置好Telnyx或Twilio账号就能用了。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kem7xrw4egz9ah3cj5s6z6c3.avif" alt="AI资讯：Call Me插件架构示意图"><br/></p></li><li><p><strong>superpowers是Claude Code核心技能库。</strong><a href="https://github.com/obra/superpowers">这个项目(AI资讯)</a>⭐15.9k专门给Claude Code加💪超能力。包含一系列核心技能模块，帮助开发者更好地使用Agent。开源社区反响不错。</p></li><li><p><strong>xpipe本地管理服务器神器。</strong><a href="https://github.com/xpipe-io/xpipe">xpipe项目(AI资讯)</a>⭐13.2k让你从桌面🖥️访问整个服务器基础设施。一站式管理多台服务器，对运维人员很友好。</p></li><li><p><strong>OpenProject开源项目管理软件。</strong><a href="https://github.com/opf/openproject">这款工具(AI资讯)</a>⭐13.6k是领先的开源项目管理方案📋，功能全面支持敏捷开发。适合团队协作场景使用。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>写代码写美了是什么体验。</strong><a href="https://x.com/hongming731/status/2009931290167152926">推友分享(AI资讯)</a>了一张截图😄，代码写得太顺手直接乐了。程序员的快乐就是这么简单(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kem7xwy8ehzr8p5n0137drdk.avif" alt="AI资讯：程序员写代码开心截图"><br/></p></li><li><p><strong>OpenCode Desktop用的Tauri。</strong><a href="https://x.com/Jimmy_JingLv/status/2009821150281711893">JimmyLv分享(AI资讯)</a>说他的🔧<a href="http://aigtd.com">http://aigtd.com</a> 其实就是普通人版opencode。技术栈同样是Tauri，面向非程序员用户。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kem7y2kdep39j7x6k209gp88.avif" alt="AI资讯：OpenCode Desktop界面截图"><br/></p></li><li><p><strong>DeepSeek V4要来了？</strong><a href="https://m.okjike.com/originalPosts/6961974ec5a1d4e6497c18f2">即刻网友(AI资讯)</a>调侃说🤣同志们该准备了：跟家人说春节行程可能有变、老板备好加班奖金、产品经理想好怎么套壳。自媒体可以提前把<strong>震惊</strong>打在标题上了。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2026/1/11 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 Niji 7上线主打画面连贯性支持sref风格迁移 FaceRefiner用可微渲染解决AI人脸细节不一致 InfiAgent文件状态外化方案解决长任务上下文爆炸 Call Me插件让Claude遇问题]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-10日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-10/</link>
@@ -199,33 +217,6 @@ ControlNet作者新架构解长视频难题
 GitHub警告⚠️<a href="https://x.com/hongming731/status/2007706612061057332">AI垃圾代码(AI资讯)</a>泛滥，写代码光快没用🚫必须<strong>可控且简洁</strong>。</p></li><li><p><strong>人机共创成为未来主流。</strong>
 未来创作是🤝<a href="https://x.com/dotey/status/2007639681207533626">人机协作(AI资讯)</a>模式，读者只在乎📚<strong>作品价值</strong>而非手段。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2026/1/5 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 OpenAI研发智能笔硬件转单富士康 国产MinT平台单CPU训万亿参数模型 ControlNet作者新架构解长视频难题 贵州推AI酿酒印度勒令X平台限时整改 编程智能体爆火GitHub警告垃圾代码 产品]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-01-04日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-01/2026-01-04/</link>
-          <guid>https://ai.hubtoday.app//2026-01/2026-01-04/</guid>
-          <pubDate>Sun, 04 Jan 2026 07:55:14 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/4</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>谷歌演示Gemini 3 Flash自动化ETL清洗
-IQuest-Coder代码模型涉嫌训练集作弊
-百度昆仑芯冲刺港股IPO估值两百亿
-字节跳动开源Dolphin多模态文档解析
-杨立昆离职痛批大模型已触及天花板
-</code></pre><h3>行业展望与社会影响</h3><ol><li><p><strong>百度昆仑芯冲刺港股IPO。</strong>
-百度旗下昆仑芯🚀冲刺<a href="https://www.qbitai.com/2026/01/366454.html">港股IPO(AI资讯)</a>。估值已达💰210亿元人民币。比亚迪等巨头🤝参与了相关投资。AI芯片📦出货量位居国产第二。旨在独立融资以(ง •_•)ง对抗英伟达。</p></li><li><p><strong>杨立昆离职后怒喷扎克伯格。</strong>
-杨立昆离开Meta后🔥火力全开。他痛批小扎🤖搞虚假基准测试。直言大语言模型🧱已触及天花板。内部研究员(Xs)对他十分反感。认为Meta并非😨理想的归宿。<a href="https://m.okjike.com/originalPosts/6958b5620d0cd914a814f5c5">查看访谈细节(AI资讯)</a><br/><br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke25xqnjf549sj90asfwjfe0.avif" alt="AI资讯：杨立昆接受访谈画面"><br/></p></li><li><p><strong>2025年LLM发展年度回顾。</strong>
-2025年AI变得🧠更聪明且昂贵。推理模型与Agent🤖成为行业标配。CLI命令行(💻)重新成为开发主战场。中国模型🇨🇳打破美国技术垄断。开发者为效率往往🙈忽视安全红线。<a href="https://x.com/shao__meng/status/2007110456562057724">阅读年度回顾(AI资讯)</a></p></li><li><p><strong>IQuest-Coder代码模型深陷作弊争议。</strong>
-IQuest-Coder号称🔥超越Claude与GPT-5。这是一个40B参数的<a href="https://newshacker.me/story?id=46472667">开源代码模型(AI资讯)</a>。社区发现⚠️仓库包含未清理.git文件。训练数据疑似🚫包含测试集答案。这种benchmaxxing(¬_¬)引发广泛质疑。SWE-bench已紧急🛠️发布修复更新。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>字节跳动开源多模态文档解析。</strong>
-字节跳动开源了🐬<a href="https://x.com/shao__meng/status/2007442206509179221">Dolphin文档解析(AI资讯)</a>。专攻复杂布局与📑多模态文档处理。通过异构锚提示⚓提升解析精度。支持表格与公式的🔢精准识别。将PDF转化为Markdown📝只需瞬间。<br/><br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke25y0m3eweb5pee9frvvcn4.avif" alt="AI资讯：Dolphin项目解析文档演示"><br/></p></li><li><p><strong>Pathway：Python实时流处理框架。</strong>
-这是一个用于🌊流处理的<a href="https://github.com/pathwaycom/pathway">Python框架(AI资讯)</a>。支持实时分析与⚡RAG管道构建。专为LLM应用🏗️设计的数据处理。GitHub斩获⭐55.8k的高关注。</p></li><li><p><strong>OpenBB：AI时代的金融数据平台。</strong>
-面向AI智能体的📈<a href="https://github.com/OpenBB-finance/OpenBB">金融数据平台(AI资讯)</a>。服务于量化交易员💰与数据分析师。提供开源的(🌐)投资研究工具。GitHub星数高达⭐56.2k。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>菜鸟程序员四个月烧掉30亿Token。</strong>
-作者利用AI🔥烧掉<a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651010258&idx=1&sn=761843ddd675d6c023bcdefb481b2f1d">30亿Token(AI资讯)</a>。四个月内(🕒)构建50多个产品。全程使用CLI与🤖AI智能体协作。证明编程是(🎮)即时策略游戏。以探索欲望🔑取代专业背景。<br/><br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke25y7defj085bn0pxhqetta.avif" alt="AI资讯：Ben Tossell使用AI编程"><br/></p></li><li><p><strong>谷歌工程师被Claude Code效率折服。</strong>
-谷歌工程师🤯被Claude Code<a href="https://x.com/shao__meng/status/2007305311313412386">效率震惊(AI资讯)</a>。一小时完成团队🕒一年的工作量。指出大公司🏢决策流程的低效。未来属于(1+N)的人机🤖协作模式。</p></li><li><p><strong>Claude Code作者公开个人工作流。</strong>
-Claude Code作者🛠️公开<a href="https://x.com/op7418/status/2007346127956500626">个人工作流(AI资讯)</a>。同时运行15个🤖Claude实例并行。通过.md文件📝积累团队知识库。强调Plan模式与📅先规划后执行。验证反馈能让💡质量提升数倍。<br/><br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke25ykykefp9hmzm7xd03w4k.avif" alt="AI资讯：Boris Cherny的工作流设置"><br/></p></li><li><p><strong>LangChain团队Deep Agents评估心得。</strong>
-LangChain分享了🧐<a href="https://x.com/shao__meng/status/2007446168620400722">Deep Agents评估(AI资讯)</a>。建议对每个数据点🎯定制测试逻辑。单步评估能(⚡)及早捕捉回归问题。强调多轮对话的🗣️真实模拟。环境设置对于🧹复现至关重要。<br/><br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke25ysg8f2fvbrcw6d121beq.avif" alt="AI资讯：LangChain评估架构图"><br/></p></li><li><p><strong>用好AI的十件关键小事。</strong>
-博主分享用好AI的🔟件<a href="https://m.okjike.com/originalPosts/6958c619f7b0b259ded22ce3">关键建议(AI资讯)</a>。建议先拆解🔄个人工作流。维护一份(📜)沟通规范文件。定期清理🗑️AI生成的冗余信息。学习项目管理📅以交付成果。</p></li><li><p><strong>Gemini 3 Flash自动化ETL演示。</strong>
-谷歌演示了⚡极速的<a href="https://x.com/googleaidevs/status/2007135019114836240">Gemini 3 Flash(AI资讯)</a>模型能力。该模型能瞬间完成🧹数据清洗与ETL流程。利用推理能力🧠自动解决源数据冲突。展示了惊人的(✧∀✧)实时处理速度。全自动化管道🚀彻底改变手工工作流。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2026/1/4 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 谷歌演示Gemini 3 Flash自动化ETL清洗 IQuest-Coder代码模型涉嫌训练集作弊 百度昆仑芯冲刺港股IPO估值两百亿 字节跳动开源Dolphin多模态文档解析 杨立昆离职痛批大模型已触]]></description>
         </item>
       
   </channel>
