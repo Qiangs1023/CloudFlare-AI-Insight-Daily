@@ -5,14 +5,14 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Jan 2026 23:14:35 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 23:55:13 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
         <item>
           <title><![CDATA[2026-01-11日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-11/</link>
           <guid>https://ai.hubtoday.app//2026-01/2026-01-11/</guid>
-          <pubDate>Sun, 11 Jan 2026 07:14:34 GMT</pubDate>
+          <pubDate>Sun, 11 Jan 2026 07:55:11 GMT</pubDate>
           <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/11</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Niji 7上线主打画面连贯性支持sref风格迁移
 FaceRefiner用可微渲染解决AI人脸细节不一致
 InfiAgent文件状态外化方案解决长任务上下文爆炸
