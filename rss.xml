@@ -5,9 +5,37 @@
     <link>https://ai.hubtoday.app/</link>
     <description> 近 7 天的AI日报</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Jan 2026 23:55:13 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 23:14:41 GMT</lastBuildDate>
     <atom:link href="https://ai-daily.justlikemaki.workers.dev/rss" rel="self" type="application/rss+xml" />
     
+        <item>
+          <title><![CDATA[2026-01-12日刊]]></title>
+          <link>https://ai.hubtoday.app//2026-01/2026-01-12/</link>
+          <guid>https://ai.hubtoday.app//2026-01/2026-01-12/</guid>
+          <pubDate>Mon, 12 Jan 2026 07:14:40 GMT</pubDate>
+          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/12</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>Sakana与MIT合作DRQ算法让AI程序互相猎杀演化
+OpenAI官方支持Open Code可直接用ChatGPT授权
+清华AGI峰会唐杰称Chat时代结束林俊旸给中国反超概率20%
+DeepSeek等顶流产品原是副业支线项目
+开源项目ralph-claude-code和Plane项目管理工具热度上涨
+</code></pre><h3>产品与功能更新</h3><ol><li><p><strong>Sakana让AI互相猎杀。</strong>
+训练方式有点🔥狠，程序在虚拟机相互猎杀。这是Sakana AI与MIT的合作<a href="https://arxiv.org/abs/2601.03335">研究项目(AI资讯)</a>。趋同进化现象很有意思。不同程序演化出相似行为(✧∀✧)。</p></li><li><p><strong>OpenAI官方支持Open Code。</strong>
+现在🚀Open Code可直接用ChatGPT授权。Plus和Pro用户放心用<a href="https://x.com/op7418/status/2010031968399028555">Open Code(AI资讯)</a>。不用担心封号问题。Codex模型随便调用(✧∀✧)。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kepwcb3xervbdv4f92zc4ben.avif" alt="AI资讯：Open Code支持OpenAI官方登录授权"><br/></p></li></ol><hr><h3>前沿研究</h3><ol><li><strong>数字红皇后登场。</strong>
+Sakana搞了个DRQ算法🔥太硬核。让AI程序在Core War里不断进化。结果出现了<strong>趋同进化</strong>现象。不同实验最终演化出<a href="https://sakana.ai/drq/">相似策略(AI资讯)</a>。代码已开源(✧∀✧)。</li></ol><hr><h3>行业展望与社会影响</h3><ol><li><p><strong>基模四杰中关村论剑。</strong>
+清华攒局聚齐AI大咖🔥信息密度爆表。唐杰说Chat时代基本结束。杨植麟说做模型是创造<strong>世界观</strong>。林俊旸给中国反超概率💡20%。<a href="https://www.qbitai.com/2026/01/368917.html">完整报道(AI资讯)</a>值得细读。</p></li><li><p><strong>DeepSeek原是支线项目。</strong>
+幻方量化副业做成💡全球顶流。Qwen最初也是side project。Claude Code同样如此(✧∀✧)。<a href="https://www.qbitai.com/2026/01/368958.html">量子位报道(AI资讯)</a>盘点了八大案例。支线项目成功概率更高？</p></li><li><p><strong>反AI泡沫需谨慎。</strong>
+开源许可争议持续发酵🔥GPL能否约束模型生成物。Tailwind被抓取当案例讨论。代码质量下降🤔就业焦虑蔓延。<a href="https://newshacker.me/story?id=46574276">详细讨论(AI资讯)</a>观点挺多元。务实试验别盲目拒绝。<br/></p></li></ol><hr><h3>开源TOP项目</h3><ol><li><p><strong>ralph-claude-code亮相。</strong>
+自主AI开发循环工具🚀智能退出检测。专为Claude Code设计(✧∀✧)。GitHub已收获<a href="https://github.com/frankbria/ralph-claude-code">⭐1.3k(AI资讯)</a>。开发体验据说挺丝滑。<br/></p></li><li><p><strong>Plane项目管理神器。</strong>
+开源替代Jira和Linear💡功能全覆盖。任务冲刺文档分类全有。<a href="https://github.com/makeplane/plane">GitHub星标⭐43.4k(AI资讯)</a>。现代界面设计挺好看。<br/></p></li><li><p><strong>Twemoji表情符号库。</strong>
+Twitter开源的🔥表情符号方案。人人可用还挺方便。<a href="https://github.com/twitter/twemoji">⭐17.4k(AI资讯)</a>下载量不少。跨平台兼容性好。<br/></p></li></ol><hr><h3>社媒分享</h3><ol><li><p><strong>带动效PPT生成来了。</strong>
+歸藏搞定演示动画PPT🚀太秀了。支持导出完整视频(✧∀✧)。首页动画无限循环。<a href="https://m.okjike.com/originalPosts/69636c319f3cd84f65fa93e4">原帖展示(AI资讯)</a>效果确实独一份。<br/></video><br/></p></li><li><p><strong>Claude Code登录限制解法。</strong>
+修改环境变量也没用🤔Anthropic挺鸡贼。配置文件加一行就行。<a href="https://m.okjike.com/originalPosts/69632cc9527b8f0145b41c85">具体操作(AI资讯)</a>歸藏分享了。hasCompletedOnboarding设为true。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kepwcf2rfrdttapwavj9982w.avif" alt="AI资讯：Claude Code配置文件修改方法"><br/></p></li><li><p><strong>AI项目安装提示词创意。</strong>
+oh-my-opencode玩法有意思💡安装说明写给AI看。复制提示词就能自动安装。<a href="https://x.com/op7418/status/2010193224732946808">歸藏分享(AI资讯)</a>这招挺聪明。Claude Code一键搞定。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kepwcjpqfp286cd60996m94c.avif" alt="AI资讯：oh-my-opencode项目AI安装提示词"><br/></p></li><li><p><strong>Claude Code写Claude Code。</strong>
+魔幻场景出现了🔥用Agent写Agent。项目依赖套娃严重(✧∀✧)。升级后功能还挂了。<a href="https://x.com/xiaokedada/status/2010001676519002309">nazha吐槽(AI资讯)</a>这世界太魔幻。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01kepwcrccfg9azb9begn2bj48.avif" alt="AI资讯：Claude Code项目依赖关系截图"><br/></p></li><li><p><strong>确定性太多会一事无成。</strong>
+凡人小北发了个感慨💡稳健其实是高风险。创新发生在模糊区域。20%成功概率不等人(✧∀✧)。<a href="https://x.com/frxiaobei/status/2010271757286973506">原帖思考(AI资讯)</a>挺有启发。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
+          <description><![CDATA[AI资讯日报 2026/1/12 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 Sakana与MIT合作DRQ算法让AI程序互相猎杀演化 OpenAI官方支持Open Code可直接用ChatGPT授权 清华AGI峰会唐杰称Chat时代结束林俊旸给中国反超概率20% DeepSee]]></description>
+        </item>
+      
         <item>
           <title><![CDATA[2026-01-11日刊]]></title>
           <link>https://ai.hubtoday.app//2026-01/2026-01-11/</link>
@@ -193,30 +221,6 @@ Greg Brockman转发Simon Willison观点🚀，GPT-5.2和Opus 4.5代表拐点时�
 当前基准测试方向错了😮，新研究关注长期软件演进。GPT-5在SWE-Bench 65%但SWE-EVO只有21%，<a href="https://x.com/omarsar0/status/2007825862721232956">多文件持续推理是弱项(AI资讯)</a>。强模型主要卡在指令理解🔥。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke7cwg92eghaz4rgadryf92m.avif" alt="AI资讯：SWE-EVO基准测试结果对比图"><br/></p></li><li><p><strong>Web2.0产品被AI打败的反思。</strong>
 有人感慨做了很多东西在23年开始逐一被AI干掉💡。Claude Code生成的SEO页比土法SEO强太多，<a href="https://x.com/Yangyixxxx/status/2007812879123185999">Vibe Coding两三天就能缝合一套(AI资讯)</a>。连接用户生态才是AI Native🔥。<br/></p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
           <description><![CDATA[AI资讯日报 2026/1/6 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 豆包眼镜2000内售腾讯ima一键生成PPT SeedFold超AlphaFold3训练数据扩147倍 StackOverflow问答量跌破08年AI分流量 北京AI产业两年冲万亿Kimi融资破百亿 Mi]]></description>
-        </item>
-      
-        <item>
-          <title><![CDATA[2026-01-05日刊]]></title>
-          <link>https://ai.hubtoday.app//2026-01/2026-01-05/</link>
-          <guid>https://ai.hubtoday.app//2026-01/2026-01-05/</guid>
-          <pubDate>Mon, 05 Jan 2026 07:55:13 GMT</pubDate>
-          <content:encoded><![CDATA[<h2>AI资讯日报 2026/1/5</h2><blockquote><p><code>AI资讯</code> | <code>每日早读</code> | <code>全网数据聚合</code> | <code>前沿科学探索</code> | <code>行业自由发声</code> | <code>开源创新力量</code> | <code>AI与人类未来</code> | <a href="https://ai.hubtoday.app/">访问网页版↗️</a> | <a href="https://source.hubtoday.app/logo/wechat-qun.jpg">进群交流🤙</a></p></blockquote><h3><strong>今日摘要</strong></h3><pre><code>OpenAI研发智能笔硬件转单富士康
-国产MinT平台单CPU训万亿参数模型
-ControlNet作者新架构解长视频难题
-贵州推AI酿酒印度勒令X平台限时整改
-编程智能体爆火GitHub警告垃圾代码
-</code></pre><h3>产品与功能更新</h3><ol><li><strong>OpenAI首款硬件细节曝光。</strong>
-软件巨头OpenAI正跨界📝研发<a href="https://www.aibase.com/zh/news/24217">首款硬件(AI资讯)</a>，代号Gumdrop或为👀<strong>智能笔形态</strong>。手写笔记内容能⚡直接上传ChatGPT，为避险已将订单🏭转给<strong>富士康</strong>。预计该产品将在🚀2026年正式发布。</li></ol><h3>前沿研究</h3><ol><li><p><strong>中国团队抢跑后训练赛道。</strong>
-中国95后团队🇨🇳打造Mind Lab实验室，推出MinT🛠️<a href="https://www.jiqizhixin.com/articles/2026-01-04-6">后训练平台(AI资讯)</a>。单卡CPU即可📉训练<strong>万亿参数模型</strong>，成本优化十倍且⚡效率极高。比前OpenAI CTO团队更早🏆实现<strong>1T LoRA-RL</strong>。</p></li><li><p><strong>ControlNet作者攻克长视频。</strong>
-斯坦福博士🎓张吕敏再出新作，解决长视频🎥<a href="https://www.jiqizhixin.com/articles/2026-01-04-5">上下文爆炸(AI资讯)</a>难题。新架构将20秒视频📉压缩至<strong>极短上下文</strong>，两阶段策略🧠保留<strong>高频细节</strong>。让普通显卡也能⚡跑出高质量长视频。</p></li></ol><h3>行业展望与社会影响</h3><ol><li><p><strong>贵州力推AI赋能酱香白酒。</strong>
-贵州出台重磅📄<a href="https://www.aibase.com/zh/news/24220">三年行动方案(AI资讯)</a>，聚焦6+3产业🏔️<strong>集群数字化</strong>。AI将全面赋能🍷<strong>酱香白酒</strong>酿造工艺，化工能源也将🤖实现<strong>智能调度</strong>。力争民间投资💰占比达到42%。</p></li><li><p><strong>印度勒令X平台紧急整改。</strong>
-印度政府😡对X平台下达<a href="https://www.aibase.com/zh/news/24183">整改令(AI资讯)</a>，Grok因生成🚫<strong>女性不雅图</strong>惹祸。限72小时内⏳提交<strong>合规报告</strong>，否则将失去⚖️<strong>法律避风港</strong>保护。AI生成内容👮监管进入高危期。</p></li></ol><h3>开源TOP项目</h3><ol><li><p><strong>超高热度的编程智能体。</strong>
-这是一个⭐47k星的<a href="https://github.com/anomalyco/opencode">开源智能体(AI资讯)</a>，它能像人类一样💻编写<strong>复杂代码</strong>。</p></li><li><p><strong>二次元专属媒体中心。</strong>
-动漫爱好者📺必备的<a href="https://github.com/5rahim/seanime">媒体服务器(AI资讯)</a>，提供丝滑的✨<strong>Web管理界面</strong>。</p></li></ol><h3>社媒分享</h3><ol><li><p><strong>AI让读论文变厚了。</strong>
-博主让AI📝解读年度论文，从几千字扩充到🤯<a href="https://x.com/vista8/status/2007802169571901785">万字长文(AI资讯)</a>。<br/><img src="https://source.hubtoday.app/images/2026/01/news_01ke4s2zvjfk2tcgjm8rrt5s5b.avif" alt="AI资讯：Latent Space年度AI论文榜单截图"><br/></p></li><li><p><strong>代码速度与质量的博弈。</strong>
-GitHub警告⚠️<a href="https://x.com/hongming731/status/2007706612061057332">AI垃圾代码(AI资讯)</a>泛滥，写代码光快没用🚫必须<strong>可控且简洁</strong>。</p></li><li><p><strong>人机共创成为未来主流。</strong>
-未来创作是🤝<a href="https://x.com/dotey/status/2007639681207533626">人机协作(AI资讯)</a>模式，读者只在乎📚<strong>作品价值</strong>而非手段。</p></li></ol><hr><h2><strong>AI资讯日报语音版</strong></h2><table><thead><tr><th>🎙️ <strong>小宇宙</strong></th><th>📹 <strong>抖音</strong></th></tr></thead><tbody><tr><td><a href="https://www.xiaoyuzhoufm.com/podcast/683c62b7c1ca9cf575a5030e">来生小酒馆</a></td><td><a href="https://www.douyin.com/user/MS4wLjABAAAAwpwqPQlu38sO38VyWgw9ZjDEnN4bMR5j8x111UxpseHR9DpB6-CveI5KRXOWuFwG">自媒体账号</a></td></tr><tr><td><img src="https://source.hubtoday.app/logo/f959f7984e9163fc50d3941d79a7f262.md.png" alt="小酒馆"></td><td><img src="https://source.hubtoday.app/logo/7fc30805eeb831e1e2baa3a240683ca3.md.png" alt="情报站"></td></tr></tbody></table>]]></content:encoded>
-          <description><![CDATA[AI资讯日报 2026/1/5 AI资讯 | 每日早读 | 全网数据聚合 | 前沿科学探索 | 行业自由发声 | 开源创新力量 | AI与人类未来 | 访问网页版↗️ | 进群交流🤙 今日摘要 OpenAI研发智能笔硬件转单富士康 国产MinT平台单CPU训万亿参数模型 ControlNet作者新架构解长视频难题 贵州推AI酿酒印度勒令X平台限时整改 编程智能体爆火GitHub警告垃圾代码 产品]]></description>
         </item>
       
   </channel>
