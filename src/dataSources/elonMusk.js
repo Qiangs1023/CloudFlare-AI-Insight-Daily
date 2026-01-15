@@ -4,13 +4,13 @@ import { getRandomUserAgent, sleep, isDateWithinLastDays, stripHtml, formatDateT
 const ElonMuskDataSource = {
     type: 'elon-musk',
     async fetch(env, foloCookie) {
-        const feedId = env.ELONMUSK_FEED_ID;
+        const listId = env.ELONMUSK_LIST_ID;
         const fetchPages = parseInt(env.ELONMUSK_FETCH_PAGES || '1', 10);
         const allElonMuskItems = [];
         const filterDays = parseInt(env.FOLO_FILTER_DAYS || '7', 10);
 
-        if (!feedId) {
-            console.warn('ELONMUSK_FEED_ID is not set in environment variables. Skipping Elon Musk feed fetch.');
+        if (!listId) {
+            console.warn('ELONMUSK_LIST_ID is not set in environment variables. Skipping Elon Musk feed fetch.');
             return {
                 version: "https://jsonfeed.org/version/1.1",
                 title: "Elon Musk Feeds",
@@ -47,7 +47,7 @@ const ElonMuskDataSource = {
             }
 
             const body = {
-                feedId: feedId,
+                listId: listId,
                 view: 1,
                 withContent: true,
             };
@@ -78,7 +78,7 @@ const ElonMuskDataSource = {
                         content_html: entry.entries.content,
                         date_published: entry.entries.publishedAt,
                         authors: [{ name: entry.entries.author }],
-                        source: 'Elon Musk',
+                        source: entry.entries.author ? `${entry.feeds.title} - ${entry.entries.author}` : entry.feeds.title,
                     })));
                     publishedAfter = data.data[data.data.length - 1].entries.publishedAt;
                 } else {
