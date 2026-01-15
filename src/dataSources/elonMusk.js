@@ -38,12 +38,26 @@ const ElonMuskDataSource = {
             }
 
             const html = await response.text();
+            console.log(`Fetched HTML length: ${html.length}`);
             
-            // 从 HTML 中提取 JSON 数据
-            const jsonMatch = html.match(/window\.__HYDRATE__\["lists\.\$get,query:id=\d+"\]=JSON\.parse\('(.+?)'\)/);
+            // 从 HTML 中提取 JSON 数据 - 尝试多种匹配模式
+            let jsonMatch = html.match(/window\.__HYDRATE__\["lists\.\$get,query:id=\d+"\]=JSON\.parse\('(.+?)'\)/);
+            
+            if (!jsonMatch || !jsonMatch[1]) {
+                console.log('First pattern failed, trying alternative pattern...');
+                // 尝试另一种模式
+                jsonMatch = html.match(/window\.__HYDRATE__\["lists\.\$get.*?\]=JSON\.parse\('(.+?)'\)/);
+            }
+            
+            if (!jsonMatch || !jsonMatch[1]) {
+                console.log('Second pattern failed, trying broader pattern...');
+                // 尝试更宽泛的模式
+                jsonMatch = html.match(/__HYDRATE__\["lists\.\$get.*?\]=JSON\.parse\('(.+?)'\)/);
+            }
             
             if (!jsonMatch || !jsonMatch[1]) {
                 console.error('Failed to extract JSON data from share link');
+                console.log('HTML snippet:', html.substring(0, 500));
                 return {
                     version: "https://jsonfeed.org/version/1.1",
                     title: "Elon Musk Feeds",
@@ -54,9 +68,12 @@ const ElonMuskDataSource = {
                 };
             }
 
+            console.log('JSON match found, parsing...');
             // 解析 JSON 数据
             const jsonData = JSON.parse(jsonMatch[1]);
+            console.log('Parsed JSON keys:', Object.keys(jsonData));
             const entries = jsonData.entries || [];
+            console.log(`Found ${entries.length} entries`);
 
             // 过滤最近 N 天的内容
             const filteredEntries = entries.filter(entry => 
