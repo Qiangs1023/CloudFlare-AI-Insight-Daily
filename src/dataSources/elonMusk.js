@@ -5,8 +5,6 @@ const ElonMuskDataSource = {
     type: 'elon-musk',
     async fetch(env, foloCookie) {
         const feedId = env.ELONMUSK_FEED_ID;
-        const fetchPages = parseInt(env.ELONMUSK_FETCH_PAGES || '1', 10);
-        const allElonMuskItems = [];
         const filterDays = parseInt(env.FOLO_FILTER_DAYS || '7', 10);
 
         if (!feedId) {
@@ -21,86 +19,83 @@ const ElonMuskDataSource = {
             };
         }
 
-        let publishedAfter = null;
-        for (let i = 0; i < fetchPages; i++) {
-            const userAgent = getRandomUserAgent();
-            const headers = {
-                'User-Agent': userAgent,
-                'Content-Type': 'application/json',
-                'accept': 'application/json',
-                'accept-language': 'zh-CN,zh;q=0.9',
-                'baggage': 'sentry-environment=stable,sentry-release=5251fa921ef6cbb6df0ac4271c41c2b4a0ce7c50,sentry-public_key=e5bccf7428aa4e881ed5cb713fdff181,sentry-trace_id=2da50ca5ad944cb794670097d876ada8,sentry-sampled=true,sentry-sample_rand=0.06211835167903246,sentry-sample_rate=1',
-                'origin': 'https://app.follow.is',
-                'priority': 'u=1, i',
-                'sec-ch-ua': '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
-                'sec-ch-ua-mobile': '?1',
-                'sec-ch-ua-platform': '"Android"',
-                'sec-fetch-dest': 'empty',
-                'sec-fetch-mode': 'cors',
-                'sec-fetch-site': 'same-site',
-                'x-app-name': 'Folo Web',
-                'x-app-version': '0.4.9',
+        try {
+            console.log(`Fetching Elon Musk data from share link...`);
+            // 使用 Folo 分享链接 API,不需要认证
+            const shareUrl = `https://app.folo.is/share/feeds/${feedId}?view=1`;
+            const response = await fetch(shareUrl);
+
+            if (!response.ok) {
+                console.error(`Failed to fetch Elon Musk data: ${response.statusText}`);
+                return {
+                    version: "https://jsonfeed.org/version/1.1",
+                    title: "Elon Musk Feeds",
+                    home_page_url: "https://twitter.com/elonmusk",
+                    description: "Aggregated Elon Musk feeds from Twitter and other sources",
+                    language: "zh-cn",
+                    items: []
+                };
+            }
+
+            const html = await response.text();
+            
+            // 从 HTML 中提取 JSON 数据
+            const jsonMatch = html.match(/window\.__HYDRATE__\["feeds\.\$get,query:id=\d+"\]=JSON\.parse\('(.+?)'\)/);
+            
+            if (!jsonMatch || !jsonMatch[1]) {
+                console.error('Failed to extract JSON data from share link');
+                return {
+                    version: "https://jsonfeed.org/version/1.1",
+                    title: "Elon Musk Feeds",
+                    home_page_url: "https://twitter.com/elonmusk",
+                    description: "Aggregated Elon Musk feeds from Twitter and other sources",
+                    language: "zh-cn",
+                    items: []
+                };
+            }
+
+            // 解析 JSON 数据
+            const jsonData = JSON.parse(jsonMatch[1]);
+            const entries = jsonData.entries || [];
+
+            // 过滤最近 N 天的内容
+            const filteredEntries = entries.filter(entry => 
+                isDateWithinLastDays(entry.publishedAt, filterDays)
+            );
+
+            // 转换为统一格式
+            const items = filteredEntries.map(entry => ({
+                id: entry.id,
+                url: entry.url,
+                title: entry.title || entry.description?.substring(0, 100) || '无标题',
+                content_html: entry.content || entry.description || '',
+                date_published: entry.publishedAt,
+                authors: [{ name: entry.author || 'Elon Musk' }],
+                source: 'Elon Musk',
+            }));
+
+            console.log(`Successfully fetched ${items.length} Elon Musk entries`);
+
+            return {
+                version: "https://jsonfeed.org/version/1.1",
+                title: "Elon Musk Feeds",
+                home_page_url: "https://twitter.com/elonmusk",
+                description: "Aggregated Elon Musk feeds from Twitter and other sources",
+                language: "zh-cn",
+                items: items
             };
 
-            if (foloCookie) {
-                headers['Cookie'] = foloCookie;
-            }
-
-            const body = {
-                feedId: feedId,
-                view: 1,
-                withContent: true,
+        } catch (error) {
+            console.error(`Error fetching Elon Musk data:`, error);
+            return {
+                version: "https://jsonfeed.org/version/1.1",
+                title: "Elon Musk Feeds",
+                home_page_url: "https://twitter.com/elonmusk",
+                description: "Aggregated Elon Musk feeds from Twitter and other sources",
+                language: "zh-cn",
+                items: []
             };
-
-            if (publishedAfter) {
-                body.publishedAfter = publishedAfter;
-            }
-
-            try {
-                console.log(`Fetching Elon Musk data, page ${i + 1}...`);
-                const response = await fetch(env.FOLO_DATA_API, {
-                    method: 'POST',
-                    headers: headers,
-                    body: JSON.stringify(body),
-                });
-
-                if (!response.ok) {
-                    console.error(`Failed to fetch Elon Musk data, page ${i + 1}: ${response.statusText}`);
-                    break;
-                }
-                const data = await response.json();
-                if (data && data.data && data.data.length > 0) {
-                    const filteredItems = data.data.filter(entry => isDateWithinLastDays(entry.entries.publishedAt, filterDays));
-                    allElonMuskItems.push(...filteredItems.map(entry => ({
-                        id: entry.entries.id,
-                        url: entry.entries.url,
-                        title: entry.entries.title,
-                        content_html: entry.entries.content,
-                        date_published: entry.entries.publishedAt,
-                        authors: [{ name: entry.entries.author }],
-                        source: `elonmusk`,
-                    })));
-                    publishedAfter = data.data[data.data.length - 1].entries.publishedAt;
-                } else {
-                    console.log(`No more data for Elon Musk, page ${i + 1}.`);
-                    break;
-                }
-            } catch (error) {
-                console.error(`Error fetching Elon Musk data, page ${i + 1}:`, error);
-                break;
-            }
-
-            await sleep(Math.random() * 5000);
         }
-
-        return {
-            version: "https://jsonfeed.org/version/1.1",
-            title: "Elon Musk Feeds",
-            home_page_url: "https://twitter.com/elonmusk",
-            description: "Aggregated Elon Musk feeds from Twitter and other sources",
-            language: "zh-cn",
-            items: allElonMuskItems
-        };
     },
 
     transform(rawData, sourceType) {
