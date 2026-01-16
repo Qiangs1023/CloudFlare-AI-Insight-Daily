@@ -3,12 +3,13 @@ import { getRandomUserAgent, sleep, isDateWithinLastDays, stripHtml, formatDateT
 const NewsAggregatorDataSource = {
     type: 'news-aggregator',
     async fetch(env, foloCookie) {
-        const listId = env.NEWS_AGGREGATOR_LIST_ID;
+        // 支持多个 listId，用逗号分隔
+        const listIds = env.NEWS_AGGREGATOR_LIST_ID ? env.NEWS_AGGREGATOR_LIST_ID.split(',').map(id => id.trim()) : [];
         const fetchPages = parseInt(env.NEWS_AGGREGATOR_FETCH_PAGES || '1', 10);
         const allNewsItems = [];
         const filterDays = parseInt(env.FOLO_FILTER_DAYS || '3', 10);
 
-        if (!listId) {
+        if (listIds.length === 0) {
             console.warn('NEWS_AGGREGATOR_LIST_ID is not set in environment variables. Skipping news aggregator fetch.');
             return {
                 version: "https://jsonfeed.org/version/1.1",
@@ -20,76 +21,81 @@ const NewsAggregatorDataSource = {
             };
         }
 
-        let publishedAfter = null;
-        for (let i = 0; i < fetchPages; i++) {
-            const userAgent = getRandomUserAgent();
-            const headers = {
-                'User-Agent': userAgent,
-                'Content-Type': 'application/json',
-                'accept': 'application/json',
-                'accept-language': 'zh-CN,zh;q=0.9',
-                'baggage': 'sentry-environment=stable,sentry-release=5251fa921ef6cbb6df0ac4271c41c2b4a0ce7c50,sentry-public_key=e5bccf7428aa4e881ed5cb713fdff181,sentry-trace_id=2da50ca5ad944cb794670097d876ada8,sentry-sampled=true,sentry-sample_rand=0.06211835167903246,sentry-sample_rate=1',
-                'origin': 'https://app.follow.is',
-                'priority': 'u=1, i',
-                'sec-ch-ua': '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
-                'sec-ch-ua-mobile': '?1',
-                'sec-ch-ua-platform': '"Android"',
-                'sec-fetch-dest': 'empty',
-                'sec-fetch-mode': 'cors',
-                'sec-fetch-site': 'same-site',
-                'x-app-name': 'Folo Web',
-                'x-app-version': '0.4.9',
-            };
+        // 遍历每个 listId 获取数据
+        for (const listId of listIds) {
+            console.log(`Fetching data from listId: ${listId}`);
+            let publishedAfter = null;
 
-            if (foloCookie) {
-                headers['Cookie'] = foloCookie;
-            }
+            for (let i = 0; i < fetchPages; i++) {
+                const userAgent = getRandomUserAgent();
+                const headers = {
+                    'User-Agent': userAgent,
+                    'Content-Type': 'application/json',
+                    'accept': 'application/json',
+                    'accept-language': 'zh-CN,zh;q=0.9',
+                    'baggage': 'sentry-environment=stable,sentry-release=5251fa921ef6cbb6df0ac4271c41c2b4a0ce7c50,sentry-public_key=e5bccf7428aa4e881ed5cb713fdff181,sentry-trace_id=2da50ca5ad944cb794670097d876ada8,sentry-sampled=true,sentry-sample_rand=0.06211835167903246,sentry-sample_rate=1',
+                    'origin': 'https://app.follow.is',
+                    'priority': 'u=1, i',
+                    'sec-ch-ua': '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
+                    'sec-ch-ua-mobile': '?1',
+                    'sec-ch-ua-platform': '"Android"',
+                    'sec-fetch-dest': 'empty',
+                    'sec-fetch-mode': 'cors',
+                    'sec-fetch-site': 'same-site',
+                    'x-app-name': 'Folo Web',
+                    'x-app-version': '0.4.9',
+                };
 
-            const body = {
-                listId: listId,
-                view: 1,
-                withContent: true,
-            };
+                if (foloCookie) {
+                    headers['Cookie'] = foloCookie;
+                }
 
-            if (publishedAfter) {
-                body.publishedAfter = publishedAfter;
-            }
+                const body = {
+                    listId: listId,
+                    view: 1,
+                    withContent: true,
+                };
 
-            try {
-                console.log(`Fetching News Aggregator data, page ${i + 1}...`);
-                const response = await fetch(env.FOLO_DATA_API, {
-                    method: 'POST',
-                    headers: headers,
-                    body: JSON.stringify(body),
-                });
+                if (publishedAfter) {
+                    body.publishedAfter = publishedAfter;
+                }
 
-                if (!response.ok) {
-                    console.error(`Failed to fetch News Aggregator data, page ${i + 1}: ${response.statusText}`);
+                try {
+                    console.log(`Fetching News Aggregator data from list ${listId}, page ${i + 1}...`);
+                    const response = await fetch(env.FOLO_DATA_API, {
+                        method: 'POST',
+                        headers: headers,
+                        body: JSON.stringify(body),
+                    });
+
+                    if (!response.ok) {
+                        console.error(`Failed to fetch News Aggregator data from list ${listId}, page ${i + 1}: ${response.statusText}`);
+                        break;
+                    }
+                    const data = await response.json();
+                    if (data && data.data && data.data.length > 0) {
+                        const filteredItems = data.data.filter(entry => isDateWithinLastDays(entry.entries.publishedAt, filterDays));
+                        allNewsItems.push(...filteredItems.map(entry => ({
+                            id: entry.entries.id,
+                            url: entry.entries.url,
+                            title: entry.entries.title,
+                            content_html: entry.entries.content,
+                            date_published: entry.entries.publishedAt,
+                            authors: [{ name: entry.entries.author }],
+                            source: entry.entries.author ? `${entry.feeds.title} - ${entry.entries.author}` : entry.feeds.title,
+                        })));
+                        publishedAfter = data.data[data.data.length - 1].entries.publishedAt;
+                    } else {
+                        console.log(`No more data for News Aggregator list ${listId}, page ${i + 1}.`);
+                        break;
+                    }
+                } catch (error) {
+                    console.error(`Error fetching News Aggregator data from list ${listId}, page ${i + 1}:`, error);
                     break;
                 }
-                const data = await response.json();
-                if (data && data.data && data.data.length > 0) {
-                    const filteredItems = data.data.filter(entry => isDateWithinLastDays(entry.entries.publishedAt, filterDays));
-                    allNewsItems.push(...filteredItems.map(entry => ({
-                        id: entry.entries.id,
-                        url: entry.entries.url,
-                        title: entry.entries.title,
-                        content_html: entry.entries.content,
-                        date_published: entry.entries.publishedAt,
-                        authors: [{ name: entry.entries.author }],
-                        source: entry.entries.author ? `${entry.feeds.title} - ${entry.entries.author}` : entry.feeds.title,
-                    })));
-                    publishedAfter = data.data[data.data.length - 1].entries.publishedAt;
-                } else {
-                    console.log(`No more data for News Aggregator, page ${i + 1}.`);
-                    break;
-                }
-            } catch (error) {
-                console.error(`Error fetching News Aggregator data, page ${i + 1}:`, error);
-                break;
-            }
 
-            await sleep(Math.random() * 5000);
+                await sleep(Math.random() * 5000);
+            }
         }
 
         return {

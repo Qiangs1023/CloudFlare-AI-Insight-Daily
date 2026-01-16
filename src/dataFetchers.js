@@ -4,12 +4,12 @@ import GithubTrendingDataSource from './dataSources/github-trending.js';
 import PapersDataSource from './dataSources/papers.js';
 import TwitterDataSource from './dataSources/twitter.js';
 import RedditDataSource from './dataSources/reddit.js';
-import ElonMuskDataSource from './dataSources/elonMusk.js';
+import FoloListDataSource from './dataSources/foloList.js';
 
 
 // Register data sources as arrays to support multiple sources per type
 export const dataSources = {
-    news: { name: '新闻', sources: [NewsAggregatorDataSource, ElonMuskDataSource] },
+    news: { name: '新闻', sources: [NewsAggregatorDataSource, FoloListDataSource] },
     project: { name: '项目', sources: [GithubTrendingDataSource] },
     paper: { name: '论文', sources: [PapersDataSource] },
     socialMedia: { name: '社交平台', sources: [TwitterDataSource, RedditDataSource] },
