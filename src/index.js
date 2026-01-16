@@ -59,8 +59,11 @@ export default {
         } else if (path === '/generateRssContent' && request.method === 'GET') {
             return await handleGenerateRssContent(request, env);
         } else if (path === '/test-cron' && request.method === 'GET') {
-            // 测试端点 - 手动触发 Cron 任务
+            // 测试端点 - 手动触发完整的 Cron 任务（可能需要较长时间）
             return await handleTestCron(env);
+        } else if (path === '/test-fetch' && request.method === 'GET') {
+            // 简化版测试端点 - 只测试数据抓取功能
+            return await handleTestFetch(env);
         }
 
         // Authentication check for all other paths
@@ -502,6 +505,249 @@ async function handleTestCron(env) {
 <body>
     <div class="container">
         <h1>❌ Cron 自动化测试失败</h1>
+        <div class="error">测试过程中出现错误</div>
+        
+        <h2>执行日志:</h2>
+        ${logs.map(log => `
+            <div class="log-item ${log.status}">
+                <span class="step">Step ${log.step}:</span> ${log.message}
+            </div>
+        `).join('')}
+        
+        <div class="error-message">
+            <strong>错误详情:</strong><br>
+            ${error.message}
+        </div>
+        
+        <a href="/" class="back-link">返回首页</a>
+    </div>
+</body>
+</html>
+        `;
+        
+        return new Response(htmlResponse, { 
+            status: 500, 
+            headers: { 'Content-Type': 'text/html; charset=utf-8' } 
+        });
+    }
+}
+
+/**
+ * 简化版测试端点 - 只测试数据抓取功能
+ */
+async function handleTestFetch(env) {
+    console.log("Manual fetch test triggered at:", new Date().toISOString());
+    
+    const startTime = Date.now();
+    const logs = [];
+    
+    try {
+        // 1. 抓取数据
+        logs.push({ step: 1, status: 'started', message: 'Fetching data from all sources...' });
+        await fetchAndWriteData(env);
+        logs.push({ step: 1, status: 'completed', message: 'Data fetching completed' });
+        
+        // 2. 获取抓取的数据统计
+        const dateStr = new Date().toISOString().split('T')[0];
+        const allFetchedData = {};
+        const fetchPromises = [];
+        
+        for (const sourceType in dataSources) {
+            if (Object.hasOwnProperty.call(dataSources, sourceType)) {
+                fetchPromises.push(
+                    getFromKV(env.DATA_KV, `${dateStr}-${sourceType}`).then(data => {
+                        allFetchedData[sourceType] = data || [];
+                    })
+                );
+            }
+        }
+        await Promise.allSettled(fetchPromises);
+        
+        // 统计数据
+        for (const sourceType in dataSources) {
+            if (Object.hasOwnProperty.call(dataSources, sourceType)) {
+                const count = allFetchedData[sourceType] ? allFetchedData[sourceType].length : 0;
+                logs.push({ step: 'stats', status: 'info', message: `${dataSources[sourceType].name}: ${count} items` });
+            }
+        }
+        
+        const endTime = Date.now();
+        const duration = ((endTime - startTime) / 1000).toFixed(2);
+        
+        logs.push({ step: 'summary', status: 'success', message: `Fetch test completed in ${duration} seconds`, duration });
+        
+        const htmlResponse = `
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据抓取测试结果</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .success {
+            color: #28a745;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .log-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background: #f8f9fa;
+        }
+        .log-item.completed {
+            border-left-color: #28a745;
+        }
+        .log-item.started {
+            border-left-color: #ffc107;
+        }
+        .log-item.info {
+            border-left-color: #17a2b8;
+        }
+        .step {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .duration {
+            color: #666;
+            font-size: 14px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-link:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 数据抓取测试</h1>
+        <div class="success">✅ 数据抓取成功完成！</div>
+        <p class="duration">总耗时: ${duration} 秒</p>
+        <p><strong>日期:</strong> ${dateStr}</p>
+        
+        <h2>执行日志:</h2>
+        ${logs.map(log => `
+            <div class="log-item ${log.status}">
+                <span class="step">${log.step === 'stats' ? '📊' : log.step === 'summary' ? '📝' : 'Step ' + log.step}:</span> ${log.message}
+            </div>
+        `).join('')}
+        
+        <h2>下一步:</h2>
+        <p>数据已成功抓取并存储到 KV。你可以：</p>
+        <ul>
+            <li>访问 <a href="/test-cron" target="_blank">/test-cron</a> 测试完整的自动化流程（包括 AI 生成和 GitHub 提交）</li>
+            <li>访问 <a href="/login" target="_blank">/login</a> 登录后手动选择内容生成 AI 日报</li>
+        </ul>
+        
+        <a href="/" class="back-link">返回首页</a>
+    </div>
+</body>
+</html>
+        `;
+        
+        return new Response(htmlResponse, { 
+            status: 200, 
+            headers: { 'Content-Type': 'text/html; charset=utf-8' } 
+        });
+        
+    } catch (error) {
+        console.error("Manual fetch test failed:", error);
+        const endTime = Date.now();
+        const duration = ((endTime - startTime) / 1000).toFixed(2);
+        
+        logs.push({ step: 'error', status: 'failed', message: error.message, duration });
+        
+        const htmlResponse = `
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据抓取测试失败</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .error {
+            color: #dc3545;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .log-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background: #f8f9fa;
+        }
+        .log-item.failed {
+            border-left-color: #dc3545;
+        }
+        .step {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .error-message {
+            color: #dc3545;
+            margin: 10px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-link:hover {
+            background: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>❌ 数据抓取测试失败</h1>
         <div class="error">测试过程中出现错误</div>
         
         <h2>执行日志:</h2>
