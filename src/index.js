@@ -58,6 +58,9 @@ export default {
             return await handleWriteRssData(request, env);
         } else if (path === '/generateRssContent' && request.method === 'GET') {
             return await handleGenerateRssContent(request, env);
+        } else if (path === '/test-cron' && request.method === 'GET') {
+            // 测试端点 - 手动触发 Cron 任务
+            return await handleTestCron(env);
         }
 
         // Authentication check for all other paths
@@ -306,4 +309,222 @@ async function commitToGitHub(env, aiContentResult) {
     }
     
     console.log("GitHub commit completed");
+}
+
+/**
+ * 测试端点 - 手动触发 Cron 任务
+ */
+async function handleTestCron(env) {
+    console.log("Manual Cron test triggered at:", new Date().toISOString());
+    
+    const startTime = Date.now();
+    const logs = [];
+    
+    try {
+        // 1. 抓取数据
+        logs.push({ step: 1, status: 'started', message: 'Fetching data from all sources...' });
+        await fetchAndWriteData(env);
+        logs.push({ step: 1, status: 'completed', message: 'Data fetching completed' });
+        
+        // 2. 生成 AI 内容
+        logs.push({ step: 2, status: 'started', message: 'Generating AI content...' });
+        const aiContentResult = await generateAIContent(env);
+        logs.push({ step: 2, status: 'completed', message: `AI content generated: ${aiContentResult.dailySummary.length} chars (summary), ${aiContentResult.podcastScript.length} chars (podcast)` });
+        
+        // 3. 提交到 GitHub
+        logs.push({ step: 3, status: 'started', message: 'Committing to GitHub...' });
+        await commitToGitHub(env, aiContentResult);
+        logs.push({ step: 3, status: 'completed', message: 'GitHub commit completed' });
+        
+        const endTime = Date.now();
+        const duration = ((endTime - startTime) / 1000).toFixed(2);
+        
+        logs.push({ step: 'summary', status: 'success', message: `All tasks completed in ${duration} seconds`, duration });
+        
+        const htmlResponse = `
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cron 测试结果</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .success {
+            color: #28a745;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .log-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background: #f8f9fa;
+        }
+        .log-item.completed {
+            border-left-color: #28a745;
+        }
+        .log-item.started {
+            border-left-color: #ffc107;
+        }
+        .step {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .duration {
+            color: #666;
+            font-size: 14px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-link:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Cron 自动化测试</h1>
+        <div class="success">✅ 测试成功完成！</div>
+        <p class="duration">总耗时: ${duration} 秒</p>
+        
+        <h2>执行日志:</h2>
+        ${logs.map(log => `
+            <div class="log-item ${log.status}">
+                <span class="step">Step ${log.step}:</span> ${log.message}
+            </div>
+        `).join('')}
+        
+        <a href="/" class="back-link">返回首页</a>
+    </div>
+</body>
+</html>
+        `;
+        
+        return new Response(htmlResponse, { 
+            status: 200, 
+            headers: { 'Content-Type': 'text/html; charset=utf-8' } 
+        });
+        
+    } catch (error) {
+        console.error("Manual Cron test failed:", error);
+        const endTime = Date.now();
+        const duration = ((endTime - startTime) / 1000).toFixed(2);
+        
+        logs.push({ step: 'error', status: 'failed', message: error.message, duration });
+        
+        const htmlResponse = `
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cron 测试失败</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .error {
+            color: #dc3545;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .log-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background: #f8f9fa;
+        }
+        .log-item.failed {
+            border-left-color: #dc3545;
+        }
+        .step {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .error-message {
+            color: #dc3545;
+            margin: 10px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-link:hover {
+            background: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>❌ Cron 自动化测试失败</h1>
+        <div class="error">测试过程中出现错误</div>
+        
+        <h2>执行日志:</h2>
+        ${logs.map(log => `
+            <div class="log-item ${log.status}">
+                <span class="step">Step ${log.step}:</span> ${log.message}
+            </div>
+        `).join('')}
+        
+        <div class="error-message">
+            <strong>错误详情:</strong><br>
+            ${error.message}
+        </div>
+        
+        <a href="/" class="back-link">返回首页</a>
+    </div>
+</body>
+</html>
+        `;
+        
+        return new Response(htmlResponse, { 
+            status: 500, 
+            headers: { 'Content-Type': 'text/html; charset=utf-8' } 
+        });
+    }
 }
