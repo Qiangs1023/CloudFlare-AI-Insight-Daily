@@ -8,6 +8,10 @@ kv_namespaces = [
   { binding = "DATA_KV", id = "71cf4115e49c4bda8fc52c7f6fda3e78" }
 ]
 
+# Cron Triggers - 每天UTC 23:00（北京时间 07:00）自动触发
+[triggers]
+crons = ["0 23 * * *"]
+
 [vars]
 IMG_PROXY = ""  #图片代理链接，用于处理图片不显示
 OPEN_TRANSLATE = "true"

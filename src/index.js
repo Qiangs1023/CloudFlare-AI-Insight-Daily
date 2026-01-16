@@ -3,12 +3,20 @@ import { handleWriteData } from './handlers/writeData.js';
 import { handleGetContent } from './handlers/getContent.js';
 import { handleGetContentHtml } from './handlers/getContentHtml.js';
 import { handleGenAIContent, handleGenAIPodcastScript, handleGenAIDailyAnalysis } from './handlers/genAIContent.js';
-import { handleGenAIDailyPage } from './handlers/genAIDailyPage.js'; // Import handleGenAIDailyPage
+import { handleGenAIDailyPage } from './handlers/genAIDailyPage.js';
 import { handleCommitToGitHub } from './handlers/commitToGitHub.js';
 import { handleRss } from './handlers/getRss.js';
 import { handleWriteRssData, handleGenerateRssContent } from './handlers/writeRssData.js';
-import { dataSources } from './dataFetchers.js';
+import { dataSources, fetchAllData } from './dataFetchers.js';
 import { handleLogin, isAuthenticated, handleLogout } from './auth.js';
+import { storeInKV, getFromKV } from './kv.js';
+import { stripHtml, removeMarkdownCodeBlock, formatMarkdownText } from './helpers.js';
+import { callChatAPIStream } from './chatapi.js';
+import { getSystemPromptSummarizationStepOne } from './prompt/summarizationPromptStepZero.js';
+import { getSystemPromptSummarizationStepTwo } from './prompt/summarizationPromptStepTwo.js';
+import { getSystemPromptSummarizationStepThree } from './prompt/summarizationPromptStepThree.js';
+import { getSystemPromptPodcastFormatting } from './prompt/podcastFormattingPrompt.js';
+import { getGitHubFileSha, createOrUpdateGitHubFile } from './github.js';
 
 export default {
     async fetch(request, env) {
@@ -96,5 +104,206 @@ export default {
             response.headers.append('Set-Cookie', newCookie);
         }
         return response;
+    },
+
+    async scheduled(event, env, ctx) {
+        // Cron 触发器处理 - 每天UTC 23:00（北京时间 07:00）自动触发
+        console.log("Cron trigger activated at:", new Date().toISOString());
+        
+        try {
+            // 1. 抓取数据
+            console.log("Step 1: Fetching data from all sources...");
+            await fetchAndWriteData(env);
+            
+            // 2. 生成 AI 内容
+            console.log("Step 2: Generating AI content...");
+            const aiContentResult = await generateAIContent(env);
+            
+            // 3. 提交到 GitHub
+            console.log("Step 3: Committing to GitHub...");
+            await commitToGitHub(env, aiContentResult);
+            
+            console.log("Cron task completed successfully at:", new Date().toISOString());
+        } catch (error) {
+            console.error("Cron task failed:", error);
+            // 可以在这里添加错误通知逻辑
+        }
     }
 };
+
+// ========================
+// 自动化任务辅助函数
+// ========================
+
+/**
+ * 自动化数据抓取
+ */
+async function fetchAndWriteData(env) {
+    const dateStr = new Date().toISOString().split('T')[0];
+    console.log(`Fetching data for date: ${dateStr}`);
+    
+    const foloCookie = env.FOLO_COOKIE_KV_KEY || null;
+    const allUnifiedData = await fetchAllData(env, foloCookie);
+    
+    const storePromises = [];
+    for (const sourceType in dataSources) {
+        if (Object.hasOwnProperty.call(dataSources, sourceType)) {
+            const data = allUnifiedData[sourceType] || [];
+            storePromises.push(storeInKV(env.DATA_KV, `${dateStr}-${sourceType}`, data));
+            console.log(`Fetched ${sourceType}: ${data.length} items`);
+        }
+    }
+    
+    await Promise.allSettled(storePromises);
+    console.log("Data fetching completed");
+}
+
+/**
+ * 自动化 AI 内容生成
+ */
+async function generateAIContent(env) {
+    const dateStr = new Date().toISOString().split('T')[0];
+    console.log(`Generating AI content for date: ${dateStr}`);
+    
+    // 获取所有数据
+    const allFetchedData = {};
+    const fetchPromises = [];
+    for (const sourceType in dataSources) {
+        if (Object.hasOwnProperty.call(dataSources, sourceType)) {
+            fetchPromises.push(
+                getFromKV(env.DATA_KV, `${dateStr}-${sourceType}`).then(data => {
+                    allFetchedData[sourceType] = data || [];
+                })
+            );
+        }
+    }
+    await Promise.allSettled(fetchPromises);
+    
+    // 收集所有数据项
+    const selectedContentItems = [];
+    for (const sourceType in dataSources) {
+        if (Object.hasOwnProperty.call(dataSources, sourceType)) {
+            const items = allFetchedData[sourceType] || [];
+            for (const item of items) {
+                let itemText = "";
+                switch (item.type) {
+                    case 'news':
+                        itemText = `News Title: ${item.title}\nPublished: ${item.published_date}\nUrl: ${item.url}\nContent Summary: ${stripHtml(item.details.content_html)}`;
+                        break;
+                    case 'project':
+                        itemText = `Project Name: ${item.title}\nPublished: ${item.published_date}\nUrl: ${item.url}\nDescription: ${item.description}\nStars: ${item.details.totalStars}`;
+                        break;
+                    case 'paper':
+                        itemText = `Papers Title: ${item.title}\nPublished: ${item.published_date}\nUrl: ${item.url}\nAbstract/Content Summary: ${stripHtml(item.details.content_html)}`;
+                        break;
+                    case 'socialMedia':
+                        itemText = `socialMedia Post by ${item.authors}：Published: ${item.published_date}\nUrl: ${item.url}\nContent: ${stripHtml(item.details.content_html)}`;
+                        break;
+                    default:
+                        itemText = `Type: ${item.type}\nTitle: ${item.title || 'N/A'}\nDescription: ${item.description || 'N/A'}\nURL: ${item.url || 'N/A'}`;
+                        if (item.published_date) itemText += `\nPublished: ${item.published_date}`;
+                        if (item.source) itemText += `\nSource: ${item.source}`;
+                        if (item.details && item.details.content_html) itemText += `\nContent: ${stripHtml(item.details.content_html)}`;
+                        break;
+                }
+                if (itemText) {
+                    selectedContentItems.push(itemText);
+                }
+            }
+        }
+    }
+    
+    console.log(`Total items to process: ${selectedContentItems.length}`);
+    
+    // 生成 AI 摘要
+    const fullPromptForCall1_System = getSystemPromptSummarizationStepOne();
+    const chunkSize = 5;
+    const summaryPromises = [];
+    
+    for (let i = 0; i < selectedContentItems.length; i += chunkSize) {
+        const chunk = selectedContentItems.slice(i, i + chunkSize);
+        const chunkPrompt = chunk.join('\n\n---\n\n');
+        
+        summaryPromises.push((async () => {
+            let summarizedChunks = [];
+            for await (const streamChunk of callChatAPIStream(env, chunkPrompt, fullPromptForCall1_System)) {
+                summarizedChunks.push(streamChunk);
+            }
+            return summarizedChunks.join('');
+        })());
+    }
+    
+    const summaries = await Promise.all(summaryPromises);
+    const summarizedContent = summaries.join('\n\n---\n\n');
+    
+    // 第二轮摘要
+    const fullPromptForCall2_System = getSystemPromptSummarizationStepTwo();
+    let finalSummaryChunks = [];
+    for await (const chunk of callChatAPIStream(env, summarizedContent, fullPromptForCall2_System)) {
+        finalSummaryChunks.push(chunk);
+    }
+    const finalSummary = finalSummaryChunks.join('');
+    
+    // 第三轮摘要
+    const fullPromptForCall3_System = getSystemPromptSummarizationStepThree();
+    let finalFinalSummaryChunks = [];
+    for await (const chunk of callChatAPIStream(env, finalSummary, fullPromptForCall3_System)) {
+        finalFinalSummaryChunks.push(chunk);
+    }
+    const finalFinalSummary = removeMarkdownCodeBlock(finalFinalSummaryChunks.join(''));
+    
+    // 生成播客脚本
+    const podcastSystemPrompt = getSystemPromptPodcastFormatting(env);
+    let podcastChunks = [];
+    for await (const chunk of callChatAPIStream(env, finalFinalSummary, podcastSystemPrompt)) {
+        podcastChunks.push(chunk);
+    }
+    const podcastScript = removeMarkdownCodeBlock(podcastChunks.join(''));
+    
+    console.log("AI content generation completed");
+    
+    return {
+        date: dateStr,
+        dailySummary: finalFinalSummary,
+        podcastScript: podcastScript
+    };
+}
+
+/**
+ * 自动化 GitHub 提交
+ */
+async function commitToGitHub(env, aiContentResult) {
+    const { date, dailySummary, podcastScript } = aiContentResult;
+    console.log(`Committing to GitHub for date: ${date}`);
+    
+    const filesToCommit = [];
+    
+    if (dailySummary) {
+        filesToCommit.push({ 
+            path: `daily/${date}.md`, 
+            content: formatMarkdownText(dailySummary), 
+            description: "Daily Summary File" 
+        });
+    }
+    
+    if (podcastScript) {
+        filesToCommit.push({ 
+            path: `podcast/${date}.md`, 
+            content: podcastScript, 
+            description: "Podcast Script File" 
+        });
+    }
+    
+    for (const file of filesToCommit) {
+        try {
+            const existingSha = await getGitHubFileSha(env, file.path);
+            const commitMessage = `${existingSha ? 'Update' : 'Create'} ${file.description.toLowerCase()} for ${date}`;
+            await createOrUpdateGitHubFile(env, file.path, file.content, commitMessage, existingSha);
+            console.log(`GitHub commit success for ${file.path}`);
+        } catch (err) {
+            console.error(`Failed to commit ${file.path} to GitHub:`, err);
+        }
+    }
+    
+    console.log("GitHub commit completed");
+}
