@@ -8,14 +8,17 @@ export async function handleWriteData(request, env) {
     const dateStr = dateParam ? dateParam : getISODate();
     console.log(`Starting /writeData process for date: ${dateStr}`);
     let category = null;
-    let foloCookie = null;
+    let foloCookie = env.FOLO_COOKIE_KV_KEY || null; // 从环境变量获取默认 Cookie
     
     try {
         // 尝试解析请求体，获取 category 参数
         if (request.headers.get('Content-Type')?.includes('application/json')) {
             const requestBody = await request.json();
             category = requestBody.category;
-            foloCookie = requestBody.foloCookie; // 获取 foloCookie
+            // 如果请求体中有 foloCookie,使用请求体中的,否则使用环境变量中的
+            if (requestBody.foloCookie) {
+                foloCookie = requestBody.foloCookie;
+            }
         }
 
         console.log(`Starting /writeData process for category: ${category || 'all'} with foloCookie presence: ${!!foloCookie}`);
