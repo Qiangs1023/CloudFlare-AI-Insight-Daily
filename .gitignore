@@ -33,3 +33,6 @@ Thumbs.db
 # 临时文件
 tmp/
 temp/cookies.txt
+
+# iFlow CLI 工作流配置文档
+WORKFLOW_CONFIG.md
