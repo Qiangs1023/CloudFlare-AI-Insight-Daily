@@ -18,6 +18,12 @@ export async function handleWriteData(request, env) {
             foloCookie = requestBody.foloCookie;
         }
 
+        // 如果前端没传 foloCookie，则从环境变量获取
+        if (!foloCookie && env.FOLO_COOKIE) {
+            foloCookie = env.FOLO_COOKIE;
+            console.log('Using FOLO_COOKIE from environment variables');
+        }
+
         console.log(`Starting /writeData process for category: ${category || 'all'} with foloCookie presence: ${!!foloCookie}`);
 
         let dataToStore = {};
