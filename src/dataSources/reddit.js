@@ -55,7 +55,7 @@ const RedditDataSource = {
             }
 
             try {
-                console.log(`Fetching Reddit data, page ${i + 1}...`);
+                console.log(`Fetching Reddit data, page ${i + 1}... with foloCookie: ${foloCookie ? 'present' : 'missing'}`);
                 const response = await fetch(env.FOLO_DATA_API, {
                     method: 'POST',
                     headers: headers,
@@ -63,10 +63,12 @@ const RedditDataSource = {
                 });
 
                 if (!response.ok) {
-                    console.error(`Failed to fetch Reddit data, page ${i + 1}: ${response.statusText}`);
+                    const errorText = await response.text();
+                    console.error(`Failed to fetch Reddit data, page ${i + 1}: ${response.status} ${response.statusText}`, errorText);
                     break;
                 }
                 const data = await response.json();
+                console.log(`Reddit API response for page ${i + 1}:`, JSON.stringify(data).substring(0, 500));
                 if (data && data.data && data.data.length > 0) {
                     const filteredItems = data.data.filter(entry => isDateWithinLastDays(entry.entries.publishedAt, filterDays));
                     allRedditItems.push(...filteredItems.map(entry => ({

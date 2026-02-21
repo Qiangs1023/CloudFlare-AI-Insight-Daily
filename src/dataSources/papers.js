@@ -56,7 +56,7 @@ const PapersDataSource = {
             }
 
             try {
-                console.log(`Fetching Papers data, page ${i + 1}...`);
+                console.log(`Fetching Papers data, page ${i + 1}... with foloCookie: ${foloCookie ? 'present' : 'missing'}`);
                 const response = await fetch(env.FOLO_DATA_API, {
                     method: 'POST',
                     headers: headers,
@@ -64,10 +64,12 @@ const PapersDataSource = {
                 });
 
                 if (!response.ok) {
-                    console.error(`Failed to fetch Papers data, page ${i + 1}: ${response.statusText}`);
+                    const errorText = await response.text();
+                    console.error(`Failed to fetch Papers data, page ${i + 1}: ${response.status} ${response.statusText}`, errorText);
                     break;
                 }
                 const data = await response.json();
+                console.log(`Papers API response for page ${i + 1}:`, JSON.stringify(data).substring(0, 500));
                 if (data && data.data && data.data.length > 0) {
                     const filteredItems = data.data.filter(entry => isDateWithinLastDays(entry.entries.publishedAt, filterDays));
                     allPaperItems.push(...filteredItems.map(entry => ({
