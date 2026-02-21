@@ -1,6 +1,6 @@
 // src/handlers/writeData.js
 import { getISODate, getFetchDate } from '../helpers.js';
-import { fetchAllData, fetchDataByCategory, dataSources } from '../dataFetchers.js'; // 导入 fetchDataByCategory 和 dataSources
+import { fetchAllData, fetchDataByCategory, dataSources } from '../dataFetchers.js';
 import { storeInKV } from '../kv.js';
 
 export async function handleWriteData(request, env) {
@@ -15,7 +15,7 @@ export async function handleWriteData(request, env) {
         if (request.headers.get('Content-Type')?.includes('application/json')) {
             const requestBody = await request.json();
             category = requestBody.category;
-            foloCookie = requestBody.foloCookie; // 获取 foloCookie
+            foloCookie = requestBody.foloCookie;
         }
 
         console.log(`Starting /writeData process for category: ${category || 'all'} with foloCookie presence: ${!!foloCookie}`);
@@ -26,14 +26,14 @@ export async function handleWriteData(request, env) {
 
         if (category) {
             // 只抓取指定分类的数据
-            const fetchedData = await fetchDataByCategory(env, category, foloCookie); // 传递 foloCookie
+            const fetchedData = await fetchDataByCategory(env, category, foloCookie);
             dataToStore[category] = fetchedData;
             fetchPromises.push(storeInKV(env.DATA_KV, `${dateStr}-${category}`, fetchedData));
             successMessage = `Data for category '${category}' fetched and stored.`;
             console.log(`Transformed ${category}: ${fetchedData.length} items.`);
         } else {
-            // 抓取所有分类的数据 (现有逻辑)
-            const allUnifiedData = await fetchAllData(env, foloCookie); // 传递 foloCookie
+            // 抓取所有分类的数据
+            const allUnifiedData = await fetchAllData(env, foloCookie);
             
             for (const sourceType in dataSources) {
                 if (Object.hasOwnProperty.call(dataSources, sourceType)) {
@@ -47,7 +47,7 @@ export async function handleWriteData(request, env) {
 
         await Promise.all(fetchPromises);
 
-        const errors = []; // Placeholder for potential future error aggregation from fetchAllData or fetchDataByCategory
+        const errors = [];
 
         if (errors.length > 0) {
             console.warn("/writeData completed with errors:", errors);
