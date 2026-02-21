@@ -2,19 +2,26 @@
 import { AINotionDataSource, TechNotionDataSource, InvestNotionDataSource } from './dataSources/notion.js';
 import GithubTrendingDataSource from './dataSources/github-trending.js';
 import PapersDataSource from './dataSources/papers.js';
+import TwitterDataSource from './dataSources/twitter.js';
+import RedditDataSource from './dataSources/reddit.js';
+import NewsAggregatorDataSource from './dataSources/newsAggregator.js';
 
 
 // Register data sources as arrays to support multiple sources per type
-// Now using Notion database feeds, organized by category
+// Notion database feeds + Folo API sources
 export const dataSources = {
     ai: { name: 'AI', sources: [AINotionDataSource] },
     tech: { name: 'Tech', sources: [TechNotionDataSource] },
     invest: { name: 'INVEST', sources: [InvestNotionDataSource] },
     project: { name: '项目', sources: [GithubTrendingDataSource] },
     paper: { name: '论文', sources: [PapersDataSource] },
+    // Folo API sources (require Folo Cookie)
+    twitter: { name: 'Twitter', sources: [TwitterDataSource] },
+    reddit: { name: 'Reddit', sources: [RedditDataSource] },
+    newsAggregator: { name: '新闻聚合', sources: [NewsAggregatorDataSource] },
     // Legacy categories mapped to AI for backward compatibility
-    news: { name: '新闻', sources: [AINotionDataSource] },
-    socialMedia: { name: '社交平台', sources: [AINotionDataSource] },
+    news: { name: '新闻', sources: [AINotionDataSource, NewsAggregatorDataSource] },
+    socialMedia: { name: '社交平台', sources: [TwitterDataSource, RedditDataSource] },
 };
 
 /**
