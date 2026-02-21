@@ -1,30 +1,31 @@
 // src/dataFetchers.js
-import NewsAggregatorDataSource from './dataSources/newsAggregator.js';
+import { AINotionDataSource, TechNotionDataSource, InvestNotionDataSource } from './dataSources/notion.js';
 import GithubTrendingDataSource from './dataSources/github-trending.js';
 import PapersDataSource from './dataSources/papers.js';
-import TwitterDataSource from './dataSources/twitter.js';
-import RedditDataSource from './dataSources/reddit.js';
 
 
 // Register data sources as arrays to support multiple sources per type
+// Now using Notion database feeds, organized by category
 export const dataSources = {
-    news: { name: '新闻', sources: [NewsAggregatorDataSource] },
+    ai: { name: 'AI', sources: [AINotionDataSource] },
+    tech: { name: 'Tech', sources: [TechNotionDataSource] },
+    invest: { name: 'INVEST', sources: [InvestNotionDataSource] },
     project: { name: '项目', sources: [GithubTrendingDataSource] },
     paper: { name: '论文', sources: [PapersDataSource] },
-    socialMedia: { name: '社交平台', sources: [TwitterDataSource, RedditDataSource] },
-    // Add new data sources here as arrays, e.g.,
-    // newType: { name: '新类型', sources: [NewTypeDataSource1, NewTypeDataSource2] },
+    // Legacy categories mapped to AI for backward compatibility
+    news: { name: '新闻', sources: [AINotionDataSource] },
+    socialMedia: { name: '社交平台', sources: [AINotionDataSource] },
 };
 
 /**
  * Fetches and transforms data from all data sources for a specified type.
- * @param {string} sourceType - The type of data source (e.g., 'news', 'projects', 'papers').
+ * @param {string} sourceType - The type of data source (e.g., 'ai', 'tech', 'invest', 'project', 'paper').
  * @param {object} env - The environment variables.
- * @param {string} [foloCookie] - The Folo authentication cookie.
+ * @param {string} [foloCookie] - The Folo authentication cookie (kept for backward compatibility, not used for Notion sources).
  * @returns {Promise<Array<object>>} A promise that resolves to an array of unified data objects from all sources of that type.
  */
 export async function fetchAndTransformDataForType(sourceType, env, foloCookie) {
-    const sources = dataSources[sourceType].sources;
+    const sources = dataSources[sourceType]?.sources;
     if (!sources || !Array.isArray(sources)) {
         console.error(`No data sources registered for type: ${sourceType}`);
         return [];
@@ -33,7 +34,6 @@ export async function fetchAndTransformDataForType(sourceType, env, foloCookie) 
     let allUnifiedDataForType = [];
     for (const dataSource of sources) {
         try {
-            // Pass foloCookie to the fetch method of the data source
             const rawData = await dataSource.fetch(env, foloCookie);
             const unifiedData = dataSource.transform(rawData, sourceType);
             allUnifiedDataForType = allUnifiedDataForType.concat(unifiedData);
@@ -56,7 +56,7 @@ export async function fetchAndTransformDataForType(sourceType, env, foloCookie) 
 /**
  * Fetches and transforms data from all registered data sources across all types.
  * @param {object} env - The environment variables.
- * @param {string} [foloCookie] - The Folo authentication cookie.
+ * @param {string} [foloCookie] - The Folo authentication cookie (kept for backward compatibility).
  * @returns {Promise<object>} A promise that resolves to an object containing unified data for each source type.
  */
 export async function fetchAllData(env, foloCookie) {
@@ -79,8 +79,8 @@ export async function fetchAllData(env, foloCookie) {
 /**
  * Fetches and transforms data from all data sources for a specific category.
  * @param {object} env - The environment variables.
- * @param {string} category - The category to fetch data for (e.g., 'news', 'project', 'paper', 'twitter').
- * @param {string} [foloCookie] - The Folo authentication cookie.
+ * @param {string} category - The category to fetch data for (e.g., 'ai', 'tech', 'invest', 'project', 'paper').
+ * @param {string} [foloCookie] - The Folo authentication cookie (kept for backward compatibility).
  * @returns {Promise<Array<object>>} A promise that resolves to an array of unified data objects for the specified category.
  */
 export async function fetchDataByCategory(env, category, foloCookie) {
