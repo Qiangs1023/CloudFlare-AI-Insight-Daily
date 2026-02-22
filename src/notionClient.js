@@ -62,17 +62,24 @@ function parseNotionResults(results) {
     return results.map(page => {
         const props = page.properties;
         
-        return {
+        // 尝试多种可能的属性名（支持中英文）
+        const feedUrl = getPropertyValue(props['Feed URL'] || props.feedUrl || props.FeedURL || props['RSS URL'] || props.rssUrl, 'url');
+        
+        const feed = {
             id: page.id,
-            name: getPropertyValue(props.Name || props.name, 'title'),
-            url: getPropertyValue(props.URL || props.url, 'url'),
-            feedUrl: getPropertyValue(props['Feed URL'] || props.feedUrl, 'url'),
-            category: getPropertyValue(props.Category || props.category, 'select'),
-            description: getPropertyValue(props.Description || props.description, 'rich_text'),
-            translate: getPropertyValue(props.Translate || props.translate, 'checkbox'),
-            deepRead: getPropertyValue(props['Deep Read'] || props.deepRead, 'checkbox'),
-            limit: getPropertyValue(props.Limit || props.limit, 'number'),
+            name: getPropertyValue(props.Name || props.name || props['名称'], 'title'),
+            url: getPropertyValue(props.URL || props.url || props['网址'], 'url'),
+            feedUrl: feedUrl,
+            category: getPropertyValue(props.Category || props.category || props['分类'], 'select'),
+            description: getPropertyValue(props.Description || props.description || props['描述'], 'rich_text'),
+            translate: getPropertyValue(props.Translate || props.translate || props['翻译'], 'checkbox'),
+            deepRead: getPropertyValue(props['Deep Read'] || props.deepRead || props['深度阅读'], 'checkbox'),
+            limit: getPropertyValue(props.Limit || props.limit || props['限制'], 'number'),
         };
+        
+        console.log(`Parsed feed: ${feed.name}, URL: ${feed.url}, FeedURL: ${feed.feedUrl || '(empty)'}, Category: ${feed.category}`);
+        
+        return feed;
     }).filter(feed => feed.url); // 只保留有 URL 的订阅源
 }
 
@@ -108,14 +115,18 @@ function getPropertyValue(prop, type) {
  * @param {object} env - 环境变量对象
  * @param {string} pageId - Notion 页面 ID
  * @param {string} feedUrl - 要更新的 Feed URL
+ * @param {string} propertyName - 属性名（默认 'Feed URL'）
  * @returns {Promise<boolean>} 是否更新成功
  */
-export async function updateNotionFeedUrl(env, pageId, feedUrl) {
+export async function updateNotionFeedUrl(env, pageId, feedUrl, propertyName = 'Feed URL') {
     const apiKey = env.NOTION_API_KEY;
 
     if (!apiKey || !pageId || !feedUrl) {
+        console.error('updateNotionFeedUrl: Missing required parameters');
         return false;
     }
+
+    console.log(`Updating Notion Feed URL for page ${pageId}: ${feedUrl}`);
 
     try {
         const response = await fetch(`${NOTION_API_BASE}/pages/${pageId}`, {
@@ -127,12 +138,19 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl) {
             },
             body: JSON.stringify({
                 properties: {
-                    'Feed URL': {
+                    [propertyName]: {
                         url: feedUrl,
                     },
                 },
             }),
         });
+
+        if (response.ok) {
+            console.log(`Successfully updated Feed URL for page ${pageId}`);
+        } else {
+            const errorText = await response.text();
+            console.error(`Failed to update Feed URL: ${response.status} - ${errorText}`);
+        }
 
         return response.ok;
     } catch (error) {
@@ -140,5 +158,3 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl) {
         return false;
     }
 }
-
-
