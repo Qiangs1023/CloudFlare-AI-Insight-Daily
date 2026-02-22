@@ -1,12 +1,18 @@
 /**
  * Notion 数据源
  * 从 Notion 数据库获取订阅源配置，抓取 RSS 内容
+ * 
+ * Notion 数据库属性说明：
+ * - Category: 分类（如 ai/tech/invest），用于后台展示分组
+ * - URL: 订阅源网址
+ * - Feed URL: RSS feed 地址（可选，系统会自动发现）
+ * - Source: 源类型（rss/youtube），用于识别如何转换为 feed URL
  */
 
 import { fetchNotionFeeds, updateNotionFeedUrl } from '../notionClient.js';
 import { getFeedUrl } from '../rssDiscovery.js';
 import { fetchAndParseRss, parseRssDate } from '../rssParser.js';
-import { stripHtml, formatDateToChineseWithTime, escapeHtml, sleep } from '../helpers.js';
+import { stripHtml, formatDateToChineseWithTime, escapeHtml } from '../helpers.js';
 
 const NotionDataSource = {
     type: 'notion',
@@ -14,7 +20,7 @@ const NotionDataSource = {
     /**
      * 从 Notion 数据库获取订阅源并抓取内容
      * @param {object} env - 环境变量
-     * @param {string} category - 分类过滤 (ai/tech/invest)，为空则获取全部
+     * @param {string} category - 分类过滤 (ai/tech/invest 等)，为空则获取全部
      * @returns {Promise<object>} 包含 items 的数据对象
      */
     async fetch(env, category = null) {
@@ -26,7 +32,7 @@ const NotionDataSource = {
             return { items: [] };
         }
         
-        // 按分类过滤
+        // 按分类过滤（如果指定了分类）
         let filteredFeeds = feeds;
         if (category) {
             filteredFeeds = feeds.filter(feed => feed.category === category.toLowerCase());
@@ -69,7 +75,7 @@ const NotionDataSource = {
      * @returns {Promise<Array>} 文章列表
      */
     async fetchSingleFeed(env, feed) {
-        // 获取 RSS feed URL
+        // 获取 RSS feed URL（根据 source 类型自动识别）
         const { feedUrl, sourceType } = await getFeedUrl(feed.url, feed.feedUrl);
         
         if (!feedUrl) {
@@ -111,14 +117,14 @@ const NotionDataSource = {
         
         return rawData.items.map(item => ({
             id: item.guid || item.link,
-            type: sourceType,
+            type: item.category || sourceType, // 使用 Notion 的 category 作为 type
             url: item.link,
             title: item.title,
             description: item.description || stripHtml(item.content || ''),
             published_date: item.pubDate || new Date().toISOString(),
             authors: item.author || 'Unknown',
             source: item.notion_feed_name || item.source || 'Unknown',
-            category: item.category,
+            category: item.category, // 保留 category 字段用于分组
             details: {
                 content_html: item.content || '',
                 need_translate: item.need_translate,
@@ -146,29 +152,5 @@ const NotionDataSource = {
     },
 };
 
-// 按分类导出独立的数据源
-export const AINotionDataSource = {
-    ...NotionDataSource,
-    type: 'notion-ai',
-    async fetch(env) {
-        return NotionDataSource.fetch(env, 'ai');
-    },
-};
-
-export const TechNotionDataSource = {
-    ...NotionDataSource,
-    type: 'notion-tech',
-    async fetch(env) {
-        return NotionDataSource.fetch(env, 'tech');
-    },
-};
-
-export const InvestNotionDataSource = {
-    ...NotionDataSource,
-    type: 'notion-invest',
-    async fetch(env) {
-        return NotionDataSource.fetch(env, 'invest');
-    },
-};
-
+export { NotionDataSource };
 export default NotionDataSource;

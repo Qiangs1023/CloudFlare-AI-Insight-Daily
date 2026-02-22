@@ -1,35 +1,21 @@
 // src/dataFetchers.js
-import { AINotionDataSource, TechNotionDataSource, InvestNotionDataSource } from './dataSources/notion.js';
-import GithubTrendingDataSource from './dataSources/github-trending.js';
-import PapersDataSource from './dataSources/papers.js';
-import TwitterDataSource from './dataSources/twitter.js';
-import RedditDataSource from './dataSources/reddit.js';
-import NewsAggregatorDataSource from './dataSources/newsAggregator.js';
+import { NotionDataSource } from './dataSources/notion.js';
 
 
-// Register data sources as arrays to support multiple sources per type
-// Notion database feeds + Folo API sources
+// All data sources are fetched from Notion database dynamically
+// Categories are determined by the "Category" property in Notion
+// Source type (rss/youtube/etc) is determined by the URL for feed discovery
 export const dataSources = {
-    ai: { name: 'AI', sources: [AINotionDataSource] },
-    tech: { name: 'Tech', sources: [TechNotionDataSource] },
-    invest: { name: 'INVEST', sources: [InvestNotionDataSource] },
-    project: { name: '项目', sources: [GithubTrendingDataSource] },
-    paper: { name: '论文', sources: [PapersDataSource] },
-    // Folo API sources (require Folo Cookie)
-    twitter: { name: 'Twitter', sources: [TwitterDataSource] },
-    reddit: { name: 'Reddit', sources: [RedditDataSource] },
-    newsAggregator: { name: '新闻聚合', sources: [NewsAggregatorDataSource] },
-    // Legacy categories mapped to AI for backward compatibility
-    news: { name: '新闻', sources: [AINotionDataSource, NewsAggregatorDataSource] },
-    socialMedia: { name: '社交平台', sources: [TwitterDataSource, RedditDataSource] },
+    // Dynamic sources from Notion - category is determined by Notion's Category property
+    notion: { name: 'Notion', sources: [NotionDataSource] },
 };
 
 /**
- * Fetches and transforms data from all data sources for a specified type.
- * @param {string} sourceType - The type of data source (e.g., 'ai', 'tech', 'invest', 'project', 'paper').
+ * Fetches and transforms data from Notion data source.
+ * @param {string} sourceType - The type of data source (should be 'notion').
  * @param {object} env - The environment variables.
- * @param {string} [foloCookie] - The Folo authentication cookie (kept for backward compatibility, not used for Notion sources).
- * @returns {Promise<Array<object>>} A promise that resolves to an array of unified data objects from all sources of that type.
+ * @param {string} [foloCookie] - The Folo authentication cookie (not used for Notion sources).
+ * @returns {Promise<Array<object>>} A promise that resolves to an array of unified data objects.
  */
 export async function fetchAndTransformDataForType(sourceType, env, foloCookie) {
     const sources = dataSources[sourceType]?.sources;
@@ -41,16 +27,15 @@ export async function fetchAndTransformDataForType(sourceType, env, foloCookie) 
     let allUnifiedDataForType = [];
     for (const dataSource of sources) {
         try {
-            const rawData = await dataSource.fetch(env, foloCookie);
+            const rawData = await dataSource.fetch(env, null); // null = fetch all categories
             const unifiedData = dataSource.transform(rawData, sourceType);
             allUnifiedDataForType = allUnifiedDataForType.concat(unifiedData);
         } catch (error) {
-            console.error(`Error fetching or transforming data from source ${dataSource.type} for type ${sourceType}:`, error.message);
-            // Continue to next data source even if one fails
+            console.error(`Error fetching or transforming data from source ${dataSource.type}:`, error.message);
         }
     }
 
-    // Sort by published_date in descending order for each type
+    // Sort by published_date in descending order
     allUnifiedDataForType.sort((a, b) => {
         const dateA = new Date(a.published_date);
         const dateB = new Date(b.published_date);
@@ -61,39 +46,67 @@ export async function fetchAndTransformDataForType(sourceType, env, foloCookie) 
 }
 
 /**
- * Fetches and transforms data from all registered data sources across all types.
+ * Fetches and transforms data from Notion, grouped by category.
  * @param {object} env - The environment variables.
- * @param {string} [foloCookie] - The Folo authentication cookie (kept for backward compatibility).
- * @returns {Promise<object>} A promise that resolves to an object containing unified data for each source type.
+ * @param {string} [foloCookie] - The Folo authentication cookie (not used).
+ * @returns {Promise<object>} A promise that resolves to an object with data grouped by category.
  */
 export async function fetchAllData(env, foloCookie) {
     const allUnifiedData = {};
-    const fetchPromises = [];
-
-    for (const sourceType in dataSources) {
-        if (Object.hasOwnProperty.call(dataSources, sourceType)) {
-            fetchPromises.push(
-                fetchAndTransformDataForType(sourceType, env, foloCookie).then(data => {
-                    allUnifiedData[sourceType] = data;
-                })
-            );
+    
+    try {
+        // Fetch all data from Notion
+        const notionData = await fetchAndTransformDataForType('notion', env, foloCookie);
+        
+        // Group by category
+        for (const item of notionData) {
+            const category = item.category || 'uncategorized';
+            if (!allUnifiedData[category]) {
+                allUnifiedData[category] = [];
+            }
+            allUnifiedData[category].push(item);
         }
+        
+        // Sort each category by published_date
+        for (const category in allUnifiedData) {
+            allUnifiedData[category].sort((a, b) => {
+                const dateA = new Date(a.published_date);
+                const dateB = new Date(b.published_date);
+                return dateB.getTime() - dateA.getTime();
+            });
+        }
+        
+    } catch (error) {
+        console.error('Error fetching all data:', error.message);
     }
-    await Promise.allSettled(fetchPromises); // Use allSettled to ensure all promises complete
+    
     return allUnifiedData;
 }
 
 /**
- * Fetches and transforms data from all data sources for a specific category.
+ * Fetches data for a specific category from Notion.
  * @param {object} env - The environment variables.
- * @param {string} category - The category to fetch data for (e.g., 'ai', 'tech', 'invest', 'project', 'paper').
- * @param {string} [foloCookie] - The Folo authentication cookie (kept for backward compatibility).
- * @returns {Promise<Array<object>>} A promise that resolves to an array of unified data objects for the specified category.
+ * @param {string} category - The category to fetch (e.g., 'ai', 'tech', 'invest').
+ * @param {string} [foloCookie] - The Folo authentication cookie (not used).
+ * @returns {Promise<Array<object>>} A promise that resolves to an array of data for the category.
  */
 export async function fetchDataByCategory(env, category, foloCookie) {
-    if (!dataSources[category]) {
-        console.warn(`Attempted to fetch data for unknown category: ${category}`);
+    const notionSource = dataSources.notion.sources[0];
+    
+    try {
+        const rawData = await notionSource.fetch(env, category);
+        const unifiedData = notionSource.transform(rawData, category);
+        
+        // Sort by published_date
+        unifiedData.sort((a, b) => {
+            const dateA = new Date(a.published_date);
+            const dateB = new Date(b.published_date);
+            return dateB.getTime() - dateA.getTime();
+        });
+        
+        return unifiedData;
+    } catch (error) {
+        console.error(`Error fetching data for category ${category}:`, error.message);
         return [];
     }
-    return await fetchAndTransformDataForType(category, env, foloCookie);
 }

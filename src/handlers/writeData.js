@@ -1,7 +1,8 @@
 // src/handlers/writeData.js
 import { getISODate, getFetchDate } from '../helpers.js';
-import { fetchAllData, fetchDataByCategory, dataSources } from '../dataFetchers.js';
+import { fetchAllData, fetchDataByCategory } from '../dataFetchers.js';
 import { storeInKV } from '../kv.js';
+import { fetchNotionFeeds } from '../notionClient.js';
 
 export async function handleWriteData(request, env) {
     const dateParam = getFetchDate();
@@ -24,7 +25,7 @@ export async function handleWriteData(request, env) {
             console.log('Using FOLO_COOKIE from environment variables');
         }
 
-        console.log(`Starting /writeData process for category: ${category || 'all'} with foloCookie presence: ${!!foloCookie}`);
+        console.log(`Starting /writeData process for category: ${category || 'all'}`);
 
         let dataToStore = {};
         let fetchPromises = [];
@@ -38,17 +39,17 @@ export async function handleWriteData(request, env) {
             successMessage = `Data for category '${category}' fetched and stored.`;
             console.log(`Transformed ${category}: ${fetchedData.length} items.`);
         } else {
-            // 抓取所有分类的数据
-            const allUnifiedData = await fetchAllData(env, foloCookie);
+            // 抓取所有分类的数据（按 Notion 数据库中的 Category 属性分组）
+            const allData = await fetchAllData(env, foloCookie);
             
-            for (const sourceType in dataSources) {
-                if (Object.hasOwnProperty.call(dataSources, sourceType)) {
-                    dataToStore[sourceType] = allUnifiedData[sourceType] || [];
-                    fetchPromises.push(storeInKV(env.DATA_KV, `${dateStr}-${sourceType}`, dataToStore[sourceType]));
-                    console.log(`Transformed ${sourceType}: ${dataToStore[sourceType].length} items.`);
+            for (const cat in allData) {
+                if (Object.hasOwnProperty.call(allData, cat)) {
+                    dataToStore[cat] = allData[cat] || [];
+                    fetchPromises.push(storeInKV(env.DATA_KV, `${dateStr}-${cat}`, dataToStore[cat]));
+                    console.log(`Transformed ${cat}: ${dataToStore[cat].length} items.`);
                 }
             }
-            successMessage = `All data categories fetched and stored.`;
+            successMessage = `All categories fetched and stored.`;
         }
 
         await Promise.all(fetchPromises);
@@ -70,6 +71,7 @@ export async function handleWriteData(request, env) {
             return new Response(JSON.stringify({ 
                 success: true, 
                 message: successMessage,
+                categories: Object.keys(dataToStore),
                 ...Object.fromEntries(Object.entries(dataToStore).map(([key, value]) => [`${key}ItemCount`, value.length]))
             }), {
                 headers: { 'Content-Type': 'application/json' }
