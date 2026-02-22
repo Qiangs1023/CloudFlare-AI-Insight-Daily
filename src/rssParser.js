@@ -8,7 +8,7 @@ import { getRandomUserAgent, stripHtml } from './helpers.js';
 /**
  * 抓取并解析 RSS feed
  * @param {string} feedUrl - RSS feed URL
- * @param {number} limit - 限制返回的条目数量
+ * @param {number} limit - 限制返回的条目数量（在 24 小时内的最新条数）
  * @returns {Promise<Array>} 解析后的文章列表
  */
 export async function fetchAndParseRss(feedUrl, limit = null) {
@@ -38,19 +38,48 @@ export async function fetchAndParseRss(feedUrl, limit = null) {
 }
 
 /**
+ * 过滤 24 小时内的内容
+ * @param {Array} items - 文章列表
+ * @param {number} limit - 限制条数（可选）
+ * @returns {Array} 过滤后的文章列表
+ */
+export function filterRecentItems(items, limit = null) {
+    const now = new Date();
+    const twentyFourHoursAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+    
+    // 先过滤 24 小时内的内容
+    let filteredItems = items.filter(item => {
+        if (!item.pubDate) return false;
+        const pubDate = new Date(item.pubDate);
+        return pubDate >= twentyFourHoursAgo;
+    });
+    
+    // 如果指定了 limit，取最新的 N 条
+    if (limit && limit > 0) {
+        filteredItems = filteredItems.slice(0, limit);
+    }
+    
+    return filteredItems;
+}
+
+/**
  * 解析 RSS XML 文本
  * @param {string} xmlText - XML 文本
- * @param {number} limit - 限制返回的条目数量
+ * @param {number} limit - 限制返回的条目数量（可选，会先过滤 24 小时内内容）
  * @returns {Array} 解析后的文章列表
  */
 export function parseRssXml(xmlText, limit = null) {
     try {
+        let items;
         // 判断是 RSS 2.0 还是 Atom 格式
         if (xmlText.includes('<feed') && xmlText.includes('xmlns="http://www.w3.org/2005/Atom"')) {
-            return parseAtomFeed(xmlText, limit);
+            items = parseAtomFeed(xmlText);
         } else {
-            return parseRss2Feed(xmlText, limit);
+            items = parseRss2Feed(xmlText);
         }
+        
+        // 应用 24 小时过滤和 limit 限制
+        return filterRecentItems(items, limit);
     } catch (error) {
         console.error('Error parsing RSS XML:', error.message);
         return [];
@@ -60,10 +89,9 @@ export function parseRssXml(xmlText, limit = null) {
 /**
  * 解析 RSS 2.0 格式
  * @param {string} xmlText - XML 文本
- * @param {number} limit - 限制条目数
  * @returns {Array} 文章列表
  */
-function parseRss2Feed(xmlText, limit) {
+function parseRss2Feed(xmlText) {
     const items = [];
     
     // 提取 channel 信息
@@ -76,9 +104,7 @@ function parseRss2Feed(xmlText, limit) {
     // 提取所有 item
     const itemMatches = xmlText.match(/<item[^>]*>([\s\S]*?)<\/item>/gi) || [];
     
-    const itemsToProcess = limit ? itemMatches.slice(0, limit) : itemMatches;
-    
-    for (const itemXml of itemsToProcess) {
+    for (const itemXml of itemMatches) {
         const item = {
             title: extractTagContent(itemXml, 'title'),
             link: extractTagContent(itemXml, 'link'),
@@ -106,10 +132,9 @@ function parseRss2Feed(xmlText, limit) {
 /**
  * 解析 Atom 格式
  * @param {string} xmlText - XML 文本
- * @param {number} limit - 限制条目数
  * @returns {Array} 文章列表
  */
-function parseAtomFeed(xmlText, limit) {
+function parseAtomFeed(xmlText) {
     const items = [];
     
     // 提取 feed 标题
@@ -118,9 +143,7 @@ function parseAtomFeed(xmlText, limit) {
     // 提取所有 entry
     const entryMatches = xmlText.match(/<entry[^>]*>([\s\S]*?)<\/entry>/gi) || [];
     
-    const itemsToProcess = limit ? entryMatches.slice(0, limit) : entryMatches;
-    
-    for (const entryXml of itemsToProcess) {
+    for (const entryXml of entryMatches) {
         // Atom 的 link 标签格式不同
         const link = extractAtomLink(entryXml);
         

@@ -1,6 +1,5 @@
 // src/htmlGenerators.js
-import { escapeHtml, formatDateToChinese, convertEnglishQuotesToChinese, replaceImageProxy} from './helpers.js';
-import { dataSources } from './dataFetchers.js'; // Import dataSources
+import { escapeHtml, formatDateToChinese, convertEnglishQuotesToChinese, replaceImageProxy, stripHtml} from './helpers.js';
 import { marked } from './marked.esm.js';
 
 function generateHtmlListForContentPage(items, dateStr) {
@@ -16,16 +15,16 @@ function generateHtmlListForContentPage(items, dateStr) {
         let displayContent = '';
         let itemId = item.id;
 
-        // Use the generateHtml method from the corresponding data source
-        const dataSourceConfig = dataSources[item.type];
-        // console.log("item.type:", item.type);
-        // console.log("dataSourceConfig:", dataSourceConfig);
-        if (dataSourceConfig && dataSourceConfig.sources && dataSourceConfig.sources.length > 0 && dataSourceConfig.sources[0].generateHtml) {
-            displayContent = dataSourceConfig.sources[0].generateHtml(item);
-        } else {
-            // Fallback for unknown types or if generateHtml is not defined
-            displayContent = `<strong>未知项目类型: ${escapeHtml(item.type)}</strong><br>${escapeHtml(item.title || item.description || JSON.stringify(item))}`;
-        }
+        // Generic HTML generation for all Notion-sourced items
+        const categoryLabel = item.category ? `[${item.category.toUpperCase()}] ` : '';
+        displayContent = `
+            <strong>${escapeHtml(categoryLabel + item.title)}</strong><br>
+            <small>来源: ${escapeHtml(item.source || 'Unknown')} | 发布日期: ${item.published_date || 'Unknown'}</small>
+            <div class="content-html">
+                ${item.details?.content_html || item.description || '无内容。'}
+            </div>
+            <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">阅读原文</a>
+        `;
 
         listHtml += `<li class="item-card">
             <label>
