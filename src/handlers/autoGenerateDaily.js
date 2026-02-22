@@ -4,7 +4,7 @@ import { getFromKV, storeInKV } from '../kv.js';
 import { callChatAPIStream } from '../chatapi.js';
 import { getGitHubFileSha, createOrUpdateGitHubFile, getDailyReportContent } from '../github.js';
 import { dataSources } from '../dataFetchers.js';
-import { getSystemPromptSummarizationStepOne } from "../prompt/summarizationPromptZero";
+import { getSystemPromptSummarizationStepOne } from "../prompt/summarizationPromptStepZero.js";
 import { getSystemPromptSummarizationStepThree } from "../prompt/summarizationPromptStepThree";
 import { insertFoot } from '../foot.js';
 import { insertAd } from '../ad.js';
