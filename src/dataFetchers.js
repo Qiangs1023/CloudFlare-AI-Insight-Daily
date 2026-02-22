@@ -1,13 +1,17 @@
 // src/dataFetchers.js
 import { NotionDataSource } from './dataSources/notion.js';
+import FoloListDataSource from './dataSources/foloList.js';
 
 
 // All data sources are fetched from Notion database dynamically
 // Categories are determined by the "Category" property in Notion
 // Source type (rss/youtube/etc) is determined by the URL for feed discovery
+// folo-list: special category for Folo subscription list content
 export const dataSources = {
     // Dynamic sources from Notion - category is determined by Notion's Category property
     notion: { name: 'Notion', sources: [NotionDataSource] },
+    // Folo List source - fetches from Folo subscription list using listId
+    'folo-list': { name: 'Folo List', sources: [FoloListDataSource] },
 };
 
 /**
@@ -46,9 +50,9 @@ export async function fetchAndTransformDataForType(sourceType, env, foloCookie) 
 }
 
 /**
- * Fetches and transforms data from Notion, grouped by category.
+ * Fetches and transforms data from Notion and Folo List, grouped by category.
  * @param {object} env - The environment variables.
- * @param {string} [foloCookie] - The Folo authentication cookie (not used).
+ * @param {string} [foloCookie] - The Folo authentication cookie (required for folo-list).
  * @returns {Promise<object>} A promise that resolves to an object with data grouped by category.
  */
 export async function fetchAllData(env, foloCookie) {
@@ -65,6 +69,19 @@ export async function fetchAllData(env, foloCookie) {
                 allUnifiedData[category] = [];
             }
             allUnifiedData[category].push(item);
+        }
+        
+        // Fetch folo-list data if FOLO_LIST_ID is configured
+        if (env.FOLO_LIST_ID && foloCookie) {
+            try {
+                const foloListData = await fetchAndTransformDataForType('folo-list', env, foloCookie);
+                if (foloListData && foloListData.length > 0) {
+                    allUnifiedData['folo-list'] = foloListData;
+                    console.log(`Fetched ${foloListData.length} items from folo-list`);
+                }
+            } catch (foloError) {
+                console.error('Error fetching folo-list data:', foloError.message);
+            }
         }
         
         // Sort each category by published_date
@@ -84,13 +101,40 @@ export async function fetchAllData(env, foloCookie) {
 }
 
 /**
- * Fetches data for a specific category from Notion.
+ * Fetches data for a specific category from Notion or Folo List.
  * @param {object} env - The environment variables.
- * @param {string} category - The category to fetch (e.g., 'ai', 'tech', 'invest').
- * @param {string} [foloCookie] - The Folo authentication cookie (not used).
+ * @param {string} category - The category to fetch (e.g., 'ai', 'tech', 'invest', 'folo-list').
+ * @param {string} [foloCookie] - The Folo authentication cookie (required for folo-list).
  * @returns {Promise<Array<object>>} A promise that resolves to an array of data for the category.
  */
 export async function fetchDataByCategory(env, category, foloCookie) {
+    // Handle folo-list category separately
+    if (category === 'folo-list') {
+        const foloListSource = dataSources['folo-list']?.sources[0];
+        if (!foloListSource) {
+            console.error('Folo List data source not found');
+            return [];
+        }
+        
+        try {
+            const rawData = await foloListSource.fetch(env, foloCookie);
+            const unifiedData = foloListSource.transform(rawData, 'folo-list');
+            
+            // Sort by published_date
+            unifiedData.sort((a, b) => {
+                const dateA = new Date(a.published_date);
+                const dateB = new Date(b.published_date);
+                return dateB.getTime() - dateA.getTime();
+            });
+            
+            return unifiedData;
+        } catch (error) {
+            console.error(`Error fetching data for folo-list:`, error.message);
+            return [];
+        }
+    }
+    
+    // Handle Notion categories
     const notionSource = dataSources.notion.sources[0];
     
     try {

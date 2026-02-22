@@ -28,6 +28,14 @@ export async function handleGetContentHtml(request, env) {
             }
         }
         
+        // Add folo-list category if FOLO_LIST_ID is configured
+        if (env.FOLO_LIST_ID) {
+            categoryMap.set('folo-list', {
+                id: 'folo-list',
+                name: 'Folo List'
+            });
+        }
+        
         const dataCategories = Array.from(categoryMap.values());
         console.log(`Found ${dataCategories.length} categories from Notion: ${dataCategories.map(c => c.id).join(', ')}`);
 
