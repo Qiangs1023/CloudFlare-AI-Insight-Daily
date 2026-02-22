@@ -6,6 +6,100 @@
 const NOTION_API_VERSION = '2022-06-28';
 const NOTION_API_BASE = 'https://api.notion.com/v1';
 
+// 缓存数据库属性名映射
+let propertyNamesCache = null;
+
+/**
+ * 获取 Notion 数据库的属性结构
+ * @param {object} env - 环境变量对象
+ * @returns {Promise<object>} 属性名映射
+ */
+async function getDatabaseProperties(env) {
+    if (propertyNamesCache) {
+        return propertyNamesCache;
+    }
+
+    const databaseId = env.NOTION_DATABASE_ID;
+    const apiKey = env.NOTION_API_KEY;
+
+    if (!databaseId || !apiKey) {
+        return {};
+    }
+
+    try {
+        const response = await fetch(`${NOTION_API_BASE}/databases/${databaseId}`, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${apiKey}`,
+                'Notion-Version': NOTION_API_VERSION,
+            },
+        });
+
+        if (!response.ok) {
+            console.error(`Failed to get database properties: ${response.status}`);
+            return {};
+        }
+
+        const data = await response.json();
+        const properties = data.properties || {};
+        
+        // 构建属性名映射（根据类型推断用途）
+        const mapping = {
+            title: null,
+            url: null,
+            feedUrl: null,
+            category: null,
+            status: null,
+            description: null,
+            translate: null,
+            deepRead: null,
+            limit: null,
+        };
+
+        for (const [name, prop] of Object.entries(properties)) {
+            const lowerName = name.toLowerCase();
+            
+            // 根据属性名和类型推断用途
+            if (prop.type === 'title') {
+                mapping.title = name;
+            } else if (prop.type === 'url') {
+                if (lowerName.includes('feed') || lowerName.includes('rss')) {
+                    mapping.feedUrl = name;
+                } else {
+                    mapping.url = name;
+                }
+            } else if (prop.type === 'select') {
+                if (lowerName.includes('category') || lowerName.includes('分类')) {
+                    mapping.category = name;
+                }
+            } else if (prop.type === 'checkbox') {
+                if (lowerName.includes('status') || lowerName.includes('启用') || lowerName.includes('状态')) {
+                    mapping.status = name;
+                } else if (lowerName.includes('translate') || lowerName.includes('翻译')) {
+                    mapping.translate = name;
+                } else if (lowerName.includes('deep') || lowerName.includes('深度')) {
+                    mapping.deepRead = name;
+                }
+            } else if (prop.type === 'rich_text') {
+                if (lowerName.includes('desc') || lowerName.includes('描述')) {
+                    mapping.description = name;
+                }
+            } else if (prop.type === 'number') {
+                if (lowerName.includes('limit') || lowerName.includes('限制')) {
+                    mapping.limit = name;
+                }
+            }
+        }
+
+        console.log('Database property mapping:', JSON.stringify(mapping));
+        propertyNamesCache = mapping;
+        return mapping;
+    } catch (error) {
+        console.error('Error getting database properties:', error.message);
+        return {};
+    }
+}
+
 /**
  * 从 Notion 数据库查询订阅源
  * @param {object} env - 环境变量对象
@@ -20,6 +114,10 @@ export async function fetchNotionFeeds(env) {
         return [];
     }
 
+    // 获取属性名映射
+    const propNames = await getDatabaseProperties(env);
+    const statusPropName = propNames.status || 'Status';
+
     try {
         const response = await fetch(`${NOTION_API_BASE}/databases/${databaseId}/query`, {
             method: 'POST',
@@ -30,7 +128,7 @@ export async function fetchNotionFeeds(env) {
             },
             body: JSON.stringify({
                 filter: {
-                    property: 'Status',
+                    property: statusPropName,
                     checkbox: {
                         equals: true,
                     },
@@ -46,7 +144,7 @@ export async function fetchNotionFeeds(env) {
         }
 
         const data = await response.json();
-        return parseNotionResults(data.results);
+        return parseNotionResults(data.results, propNames);
     } catch (error) {
         console.error('Error fetching Notion feeds:', error.message);
         return [];
@@ -56,25 +154,23 @@ export async function fetchNotionFeeds(env) {
 /**
  * 解析 Notion 查询结果
  * @param {Array} results - Notion API 返回的结果数组
+ * @param {object} propNames - 属性名映射
  * @returns {Array} 标准化的订阅源列表
  */
-function parseNotionResults(results) {
+function parseNotionResults(results, propNames) {
     return results.map(page => {
         const props = page.properties;
         
-        // 尝试多种可能的属性名（支持中英文）
-        const feedUrl = getPropertyValue(props['Feed URL'] || props.feedUrl || props.FeedURL || props['RSS URL'] || props.rssUrl, 'url');
-        
         const feed = {
             id: page.id,
-            name: getPropertyValue(props.Name || props.name || props['名称'], 'title'),
-            url: getPropertyValue(props.URL || props.url || props['网址'], 'url'),
-            feedUrl: feedUrl,
-            category: getPropertyValue(props.Category || props.category || props['分类'], 'select'),
-            description: getPropertyValue(props.Description || props.description || props['描述'], 'rich_text'),
-            translate: getPropertyValue(props.Translate || props.translate || props['翻译'], 'checkbox'),
-            deepRead: getPropertyValue(props['Deep Read'] || props.deepRead || props['深度阅读'], 'checkbox'),
-            limit: getPropertyValue(props.Limit || props.limit || props['限制'], 'number'),
+            name: getPropertyValue(props[propNames.title], 'title'),
+            url: getPropertyValue(props[propNames.url], 'url'),
+            feedUrl: getPropertyValue(props[propNames.feedUrl], 'url'),
+            category: getPropertyValue(props[propNames.category], 'select'),
+            description: getPropertyValue(props[propNames.description], 'rich_text'),
+            translate: getPropertyValue(props[propNames.translate], 'checkbox'),
+            deepRead: getPropertyValue(props[propNames.deepRead], 'checkbox'),
+            limit: getPropertyValue(props[propNames.limit], 'number'),
         };
         
         console.log(`Parsed feed: ${feed.name}, URL: ${feed.url}, FeedURL: ${feed.feedUrl || '(empty)'}, Category: ${feed.category}`);
@@ -115,10 +211,9 @@ function getPropertyValue(prop, type) {
  * @param {object} env - 环境变量对象
  * @param {string} pageId - Notion 页面 ID
  * @param {string} feedUrl - 要更新的 Feed URL
- * @param {string} propertyName - 属性名（默认 'Feed URL'）
  * @returns {Promise<boolean>} 是否更新成功
  */
-export async function updateNotionFeedUrl(env, pageId, feedUrl, propertyName = 'Feed URL') {
+export async function updateNotionFeedUrl(env, pageId, feedUrl) {
     const apiKey = env.NOTION_API_KEY;
 
     if (!apiKey || !pageId || !feedUrl) {
@@ -126,7 +221,16 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl, propertyName = '
         return false;
     }
 
-    console.log(`Updating Notion Feed URL for page ${pageId}: ${feedUrl}`);
+    // 获取正确的属性名
+    const propNames = await getDatabaseProperties(env);
+    const feedUrlPropName = propNames.feedUrl;
+
+    if (!feedUrlPropName) {
+        console.error('updateNotionFeedUrl: Could not find Feed URL property name');
+        return false;
+    }
+
+    console.log(`Updating Notion Feed URL for page ${pageId}: ${feedUrl} (property: ${feedUrlPropName})`);
 
     try {
         const response = await fetch(`${NOTION_API_BASE}/pages/${pageId}`, {
@@ -138,7 +242,7 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl, propertyName = '
             },
             body: JSON.stringify({
                 properties: {
-                    [propertyName]: {
+                    [feedUrlPropName]: {
                         url: feedUrl,
                     },
                 },
@@ -157,4 +261,11 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl, propertyName = '
         console.error(`Error updating Notion Feed URL for page ${pageId}:`, error.message);
         return false;
     }
+}
+
+/**
+ * 清除属性名缓存（用于测试）
+ */
+export function clearPropertyNameCache() {
+    propertyNamesCache = null;
 }
