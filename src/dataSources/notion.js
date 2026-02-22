@@ -2,11 +2,15 @@
  * Notion 数据源
  * 从 Notion 数据库获取订阅源配置，抓取 RSS 内容
  * 
- * Notion 数据库属性说明：
- * - Category: 分类（如 ai/tech/invest），用于后台展示分组
- * - URL: 订阅源网址
- * - Feed URL: RSS feed 地址（可选，系统会自动发现）
- * - Source: 源类型（rss/youtube），用于识别如何转换为 feed URL
+ * Notion 数据库属性：
+ * - Name (title): 订阅源名称
+ * - category (select): 分类（AI新闻/项目/论文/投资资讯），用于后台展示分组
+ * - source (select): 来源类型（web/rss/youtube等）
+ * - rssurl (url): RSS 地址（可选，系统会自动发现）
+ * - url (url): 主网址
+ * - t. (checkbox): 翻译
+ * - d. (checkbox): 深度阅读
+ * - limit (number): 限制数量（24小时内最新N条）
  */
 
 import { fetchNotionFeeds, updateNotionFeedUrl } from '../notionClient.js';
@@ -20,7 +24,7 @@ const NotionDataSource = {
     /**
      * 从 Notion 数据库获取订阅源并抓取内容
      * @param {object} env - 环境变量
-     * @param {string} category - 分类过滤 (ai/tech/invest 等)，为空则获取全部
+     * @param {string} category - 分类过滤，为空则获取全部
      * @returns {Promise<object>} 包含 items 的数据对象
      */
     async fetch(env, category = null) {
@@ -75,21 +79,30 @@ const NotionDataSource = {
      * @returns {Promise<Array>} 文章列表
      */
     async fetchSingleFeed(env, feed) {
-        // 获取 RSS feed URL（根据 source 类型自动识别）
-        const { feedUrl, sourceType } = await getFeedUrl(feed.url, feed.feedUrl);
+        // 获取 RSS feed URL
+        // 优先使用 feed.feedUrl (rssurl)，如果没有则尝试自动发现
+        let feedUrl = feed.feedUrl;
+        let sourceType = feed.source || 'rss';
         
         if (!feedUrl) {
-            console.warn(`Could not discover RSS feed for ${feed.name}`);
+            // 尝试根据 source 类型和 URL 自动发现 RSS
+            const discovered = await getFeedUrl(feed.url, null);
+            feedUrl = discovered.feedUrl;
+            sourceType = discovered.sourceType || sourceType;
+        }
+        
+        if (!feedUrl) {
+            console.warn(`Could not discover RSS feed for ${feed.name} (${feed.url})`);
             return [];
         }
         
-        // 如果之前没有 Feed URL，现在发现了，更新到 Notion
+        // 如果之前没有 RSS URL，现在发现了，更新到 Notion
         if (!feed.feedUrl && feedUrl) {
             console.log(`Discovered new RSS feed for ${feed.name}: ${feedUrl}`);
             await updateNotionFeedUrl(env, feed.id, feedUrl);
         }
         
-        // 抓取并解析 RSS
+        // 抓取并解析 RSS（limit 用于限制 24 小时内最新条数）
         const items = await fetchAndParseRss(feedUrl, feed.limit);
         
         // 添加额外信息

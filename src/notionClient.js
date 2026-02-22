@@ -1,6 +1,16 @@
 /**
  * Notion API 客户端
  * 用于从 Notion 数据库获取订阅源配置
+ * 
+ * Notion 数据库属性映射：
+ * - Name (title): 订阅源名称
+ * - category (select): 分类（AI新闻/项目/论文/投资资讯）
+ * - source (select): 来源类型
+ * - rssurl (url): RSS 地址
+ * - url (url): 主网址
+ * - t. (checkbox): 翻译
+ * - d. (checkbox): 深度阅读
+ * - limit (number): 限制数量
  */
 
 const NOTION_API_VERSION = '2022-06-28';
@@ -45,47 +55,46 @@ async function getDatabaseProperties(env) {
         
         // 构建属性名映射（根据类型推断用途）
         const mapping = {
-            title: null,
-            url: null,
-            feedUrl: null,
-            category: null,
-            status: null,
-            description: null,
-            translate: null,
-            deepRead: null,
-            limit: null,
+            title: null,       // Name
+            url: null,         // 主网址
+            rssurl: null,      // RSS 地址
+            category: null,    // 分类
+            source: null,      // 来源类型
+            status: null,      // 启用状态
+            translate: null,   // 翻译
+            deepRead: null,    // 深度阅读
+            limit: null,       // 限制数量
         };
 
         for (const [name, prop] of Object.entries(properties)) {
             const lowerName = name.toLowerCase();
             
-            // 根据属性名和类型推断用途
             if (prop.type === 'title') {
                 mapping.title = name;
             } else if (prop.type === 'url') {
-                if (lowerName.includes('feed') || lowerName.includes('rss')) {
-                    mapping.feedUrl = name;
+                // 根据 Notion 属性名区分 url 和 rssurl
+                if (lowerName.includes('rss') || lowerName === 'rssurl') {
+                    mapping.rssurl = name;
                 } else {
                     mapping.url = name;
                 }
             } else if (prop.type === 'select') {
-                if (lowerName.includes('category') || lowerName.includes('分类')) {
+                if (lowerName.includes('category') || lowerName === 'category') {
                     mapping.category = name;
+                } else if (lowerName.includes('source') || lowerName === 'source') {
+                    mapping.source = name;
                 }
             } else if (prop.type === 'checkbox') {
-                if (lowerName.includes('status') || lowerName.includes('启用') || lowerName.includes('状态')) {
-                    mapping.status = name;
-                } else if (lowerName.includes('translate') || lowerName.includes('翻译')) {
+                // 匹配 t. (翻译) 和 d. (深度阅读)，以及其他常见命名
+                if (lowerName === 't.' || lowerName.includes('translate') || lowerName.includes('翻译')) {
                     mapping.translate = name;
-                } else if (lowerName.includes('deep') || lowerName.includes('深度')) {
+                } else if (lowerName === 'd.' || lowerName.includes('deep') || lowerName.includes('深度')) {
                     mapping.deepRead = name;
-                }
-            } else if (prop.type === 'rich_text') {
-                if (lowerName.includes('desc') || lowerName.includes('描述')) {
-                    mapping.description = name;
+                } else if (lowerName.includes('status') || lowerName.includes('启用') || lowerName.includes('状态')) {
+                    mapping.status = name;
                 }
             } else if (prop.type === 'number') {
-                if (lowerName.includes('limit') || lowerName.includes('限制')) {
+                if (lowerName.includes('limit') || lowerName === 'limit' || lowerName.includes('限制')) {
                     mapping.limit = name;
                 }
             }
@@ -116,9 +125,26 @@ export async function fetchNotionFeeds(env) {
 
     // 获取属性名映射
     const propNames = await getDatabaseProperties(env);
+    
+    // 使用找到的 status 属性名，如果没找到就尝试常见的名称
     const statusPropName = propNames.status || 'Status';
 
     try {
+        // 构建 filter，如果 status 属性存在则使用
+        const requestBody = {
+            page_size: 100,
+        };
+        
+        // 尝试使用 checkbox 类型的 status 属性过滤
+        if (propNames.status) {
+            requestBody.filter = {
+                property: statusPropName,
+                checkbox: {
+                    equals: true,
+                },
+            };
+        }
+
         const response = await fetch(`${NOTION_API_BASE}/databases/${databaseId}/query`, {
             method: 'POST',
             headers: {
@@ -126,15 +152,7 @@ export async function fetchNotionFeeds(env) {
                 'Notion-Version': NOTION_API_VERSION,
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                filter: {
-                    property: statusPropName,
-                    checkbox: {
-                        equals: true,
-                    },
-                },
-                page_size: 100,
-            }),
+            body: JSON.stringify(requestBody),
         });
 
         if (!response.ok) {
@@ -165,15 +183,15 @@ function parseNotionResults(results, propNames) {
             id: page.id,
             name: getPropertyValue(props[propNames.title], 'title'),
             url: getPropertyValue(props[propNames.url], 'url'),
-            feedUrl: getPropertyValue(props[propNames.feedUrl], 'url'),
+            feedUrl: getPropertyValue(props[propNames.rssurl], 'url'),  // rssurl 作为 feedUrl
             category: getPropertyValue(props[propNames.category], 'select'),
-            description: getPropertyValue(props[propNames.description], 'rich_text'),
+            source: getPropertyValue(props[propNames.source], 'select'),  // source 类型
             translate: getPropertyValue(props[propNames.translate], 'checkbox'),
             deepRead: getPropertyValue(props[propNames.deepRead], 'checkbox'),
             limit: getPropertyValue(props[propNames.limit], 'number'),
         };
         
-        console.log(`Parsed feed: ${feed.name}, URL: ${feed.url}, FeedURL: ${feed.feedUrl || '(empty)'}, Category: ${feed.category}`);
+        console.log(`Parsed feed: ${feed.name}, URL: ${feed.url}, FeedURL: ${feed.feedUrl || '(empty)'}, Category: ${feed.category}, Source: ${feed.source}`);
         
         return feed;
     }).filter(feed => feed.url); // 只保留有 URL 的订阅源
@@ -207,10 +225,10 @@ function getPropertyValue(prop, type) {
 }
 
 /**
- * 更新 Notion 页面的 Feed URL 字段
+ * 更新 Notion 页面的 RSS URL 字段
  * @param {object} env - 环境变量对象
  * @param {string} pageId - Notion 页面 ID
- * @param {string} feedUrl - 要更新的 Feed URL
+ * @param {string} feedUrl - 要更新的 RSS URL
  * @returns {Promise<boolean>} 是否更新成功
  */
 export async function updateNotionFeedUrl(env, pageId, feedUrl) {
@@ -223,14 +241,14 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl) {
 
     // 获取正确的属性名
     const propNames = await getDatabaseProperties(env);
-    const feedUrlPropName = propNames.feedUrl;
+    const rssurlPropName = propNames.rssurl;
 
-    if (!feedUrlPropName) {
-        console.error('updateNotionFeedUrl: Could not find Feed URL property name');
+    if (!rssurlPropName) {
+        console.error('updateNotionFeedUrl: Could not find RSS URL property name');
         return false;
     }
 
-    console.log(`Updating Notion Feed URL for page ${pageId}: ${feedUrl} (property: ${feedUrlPropName})`);
+    console.log(`Updating Notion RSS URL for page ${pageId}: ${feedUrl} (property: ${rssurlPropName})`);
 
     try {
         const response = await fetch(`${NOTION_API_BASE}/pages/${pageId}`, {
@@ -242,7 +260,7 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl) {
             },
             body: JSON.stringify({
                 properties: {
-                    [feedUrlPropName]: {
+                    [rssurlPropName]: {
                         url: feedUrl,
                     },
                 },
@@ -250,15 +268,15 @@ export async function updateNotionFeedUrl(env, pageId, feedUrl) {
         });
 
         if (response.ok) {
-            console.log(`Successfully updated Feed URL for page ${pageId}`);
+            console.log(`Successfully updated RSS URL for page ${pageId}`);
         } else {
             const errorText = await response.text();
-            console.error(`Failed to update Feed URL: ${response.status} - ${errorText}`);
+            console.error(`Failed to update RSS URL: ${response.status} - ${errorText}`);
         }
 
         return response.ok;
     } catch (error) {
-        console.error(`Error updating Notion Feed URL for page ${pageId}:`, error.message);
+        console.error(`Error updating Notion RSS URL for page ${pageId}:`, error.message);
         return false;
     }
 }
