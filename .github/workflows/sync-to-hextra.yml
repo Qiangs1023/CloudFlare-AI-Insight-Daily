@@ -33,23 +33,40 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Sync Chinese content to content/cn
+      - name: Sync Chinese content to content/cn/YYYY-MM/
         run: |
-          echo "同步中文内容到 content/cn 目录..."
-          mkdir -p hextra/content/cn
-          rsync -av --delete --exclude='*/' daily/ hextra/content/cn/
-          echo "=== content/cn ==="
-          ls -la hextra/content/cn/
-      
-      - name: Translate and sync to content/en
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          echo "翻译并同步英文内容到 content/en 目录..."
-          mkdir -p hextra/content/en
+          echo "同步中文内容到 content/cn/年-月/ 目录..."
           
-          # 安装翻译依赖
-          npm install marked
+          # 遍历 daily 目录下的 md 文件
+          for file in daily/*.md; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              # 从文件名提取年月 (格式: YYYY-MM-DD.md)
+              year_month=$(echo "$filename" | cut -d'-' -f1,2)
+              
+              # 创建目标目录
+              mkdir -p "hextra/content/cn/$year_month"
+              
+              # 复制文件
+              cp "$file" "hextra/content/cn/$year_month/"
+              echo "Copied: $file -> hextra/content/cn/$year_month/$filename"
+            fi
+          done
+          
+          echo "=== content/cn 目录结构 ==="
+          ls -la hextra/content/cn/
+          for dir in hextra/content/cn/*/; do
+            if [ -d "$dir" ]; then
+              echo "--- $dir ---"
+              ls -la "$dir"
+            fi
+          done
+      
+      - name: Translate and sync to content/en/YYYY-MM/
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          echo "翻译并同步英文内容到 content/en/年-月/ 目录..."
           
           # 创建翻译脚本
           cat > translate.js << 'SCRIPT'
@@ -57,14 +74,14 @@ jobs:
           const path = require('path');
           
           async function translateContent(content, apiKey) {
-            const response = await fetch('https://api.openai.com/v1/chat/completions', {
+            const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
               },
               body: JSON.stringify({
-                model: 'gpt-4o-mini',
+                model: 'deepseek-chat',
                 messages: [
                   {
                     role: 'system',
@@ -80,7 +97,8 @@ jobs:
             });
             
             if (!response.ok) {
-              throw new Error(`Translation failed: ${response.status}`);
+              const errorText = await response.text();
+              throw new Error(`Translation failed: ${response.status} - ${errorText}`);
             }
             
             const data = await response.json();
@@ -88,22 +106,28 @@ jobs:
           }
           
           async function main() {
-            const apiKey = process.env.OPENAI_API_KEY;
+            const apiKey = process.env.DEEPSEEK_API_KEY;
             if (!apiKey) {
-              console.error('OPENAI_API_KEY not set');
+              console.error('DEEPSEEK_API_KEY not set');
               process.exit(1);
             }
             
             const dailyDir = 'daily';
-            const enDir = 'hextra/content/en';
+            const enBaseDir = 'hextra/content/en';
             
             // 获取所有 md 文件
             const files = fs.readdirSync(dailyDir).filter(f => f.endsWith('.md'));
-            console.log(`Found ${files.length} files to translate`);
+            console.log(`Found ${files.length} files to process`);
             
             for (const file of files) {
+              // 从文件名提取年月 (格式: YYYY-MM-DD.md)
+              const yearMonth = file.substring(0, 7); // YYYY-MM
               const srcPath = path.join(dailyDir, file);
-              const destPath = path.join(enDir, file);
+              const destDir = path.join(enBaseDir, yearMonth);
+              const destPath = path.join(destDir, file);
+              
+              // 创建目标目录
+              fs.mkdirSync(destDir, { recursive: true });
               
               // 检查目标文件是否已存在且较新
               if (fs.existsSync(destPath)) {
@@ -121,7 +145,7 @@ jobs:
               try {
                 const translated = await translateContent(content, apiKey);
                 fs.writeFileSync(destPath, translated);
-                console.log(`Translated ${file} successfully`);
+                console.log(`Translated ${file} -> content/en/${yearMonth}/${file}`);
                 
                 // 避免请求过快
                 await new Promise(r => setTimeout(r, 1000));
@@ -129,6 +153,7 @@ jobs:
                 console.error(`Failed to translate ${file}:`, error.message);
                 // 翻译失败时复制原文
                 fs.copyFileSync(srcPath, destPath);
+                console.log(`Copied original ${file} due to translation failure`);
               }
             }
             
@@ -141,8 +166,14 @@ jobs:
           # 运行翻译脚本
           node translate.js
           
-          echo "=== content/en ==="
+          echo "=== content/en 目录结构 ==="
           ls -la hextra/content/en/
+          for dir in hextra/content/en/*/; do
+            if [ -d "$dir" ]; then
+              echo "--- $dir ---"
+              ls -la "$dir"
+            fi
+          done
       
       - name: Commit and push to Hextra repo
         run: |
