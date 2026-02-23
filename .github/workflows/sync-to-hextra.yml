@@ -28,20 +28,25 @@ jobs:
           path: hextra
           fetch-depth: 1
       
-      - name: Sync daily content to Hextra
+      - name: Sync daily content to Hextra (cn + en)
         run: |
-          echo "开始同步 daily 文件夹到 Hextra content 目录..."
+          echo "开始同步 daily 文件夹到 Hextra content/cn 和 content/en 目录..."
           
           # 确保目标目录存在
-          mkdir -p hextra/content
+          mkdir -p hextra/content/cn
+          mkdir -p hextra/content/en
           
-          # 同步 daily 文件夹内容到 content 目录
+          # 同步 daily 文件夹内容到 cn 和 en 目录
           # --delete: 删除目标中不存在于源的文件
           # --exclude: 排除子目录，只同步根目录的 md 文件
-          rsync -av --delete --exclude='*/' daily/ hextra/content/
+          rsync -av --delete --exclude='*/' daily/ hextra/content/cn/
+          rsync -av --delete --exclude='*/' daily/ hextra/content/en/
           
           echo "同步完成，查看 content 目录内容:"
-          ls -la hextra/content/
+          echo "=== content/cn ==="
+          ls -la hextra/content/cn/
+          echo "=== content/en ==="
+          ls -la hextra/content/en/
       
       - name: Commit and push to Hextra repo
         run: |
