@@ -1,0 +1,61 @@
+name: Sync to Hextra
+
+on:
+  push:
+    branches: [book]
+    paths: ['daily/**']
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout source repo (book branch)
+        uses: actions/checkout@v4
+        with:
+          ref: book
+          fetch-depth: 1
+      
+      - name: Checkout target repo (Hextra)
+        uses: actions/checkout@v4
+        with:
+          repository: Qiangs1023/Hextra-AI-Insight-Daily
+          ref: main
+          token: ${{ secrets.HEXTRA_REPO_TOKEN }}
+          path: hextra
+          fetch-depth: 1
+      
+      - name: Sync daily content to Hextra
+        run: |
+          echo "开始同步 daily 文件夹到 Hextra content 目录..."
+          
+          # 确保目标目录存在
+          mkdir -p hextra/content
+          
+          # 同步 daily 文件夹内容到 content 目录
+          # --delete: 删除目标中不存在于源的文件
+          # --exclude: 排除子目录，只同步根目录的 md 文件
+          rsync -av --delete --exclude='*/' daily/ hextra/content/
+          
+          echo "同步完成，查看 content 目录内容:"
+          ls -la hextra/content/
+      
+      - name: Commit and push to Hextra repo
+        run: |
+          cd hextra
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          
+          git add content/
+          
+          if git diff --staged --quiet; then
+            echo "没有文件变更，无需提交。"
+          else
+            echo "检测到文件变更，正在提交..."
+            git commit -m "docs: 同步日报内容 (`date -u +%Y-%m-%d`)"
+            git push
+            echo "推送成功!"
+          fi
