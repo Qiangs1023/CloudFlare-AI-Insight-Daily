@@ -3,7 +3,6 @@ import { getISODate, escapeHtml, stripHtml, removeMarkdownCodeBlock, formatDateT
 import { getFromKV } from '../kv.js';
 import { callChatAPIStream } from '../chatapi.js';
 import { generateGenAiPageHtml } from '../htmlGenerators.js';
-import { dataSources } from '../dataFetchers.js'; // Import dataSources
 import { getSystemPromptSummarizationStepOne } from "../prompt/summarizationPromptStepZero";
 import { getSystemPromptSummarizationStepTwo } from "../prompt/summarizationPromptStepTwo";
 import { getSystemPromptSummarizationStepThree } from "../prompt/summarizationPromptStepThree";
@@ -12,6 +11,7 @@ import { getSystemPromptDailyAnalysis } from '../prompt/dailyAnalysisPrompt.js';
 import { insertFoot } from '../foot.js';
 import { insertAd } from '../ad.js';
 import { getDailyReportContent } from '../github.js'; // 导入 getDailyReportContent
+import { fetchNotionFeeds } from '../notionClient.js'; // 导入 fetchNotionFeeds 获取分类
 
 export async function handleGenAIPodcastScript(request, env) {
     let dateStr;
@@ -149,16 +149,24 @@ export async function handleGenAIContent(request, env) {
 
         console.log(`Generating AI content for ${selectedItemsParams.length} selected item references from date ${dateStr}`);
 
+        // 从 Notion 获取所有分类
+        const feeds = await fetchNotionFeeds(env);
+        const categories = [...new Set(feeds.map(f => f.category).filter(Boolean))];
+        // 添加 folo-list 分类（如果存在）
+        const foloListData = await getFromKV(env.DATA_KV, `${dateStr}-folo-list`);
+        if (foloListData && foloListData.length > 0) {
+            categories.push('folo-list');
+        }
+
+        // 按分类从 KV 读取数据
         const allFetchedData = {};
         const fetchPromises = [];
-        for (const sourceType in dataSources) {
-            if (Object.hasOwnProperty.call(dataSources, sourceType)) {
-                fetchPromises.push(
-                    getFromKV(env.DATA_KV, `${dateStr}-${sourceType}`).then(data => {
-                        allFetchedData[sourceType] = data || [];
-                    })
-                );
-            }
+        for (const category of categories) {
+            fetchPromises.push(
+                getFromKV(env.DATA_KV, `${dateStr}-${category}`).then(data => {
+                    allFetchedData[category] = data || [];
+                })
+            );
         }
         await Promise.allSettled(fetchPromises);
 
