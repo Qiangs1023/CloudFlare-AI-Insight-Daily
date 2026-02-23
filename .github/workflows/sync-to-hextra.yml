@@ -28,23 +28,44 @@ jobs:
           path: hextra
           fetch-depth: 1
       
-      - name: Sync daily content to content/cn/YYYY-MM/
+      - name: Sync daily content to content/cn/YYYY-MM/ with front matter
         run: |
           echo "同步日报内容到 content/cn/年-月/ 目录..."
+          
+          DESCRIPTION="个人每日整理的AI资讯站。我们为您过滤信息噪音，只提供最精选的AI新闻、最实用的AI工具与AI教程，助您高效获取人工智能领域的前沿动态"
           
           # 遍历 daily 目录下的 md 文件
           for file in daily/*.md; do
             if [ -f "$file" ]; then
               filename=$(basename "$file")
-              # 从文件名提取年月 (格式: YYYY-MM-DD.md)
+              # 从文件名提取日期 (格式: YYYY-MM-DD.md)
               year_month=$(echo "$filename" | cut -d'-' -f1,2)
+              YEAR=$(echo "$filename" | cut -c 1-4)
+              MONTH=$(echo "$filename" | cut -c 6-7)
+              DAY=$(echo "$filename" | cut -c 9-10)
+              DAY_NO_ZERO=$(echo $DAY | sed 's/^0*//')
+              weight=$((32 - DAY_NO_ZERO))
               
               # 创建目标目录 (如果不存在)
               mkdir -p "hextra/content/cn/$year_month"
               
-              # 复制文件
-              cp "$file" "hextra/content/cn/$year_month/"
-              echo "Copied: $file -> hextra/content/cn/$year_month/$filename"
+              # 读取原始内容
+              original_content=$(cat "$file")
+              
+              # 生成带 front matter 的新内容
+              {
+                printf -- "---\n"
+                printf -- "linkTitle: %s-%s-日报\n" "$MONTH" "$DAY"
+                printf -- "title: %s-%s-日报-AI资讯日报\n" "$MONTH" "$DAY"
+                printf -- "weight: %d\n" "$weight"
+                printf -- "breadcrumbs: false\n"
+                printf -- "comments: true\n"
+                printf -- "description: \"%s\"\n" "$DESCRIPTION"
+                printf -- "---\n\n"
+                echo "$original_content"
+              } > "hextra/content/cn/$year_month/$filename"
+              
+              echo "Processed: $file -> hextra/content/cn/$year_month/$filename"
             fi
           done
           
