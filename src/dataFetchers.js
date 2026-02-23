@@ -31,7 +31,7 @@ export async function fetchAndTransformDataForType(sourceType, env, foloCookie) 
     let allUnifiedDataForType = [];
     for (const dataSource of sources) {
         try {
-            const rawData = await dataSource.fetch(env, null); // null = fetch all categories
+            const rawData = await dataSource.fetch(env, foloCookie);
             const unifiedData = dataSource.transform(rawData, sourceType);
             allUnifiedDataForType = allUnifiedDataForType.concat(unifiedData);
         } catch (error) {
